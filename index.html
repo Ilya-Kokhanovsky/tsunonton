@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tsun On TON - The Ultimate Tsundere Token</title>
     <meta name="description" content="First tsundere token on TON blockchain with interactive clicker game and anime community">
-    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
     <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
-    <link rel="stylesheet" href="/static/css/output.css">
+    <link href="/static/css/output.css" rel="stylesheet">
 </head>
 <body class="min-h-screen bg-gradient-to-br from-pink-50 to-purple-100">
     <!-- Navigation -->
@@ -71,8 +70,14 @@
                         </div>
                     </div>
 
+                    <!-- Mascot Image -->
+                    <div class="mascot-float relative z-0 flex justify-center">
+                        <img src="/static/img/tsun-mascot.png" alt="Tsun Mascot" 
+                            class="rounded-2xl w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg shadow-2xl">
+                    </div>
+
                     <!-- Speech Bubble for Desktop -->
-                    <div class="hidden lg:block absolute -top-8 -right-8 z-10 bubble-container">
+                    <div class="hidden lg:block absolute -top-20 -right-4 z-10 bubble-container">
                         <div class="tsun-bubble p-4 max-w-xs bubble-float bg-white/90 backdrop-blur-sm relative">
                             <p class="text-lg text-gray-700 font-semibold bubble-text">
                                 "I-It's not like I want you to buy me or anything... <span class="baka-text text-red-400">B-BAKA!</span>"
@@ -83,12 +88,6 @@
                             <div class="floating-heart" style="bottom: -20px; left: -15px; animation-delay: 2s;">💕</div>
                             <div class="floating-heart" style="bottom: -15px; right: -20px; animation-delay: 3s;">💗</div>
                         </div>
-                    </div>
-
-                    <!-- Mascot Image -->
-                    <div class="mascot-float relative z-0 flex justify-center">
-                        <img src="/static/img/tsun-mascot.png" alt="Tsun Mascot" 
-                            class="rounded-2xl w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg shadow-2xl">
                     </div>
 
                     <!-- Floating elements for desktop -->
@@ -449,8 +448,7 @@
     </footer>
 
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script src="/static/js/app.js"></script>
-        <script src="/static/js/bubble-effects.js"></script>
+        <script src="/static/js/app.min.js"></script>
 
 </body>
 </html>
