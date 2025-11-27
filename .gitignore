@@ -142,3 +142,7 @@ vite.config.ts.timestamp-*
 
 # Ignore src directory and all files within
 src/
+app.js
+bubble-effects.js
+style.css
+bubble-effects.css

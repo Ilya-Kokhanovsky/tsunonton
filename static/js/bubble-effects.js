@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Add interactive hover effect
   addBubbleInteractivity();
 
-  // Start auto text change
+  // Start auto text change with slower intervals
   startAutoTextChange();
 });
 
@@ -218,7 +218,7 @@ function changeBubbleTextWithEffect() {
   // Update text in all bubbles with transition
   bubbleTexts.forEach((bubbleText) => {
     bubbleText.style.opacity = "0";
-    bubbleText.style.transition = "opacity 0.2s ease";
+    bubbleText.style.transition = "opacity 0.3s ease"; // Немного медленнее исчезновение
   });
 
   setTimeout(() => {
@@ -227,20 +227,21 @@ function changeBubbleTextWithEffect() {
       bubbleText.style.opacity = "1";
     });
 
-    // Remove effects after animation
+    // Remove effects after animation - увеличенное время
     setTimeout(() => {
       bubbles.forEach((bubble) => {
         bubble.style.animation = "";
         bubble.style.boxShadow = "0 8px 32px rgba(236, 72, 153, 0.3)";
         bubble.classList.remove("attention-grab");
       });
-    }, 500);
-  }, 200);
+    }, 1500); // Увеличено с 500 до 1500 мс
+  }, 300); // Увеличено с 200 до 300 мс
 }
 
 function startAutoTextChange() {
   function changeWithRandomInterval() {
-    const randomDelay = Math.random() * 25000 + 5000; // 5-30 seconds
+    // Увеличены интервалы: 15-45 секунд вместо 5-30
+    const randomDelay = Math.random() * 30000 + 15000; // 15-45 seconds
     setTimeout(() => {
       changeBubbleTextWithEffect();
       changeWithRandomInterval();

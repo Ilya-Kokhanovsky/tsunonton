@@ -70,14 +70,8 @@
                         </div>
                     </div>
 
-                    <!-- Mascot Image -->
-                    <div class="mascot-float relative z-0 flex justify-center">
-                        <img src="/static/img/tsun-mascot.png" alt="Tsun Mascot" 
-                            class="rounded-2xl w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg shadow-2xl">
-                    </div>
-
-                    <!-- Speech Bubble for Desktop -->
-                    <div class="hidden lg:block absolute -top-20 -right-4 z-10 bubble-container">
+                    <!-- Speech Bubble for Desktop - ADJUSTED POSITION (LOWER) -->
+                    <div class="hidden lg:block absolute -top-16 -right-4 z-10 bubble-container">
                         <div class="tsun-bubble p-4 max-w-xs bubble-float bg-white/90 backdrop-blur-sm relative">
                             <p class="text-lg text-gray-700 font-semibold bubble-text">
                                 "I-It's not like I want you to buy me or anything... <span class="baka-text text-red-400">B-BAKA!</span>"
@@ -87,7 +81,15 @@
                             <div class="floating-heart" style="top: -25px; right: -5px; animation-delay: 1s;">❤️</div>
                             <div class="floating-heart" style="bottom: -20px; left: -15px; animation-delay: 2s;">💕</div>
                             <div class="floating-heart" style="bottom: -15px; right: -20px; animation-delay: 3s;">💗</div>
+                            <!-- Blush effects -->
+                            <div class="blush-right"></div>
                         </div>
+                    </div>
+
+                    <!-- Mascot Image -->
+                    <div class="mascot-float relative z-0 flex justify-center">
+                        <img src="/static/img/tsun-mascot.png" alt="Tsun Mascot" 
+                            class="rounded-2xl w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg shadow-2xl">
                     </div>
 
                     <!-- Floating elements for desktop -->
@@ -98,6 +100,7 @@
         </div>
     </section>
 
+    <!-- Rest of the HTML remains unchanged -->
     <!-- About Section -->
     <section id="about" class="py-16 md:py-20">
         <div class="container mx-auto px-6">
