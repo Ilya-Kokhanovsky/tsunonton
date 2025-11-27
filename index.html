@@ -1,1 +1,456 @@
-123@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tsun On TON - The Ultimate Tsundere Token</title>
+    <meta name="description" content="First tsundere token on TON blockchain with interactive clicker game and anime community">
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <link rel="stylesheet" href="/static/css/output.css">
+</head>
+<body class="min-h-screen bg-gradient-to-br from-pink-50 to-purple-100">
+    <!-- Navigation -->
+    <nav class="w-full px-6 py-4 flex justify-between items-center sticky top-0 bg-white/10 backdrop-blur-lg border-b border-white/20 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-pink-500 rounded-full flex items-center justify-center heart-beat">
+                    <span class="text-white font-bold">T</span>
+                </div>
+                <span class="anime-title text-2xl text-pink-600">TSUN</span>
+            </div>
+            <div class="hidden md:flex space-x-8 mr-8">
+                <a href="#about" class="text-gray-700 hover:text-pink-500 font-bold transition-colors duration-300">About</a>
+                <a href="#tsunomics" class="text-gray-700 hover:text-pink-500 font-bold transition-colors duration-300">Tsunomics</a>
+                <a href="#roadmap" class="text-gray-700 hover:text-pink-500 font-bold transition-colors duration-300">Roadmap</a>
+                <a href="#community" class="text-gray-700 hover:text-pink-500 font-bold transition-colors duration-300">Community</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center pt-16 md:pt-10">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                <!-- Text Content -->
+                <div data-aos="fade-right" class="order-2 lg:order-1 text-center lg:text-left mt-8 lg:mt-0">
+                    <h1 class="anime-title text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-pink-600 mb-4 md:mb-6 leading-tight">
+                        TSUN ON TON
+                    </h1>
+                    <p class="text-lg sm:text-xl md:text-2xl text-gray-600 mb-6 md:mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        The first <span class="text-pink-500 font-bold">tsundere token</span> on TON blockchain!<br class="hidden sm:block">
+                        Combining anime culture with real utility through our interactive clicker game.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <button class="bg-pink-500 hover:bg-pink-600 px-6 py-3 sm:px-8 sm:py-4 rounded-full font-bold text-white text-base sm:text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-pink-200 heart-beat flex items-center justify-center gap-2">
+                            <span>Get Started</span>
+                            <span>🚀</span>
+                        </button>
+                        <button class="border-2 border-pink-500 text-pink-500 hover:bg-pink-500 hover:text-white px-6 py-3 sm:px-8 sm:py-4 rounded-full font-bold text-base sm:text-lg transition-all duration-300 flex items-center justify-center gap-2">
+                            <span>Learn More</span>
+                            <span>📚</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Mascot Image with Speech Bubble -->
+                <div data-aos="fade-left" class="order-1 lg:order-2 relative w-full max-w-md lg:max-w-lg mx-auto">
+                    <!-- Speech Bubble for Mobile -->
+                    <div class="lg:hidden mb-6 flex justify-center">
+                        <div class="tsun-bubble p-4 max-w-xs bubble-float bg-white/90 backdrop-blur-sm relative">
+                            <p class="text-base sm:text-lg text-gray-700 font-semibold bubble-text text-center">
+                                "I-It's not like I want you to buy me or anything... <span class="baka-text text-red-400">B-BAKA!</span>"
+                            </p>
+                            <!-- Hearts for mobile bubble -->
+                            <div class="absolute -top-2 -left-2 text-lg">💖</div>
+                            <div class="absolute -top-3 -right-2 text-lg">❤️</div>
+                            <div class="absolute -bottom-2 -left-3 text-lg">💕</div>
+                            <div class="absolute -bottom-2 -right-3 text-lg">💗</div>
+                        </div>
+                    </div>
+
+                    <!-- Speech Bubble for Desktop -->
+                    <div class="hidden lg:block absolute -top-8 -right-8 z-10 bubble-container">
+                        <div class="tsun-bubble p-4 max-w-xs bubble-float bg-white/90 backdrop-blur-sm relative">
+                            <p class="text-lg text-gray-700 font-semibold bubble-text">
+                                "I-It's not like I want you to buy me or anything... <span class="baka-text text-red-400">B-BAKA!</span>"
+                            </p>
+                            <!-- Floating hearts around the bubble -->
+                            <div class="floating-heart" style="top: -15px; left: -10px; animation-delay: 0s;">💖</div>
+                            <div class="floating-heart" style="top: -25px; right: -5px; animation-delay: 1s;">❤️</div>
+                            <div class="floating-heart" style="bottom: -20px; left: -15px; animation-delay: 2s;">💕</div>
+                            <div class="floating-heart" style="bottom: -15px; right: -20px; animation-delay: 3s;">💗</div>
+                        </div>
+                    </div>
+
+                    <!-- Mascot Image -->
+                    <div class="mascot-float relative z-0 flex justify-center">
+                        <img src="/static/img/tsun-mascot.png" alt="Tsun Mascot" 
+                            class="rounded-2xl w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg shadow-2xl">
+                    </div>
+
+                    <!-- Floating elements for desktop -->
+                    <div class="hidden lg:block absolute -top-4 -left-4 sparkle text-2xl">✨</div>
+                    <div class="hidden lg:block absolute -bottom-4 -right-4 sparkle text-2xl" style="animation-delay: 0.5s;">💖</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 md:py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="anime-title text-3xl md:text-4xl text-center text-pink-600 mb-12 md:mb-16" data-aos="fade-up">About $TSUN</h2>
+            <div class="flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+                <div data-aos="fade-right" class="order-2 md:order-1">
+                    <div class="anime-card p-6 md:p-8 bg-white/70 backdrop-blur-sm rounded-2xl shadow-xl">
+                        <h3 class="text-xl md:text-2xl font-bold text-pink-500 mb-4">What is Tsun On TON?</h3>
+                        <p class="text-gray-700 mb-6 text-base md:text-lg leading-relaxed">
+                            $TSUN is a fun anime-themed cryptocurrency on the TON blockchain featuring our tsundere mascot. 
+                            We're building an interactive ecosystem where you can:
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-3 p-3 rounded-lg bg-white/50">
+                                <div class="w-10 h-10 md:w-12 md:h-12 bg-pink-500 rounded-full flex items-center justify-center shadow-md">
+                                    <span class="text-white text-lg md:text-xl">🎮</span>
+                                </div>
+                                <div>
+                                    <span class="font-bold text-gray-700 text-base md:text-lg">Play & Earn</span>
+                                    <p class="text-gray-600 text-sm">Interactive clicker game with token rewards</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-3 p-3 rounded-lg bg-white/50">
+                                <div class="w-10 h-10 md:w-12 md:h-12 bg-green-500 rounded-full flex items-center justify-center shadow-md">
+                                    <span class="text-white text-lg md:text-xl">👥</span>
+                                </div>
+                                <div>
+                                    <span class="font-bold text-gray-700 text-base md:text-lg">Join Community</span>
+                                    <p class="text-gray-600 text-sm">Connect with fellow anime fans</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-3 p-3 rounded-lg bg-white/50">
+                                <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-500 rounded-full flex items-center justify-center shadow-md">
+                                    <span class="text-white text-lg md:text-xl">⚡</span>
+                                </div>
+                                <div>
+                                    <span class="font-bold text-gray-700 text-base md:text-lg">Fast & Secure</span>
+                                    <p class="text-gray-600 text-sm">Built on TON blockchain technology</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mt-6 text-base md:text-lg leading-relaxed">
+                            Perfect for anime lovers and crypto enthusiasts who want a playful, engaging experience with real utility!
+                        </p>
+                    </div>
+                </div>
+                <div data-aos="fade-left" class="relative max-w-md mx-auto order-1 md:order-2 mb-8 md:mb-0">
+                    <!-- Game preview image -->
+                    <img src="/static/img/game-preview.png" alt="Tsun Game Preview" class="rounded-2xl w-full shadow-2xl">
+                    <div class="absolute inset-0 rounded-2xl bg-black bg-opacity-40 flex items-center justify-center pointer-events-none">
+                        <span class="text-white text-lg md:text-xl font-bold uppercase bg-black/50 px-4 py-2 rounded-full">Coming Soon</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- How $TSUN Works -->
+<section id="tsunomics" class="py-16 md:py-20 bg-white/30 backdrop-blur-sm">
+    <div class="container mx-auto px-6">
+        <h2 class="anime-title text-3xl md:text-4xl text-center text-pink-600 mb-4" data-aos="fade-up">
+            How $TSUN Works
+        </h2>
+        <p class="text-lg text-center text-gray-600 mb-12 max-w-2xl mx-auto" data-aos="fade-up">
+            "It's not like we want to explain everything to you... but fine!"
+        </p>
+        
+        <div class="max-w-4xl mx-auto">
+
+            <div class="anime-card p-6 md:p-8 mb-8 bg-white/70 backdrop-blur-sm rounded-2xl shadow-xl" data-aos="zoom-in">
+                <!-- Total Supply -->
+                <div class="text-center mb-8">
+                    <h3 class="text-xl md:text-2xl font-bold text-pink-500 mb-2">Total Supply</h3>
+                    <p class="text-2xl md:text-4xl font-bold text-gray-700">1,000,000,000 TSUN</p>
+                    <p class="text-gray-500 mt-2">(That's a lot, but we're not showing off or anything!)</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6">
+
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-4 p-4 rounded-xl bg-pink-50 border-2 border-pink-200">
+                            <div class="w-12 h-12 bg-pink-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                <span class="text-white text-xl">🎮</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-700 text-lg">For Our Clicker Game</h4>
+                                <p class="text-gray-600 text-sm mt-1">
+                                    Earn tokens by playing - it's not like we want to reward you or anything!
+                                </p>
+                                <div class="mt-2">
+                                    <span class="text-pink-600 font-bold">60%</span>
+                                    <span class="text-gray-500 text-sm ml-2">of total supply</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4 p-4 rounded-xl bg-green-50 border-2 border-green-200">
+                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                <span class="text-white text-xl">👥</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-700 text-lg">For Our Community</h4>
+                                <p class="text-gray-600 text-sm mt-1">
+                                    Airdrops and rewards for early supporters... not that we care!
+                                </p>
+                                <div class="mt-2">
+                                    <span class="text-green-600 font-bold">20%</span>
+                                    <span class="text-gray-500 text-sm ml-2">for giveaways</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-4 p-4 rounded-xl bg-blue-50 border-2 border-blue-200">
+                            <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                <span class="text-white text-xl">💻</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-700 text-lg">For Development</h4>
+                                <p class="text-gray-600 text-sm mt-1">
+                                    Making the game better... it's not for you, we just like coding!
+                                </p>
+                                <div class="mt-2">
+                                    <span class="text-blue-600 font-bold">15%</span>
+                                    <span class="text-gray-500 text-sm ml-2">team & development</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4 p-4 rounded-xl bg-yellow-50 border-2 border-yellow-200">
+                            <div class="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                <span class="text-white text-xl">💰</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-700 text-lg">For Trading</h4>
+                                <p class="text-gray-600 text-sm mt-1">
+                                    So you can buy and sell easily... not that we want you to trade!
+                                </p>
+                                <div class="mt-2">
+                                    <span class="text-yellow-600 font-bold">5%</span>
+                                    <span class="text-gray-500 text-sm ml-2">liquidity pool</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contract Address Section -->
+            <div class="text-center mb-8" data-aos="fade-up">
+                <div class="anime-card p-6 bg-gradient-to-r from-pink-50 to-purple-50 rounded-2xl shadow-lg border-2 border-pink-200">
+                    <h4 class="text-lg md:text-xl font-bold text-pink-600 mb-4">
+                        "You can verify everything yourself... not that we think you will!"
+                    </h4>
+                    <div class="bg-white/80 p-4 rounded-xl mb-4">
+                        <p class="text-sm text-gray-500 mb-2">Contract Address (TON)</p>
+                        <p id="contractAddress" class="font-mono text-gray-800 text-base break-all bg-gray-100 p-3 rounded-lg cursor-pointer select-all" title="Click to copy contract address">
+                            EQXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        </p>
+                        <div id="copyStatus" class="sr-only" aria-live="polite"></div>
+                        <p class="text-xs text-gray-500 mt-2">
+                            Check on: <a href="#" class="text-pink-500 hover:text-pink-600">tonviewer.com</a> | 
+                            <a href="#" class="text-pink-500 hover:text-pink-600">tonscan.org</a>
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="flex flex-col items-center p-4">
+                            <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-3">
+                                <span class="text-green-600 text-2xl">✅</span>
+                            </div>
+                            <h5 class="font-bold text-gray-700">Contract Renounced</h5>
+                            <p class="text-gray-600 text-sm mt-1">No changes can be made</p>
+                        </div>
+                        <div class="flex flex-col items-center p-4">
+                            <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-3">
+                                <span class="text-blue-600 text-2xl">🔒</span>
+                            </div>
+                            <h5 class="font-bold text-gray-700">Liquidity Locked</h5>
+                            <p class="text-gray-600 text-sm mt-1">Funds are safe forever</p>
+                        </div>
+                        <div class="flex flex-col items-center p-4">
+                            <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-3">
+                                <span class="text-purple-600 text-2xl">👑</span>
+                            </div>
+                            <h5 class="font-bold text-gray-700">Community Owned</h5>
+                            <p class="text-gray-600 text-sm mt-1">You're in control</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-8" data-aos="fade-up">
+                <div class="inline-block anime-card p-4 bg-white/50 rounded-xl">
+                    <p class="text-gray-600 font-semibold">
+                        "So basically... play game, get tokens, have fun. <span class="text-pink-500">Not that we care what you do!</span>"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap" class="py-16 md:py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="anime-title text-3xl md:text-4xl text-center text-pink-600 mb-12 md:mb-16" data-aos="fade-up">Our Journey</h2>
+            <p class="text-lg md:text-xl text-center text-gray-700 mb-8 md:mb-12 max-w-3xl mx-auto" data-aos="fade-up">
+                "We have a vision for the future... not that we're excited to share it with you or anything!"
+            </p>
+            
+            <div class="max-w-6xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+                    <!-- Block 1 -->
+                    <div class="anime-card p-6 md:p-8 text-center bg-white/70 backdrop-blur-sm rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300" data-aos="fade-up">
+                        <div class="w-16 h-16 md:w-20 md:h-20 bg-pink-500 rounded-full flex items-center justify-center mb-4 md:mb-6 mx-auto heart-beat shadow-lg">
+                            <span class="text-white text-2xl md:text-3xl">🚀</span>
+                        </div>
+                        <h3 class="anime-title text-xl md:text-2xl text-pink-600 mb-4">Phase 1: Launch</h3>
+                        <ul class="text-gray-600 space-y-2 md:space-y-3 text-left text-sm md:text-base">
+                            <li class="flex items-start">
+                                <span class="text-pink-500 mr-2">•</span>
+                                Token launch on TON
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-pink-500 mr-2">•</span>
+                                Community building
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-pink-500 mr-2">•</span>
+                                Clicker app prototype
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-pink-500 mr-2">•</span>
+                                Exchange listings
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Block 2 -->
+                    <div class="anime-card p-6 md:p-8 text-center bg-white/70 backdrop-blur-sm rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                        <div class="w-16 h-16 md:w-20 md:h-20 bg-green-500 rounded-full flex items-center justify-center mb-4 md:mb-6 mx-auto shadow-lg">
+                            <span class="text-white text-2xl md:text-3xl">🎮</span>
+                        </div>
+                        <h3 class="anime-title text-xl md:text-2xl text-green-600 mb-4">Phase 2: Development</h3>
+                        <ul class="text-gray-600 space-y-2 md:space-y-3 text-left text-sm md:text-base">
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2">•</span>
+                                Full app release
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2">•</span>
+                                Token rewards system
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2">•</span>
+                                Mobile optimization
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2">•</span>
+                                Enhanced UX/UI
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Block 3 -->
+                    <div class="anime-card p-6 md:p-8 text-center bg-white/70 backdrop-blur-sm rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                        <div class="w-16 h-16 md:w-20 md:h-20 bg-purple-500 rounded-full flex items-center justify-center mb-4 md:mb-6 mx-auto shadow-lg">
+                            <span class="text-white text-2xl md:text-3xl">⭐</span>
+                        </div>
+                        <h3 class="anime-title text-xl md:text-2xl text-purple-600 mb-4">Phase 3: Growth</h3>
+                        <ul class="text-gray-600 space-y-2 md:space-y-3 text-left text-sm md:text-base">
+                            <li class="flex items-start">
+                                <span class="text-purple-500 mr-2">•</span>
+                                Advanced features
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-purple-500 mr-2">•</span>
+                                Community governance
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-purple-500 mr-2">•</span>
+                                Partnerships
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-purple-500 mr-2">•</span>
+                                Cross-platform expansion
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Inspirational Footer -->
+                <div class="max-w-4xl mx-auto mt-12 md:mt-16" data-aos="fade-up">
+                    <div class="anime-card p-6 md:p-8 text-center bg-gradient-to-r from-pink-50 to-purple-50 rounded-2xl shadow-xl border-2 border-pink-200">
+                        <h3 class="text-xl md:text-2xl font-bold text-pink-600 mb-4">Our Promise</h3>
+                        <p class="text-gray-600 text-base md:text-lg">
+                            "We're building an amazing clicker app experience... not that we need your support or anything!"
+                        </p>
+                        <p class="text-gray-500 mt-4 text-sm md:text-base">
+                            With our interactive application and growing ecosystem, the future looks bright for $TSUN holders.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section id="community" class="py-16 md:py-20 bg-white/30 backdrop-blur-sm">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="anime-title text-3xl md:text-4xl text-pink-600 mb-6 md:mb-8" data-aos="fade-up">Join Our Community</h2>
+            <p class="text-lg md:text-xl mb-8 md:mb-12 max-w-2xl mx-auto text-gray-700" data-aos="fade-up">
+                Even though we'll pretend we don't care if you join... we'd be really happy to have you!
+            </p>
+            <div class="flex flex-wrap justify-center gap-6 md:gap-8" data-aos="zoom-in">
+                <!-- Telegram -->
+                <a href="https://t.me/tsunonton" target="_blank" class="social-link anime-card p-4 md:p-6 transition-all transform hover:scale-105 md:hover:scale-110 hover:shadow-2xl bg-white/70 backdrop-blur-sm rounded-2xl">
+                    <div class="flex items-center gap-2 md:gap-3">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/kpqwgobz.json"
+                            trigger="hover"
+                            colors="primary:#0088cc"
+                            style="width:45px;height:45px">
+                        </lord-icon>
+                    </div>
+                </a>
+                <!-- X (Twitter) -->
+                <a href="https://x.com/tsunonton" target="_blank" class="social-link anime-card p-4 md:p-6 transition-all transform hover:scale-105 md:hover:scale-110 hover:shadow-2xl bg-white/70 backdrop-blur-sm rounded-2xl">
+                    <div class="flex items-center gap-2 md:gap-3">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/cbxaxfqs.json"
+                            trigger="hover"
+                            colors="primary:#000000"
+                            style="width:45px;height:45px;">
+                        </lord-icon>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 md:py-8 border-t border-pink-200 bg-white/50">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-600 text-sm md:text-base">&copy; 2025 Tsun On TON. All rights reserved. Not that we care...</p>
+        </div>
+    </footer>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="/static/js/app.js"></script>
+        <script src="/static/js/bubble-effects.js"></script>
+
+</body>
+</html>

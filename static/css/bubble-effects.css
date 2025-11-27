@@ -1,0 +1,327 @@
+/* Bubble Effects Styles */
+.bubble-container {
+    position: relative;
+}
+
+.tsun-bubble {
+    position: relative;
+    background: white;
+    border: 3px solid #ec4899;
+    border-radius: 25px;
+    box-shadow: 0 8px 32px rgba(236, 72, 153, 0.3);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    /* Always show pointer cursor */
+    -webkit-tap-highlight-color: transparent;
+    /* Remove tap highlight on mobile */
+    touch-action: manipulation;
+    /* Improve touch responsiveness */
+}
+
+.tsun-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50px;
+    border-width: 15px 15px 0;
+    border-style: solid;
+    border-color: #ec4899 transparent;
+    transform: rotate(15deg);
+}
+
+.bubble-float {
+    animation: bubble-float 3s ease-in-out infinite;
+}
+
+@keyframes bubble-float {
+
+    0%,
+    100% {
+        transform: translateY(0px) rotate(-0.5deg);
+    }
+
+    50% {
+        transform: translateY(-5px) rotate(0.5deg);
+    }
+}
+
+.bubble-text {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    line-height: 1.4;
+}
+
+.baka-text {
+    color: #dc2626;
+    font-weight: bold;
+    display: inline-block;
+    animation: gentle-bounce 2s ease-in-out infinite;
+    text-shadow: 0 2px 4px rgba(220, 38, 38, 0.3);
+}
+
+@keyframes gentle-bounce {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.floating-heart {
+    position: absolute;
+    animation: float-heart 4s ease-in-out infinite;
+    font-size: 1.2rem;
+    opacity: 0;
+    z-index: 20;
+    pointer-events: none;
+}
+
+@keyframes float-heart {
+    0% {
+        transform: translateY(0) translateX(0) rotate(0deg) scale(0.8);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0.8;
+    }
+
+    80% {
+        opacity: 0.4;
+    }
+
+    100% {
+        transform: translateY(-60px) translateX(10px) rotate(45deg) scale(1.2);
+        opacity: 0;
+    }
+}
+
+.bubble-sparkle {
+    position: absolute;
+    animation: sparkle-twinkle 2s ease-in-out infinite;
+    font-size: 1rem;
+    opacity: 0;
+    pointer-events: none;
+}
+
+@keyframes sparkle-twinkle {
+
+    0%,
+    100% {
+        opacity: 0;
+        transform: scale(0.8) rotate(0deg);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.2) rotate(180deg);
+    }
+}
+
+/* Pulse effect for the bubble */
+@keyframes bubble-pulse {
+
+    0%,
+    100% {
+        box-shadow: 0 8px 32px rgba(236, 72, 153, 0.3);
+    }
+
+    50% {
+        box-shadow: 0 12px 40px rgba(236, 72, 153, 0.5);
+    }
+}
+
+.tsun-bubble {
+    animation: bubble-pulse 3s ease-in-out infinite;
+}
+
+/* Blush effect */
+.tsun-bubble::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    width: 8px;
+    height: 4px;
+    background: rgba(236, 72, 153, 0.2);
+    border-radius: 50%;
+    filter: blur(2px);
+    animation: blush-pulse 2s ease-in-out infinite;
+}
+
+.tsun-bubble .blush-right {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    width: 8px;
+    height: 4px;
+    background: rgba(236, 72, 153, 0.2);
+    border-radius: 50%;
+    filter: blur(2px);
+    animation: blush-pulse 2s ease-in-out infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes blush-pulse {
+
+    0%,
+    100% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.4;
+        transform: scale(1.1);
+    }
+}
+
+/* Enhanced hover effects */
+.tsun-bubble:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 45px rgba(236, 72, 153, 0.4);
+}
+
+.attention-grab {
+    animation: attention-grab 0.5s ease-in-out !important;
+}
+
+@keyframes attention-grab {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1.1) rotate(-2deg);
+    }
+
+    50% {
+        transform: scale(1.15) rotate(2deg);
+    }
+
+    75% {
+        transform: scale(1.1) rotate(-1deg);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes bubble-shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-5px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(5px);
+    }
+}
+
+.tsun-bubble:active {
+    transform: scale(0.95);
+    transition: transform 0.1s ease;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .bubble-container {
+        position: static;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .tsun-bubble {
+        max-width: 280px;
+        font-size: 0.9rem;
+        position: relative;
+        margin: 0 auto;
+        /* Enhanced for mobile touch */
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .tsun-bubble::after {
+        left: 50%;
+        bottom: -12px;
+        border-width: 12px 12px 0;
+        transform: translateX(-50%) rotate(0deg);
+    }
+
+    .floating-heart {
+        font-size: 1rem;
+    }
+
+    /* Hide floating hearts and sparkles on mobile for better performance */
+    .floating-heart,
+    .bubble-sparkle {
+        display: none;
+    }
+
+    /* Reposition the bubble for mobile */
+    .hero-section .relative .bubble-container {
+        position: static;
+        margin: 0 auto 20px;
+        width: 100%;
+    }
+
+    /* Mobile-specific animations */
+    @keyframes attention-grab-mobile {
+        0% {
+            transform: scale(1);
+        }
+
+        25% {
+            transform: scale(1.08) rotate(-1deg);
+        }
+
+        50% {
+            transform: scale(1.12) rotate(1deg);
+        }
+
+        75% {
+            transform: scale(1.08) rotate(-0.5deg);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    .attention-grab {
+        animation: attention-grab-mobile 0.5s ease-in-out !important;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+    .tsun-bubble {
+        max-width: 250px;
+        padding: 12px;
+    }
+
+    .tsun-bubble::after {
+        bottom: -10px;
+        border-width: 10px 10px 0;
+    }
+}
