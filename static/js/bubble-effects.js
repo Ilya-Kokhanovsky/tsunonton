@@ -1,278 +1,203 @@
-// Bubble Effects JavaScript
-document.addEventListener("DOMContentLoaded", function () {
-  // Initialize bubble effects
-  initBubbleEffects();
+if (window.tsunBubbleScriptLoaded) {
+  console.warn("⚠️ Bubble script prevented double loading");
+} else {
+  window.tsunBubbleScriptLoaded = true;
 
-  // Add interactive hover effect
-  addBubbleInteractivity();
+  document.addEventListener("DOMContentLoaded", function () {
+    const isMobile = window.matchMedia("(max-width: 768px)").matches;
 
-  // Start auto text change with slower intervals
-  startAutoTextChange();
-});
+    if (window.tsunBubbleTimer) clearTimeout(window.tsunBubbleTimer);
+
+    initBubbleEffects();
+
+    if (!isMobile) {
+      addBubbleInteractivity();
+    }
+
+    if (!document.hidden) {
+      startAutoTextChange();
+    }
+  });
+}
 
 function initBubbleEffects() {
   const bubbles = document.querySelectorAll(".tsun-bubble");
   bubbles.forEach((bubble) => {
-    // Add blush elements to each bubble
-    const blushRight = document.createElement("div");
-    blushRight.className = "blush-right";
-    bubble.appendChild(blushRight);
+    if (!bubble.querySelector(".blush-right")) {
+      const blushRight = document.createElement("div");
+      blushRight.className = "blush-right";
+      bubble.appendChild(blushRight);
+    }
+
+    const textEl = bubble.querySelector(".bubble-text");
+    if (textEl) {
+      textEl.style.transition = "opacity 0.5s ease-in-out";
+    }
   });
 
-  console.log("✨ Tsun bubble effects initialized!");
+  if (!document.querySelector("#bubble-effects-styles")) {
+    const styleSheet = document.createElement("style");
+    styleSheet.id = "bubble-effects-styles";
+    styleSheet.textContent = `
+            .tsun-bubble {
+                will-change: transform; 
+                transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            }
+            .explosion-heart {
+                position: fixed;
+                pointer-events: none;
+                z-index: 1000;
+                user-select: none;
+                will-change: transform, opacity;
+            }
+            .attention-grab {
+                animation: popScale 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            }
+            @keyframes popScale {
+                0% { transform: scale(1); }
+                50% { transform: scale(1.05); }
+                100% { transform: scale(1); }
+            }
+        `;
+    document.head.appendChild(styleSheet);
+  }
 }
 
 function addBubbleInteractivity() {
   const bubbles = document.querySelectorAll(".tsun-bubble");
-
   bubbles.forEach((bubble) => {
-    // Add hover effect for desktop
+    if (bubble.dataset.init === "true") return;
+    bubble.dataset.init = "true";
+
     bubble.addEventListener("mouseenter", function () {
       this.style.transform = "scale(1.05) translateY(-2px)";
-      this.style.boxShadow = "0 20px 50px rgba(236, 72, 153, 0.5)";
-      this.style.transition = "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)";
+      this.style.boxShadow = "0 15px 35px rgba(236, 72, 153, 0.4)";
       this.style.cursor = "pointer";
     });
 
     bubble.addEventListener("mouseleave", function () {
       this.style.transform = "scale(1) translateY(0)";
-      this.style.boxShadow = "0 8px 32px rgba(236, 72, 153, 0.3)";
+      this.style.boxShadow = "";
     });
 
-    // Add click effect for both desktop and mobile
-    const handleBubbleClick = function (e) {
-      e.preventDefault();
-      e.stopPropagation();
-
-      // Click animation
+    bubble.addEventListener("click", function (e) {
+      createHeartExplosion(e.clientX, e.clientY);
       this.style.transform = "scale(0.95)";
       setTimeout(() => {
-        this.style.transform = "scale(1)";
+        this.style.transform = "scale(1.05) translateY(-2px)";
       }, 150);
-
-      // Get position for heart explosion
-      let clientX, clientY;
-      if (e.type === "click") {
-        // Mouse click
-        clientX = e.clientX;
-        clientY = e.clientY;
-      } else if (e.type === "touchend") {
-        // Touch event
-        const touch = e.changedTouches[0];
-        clientX = touch.clientX;
-        clientY = touch.clientY;
-      }
-
-      // Create heart explosion
-      if (clientX && clientY) {
-        createHeartExplosion(clientX, clientY);
-      }
-
-      // Change text with attention effect
-      changeBubbleTextWithEffect();
-    };
-
-    // Add both click and touch events
-    bubble.addEventListener("click", handleBubbleClick);
-    bubble.addEventListener("touchend", handleBubbleClick);
-
-    // Prevent default touch behavior
-    bubble.addEventListener(
-      "touchstart",
-      function (e) {
-        e.preventDefault();
-        this.style.transform = "scale(0.98)";
-      },
-      { passive: false }
-    );
-
-    bubble.addEventListener(
-      "touchmove",
-      function (e) {
-        e.preventDefault();
-      },
-      { passive: false }
-    );
+    });
   });
 }
 
-function createHeartExplosion(x, y) {
-  const hearts = ["💖", "❤️", "💕", "💗", "💓", "🌸", "✨"];
-  const container = document.body;
+const tsunderePhrases = [
+  // --- Classic Tsundere Phrases ---
+  "I-It's not like I want you to buy me or anything... <span class='baka-text text-red-400'>B-BAKA!</span>",
+  "Don't get the wrong idea! I'm only here because I want to be! 😤",
+  "W-why are you staring at me? Look at the chart instead! 👀",
 
-  for (let i = 0; i < 6; i++) {
-    const heart = document.createElement("div");
-    heart.className = "explosion-heart";
-    heart.innerHTML = hearts[Math.floor(Math.random() * hearts.length)];
-    heart.style.position = "fixed";
-    heart.style.left = x + "px";
-    heart.style.top = y + "px";
-    heart.style.fontSize = Math.random() * 10 + 16 + "px";
-    heart.style.pointerEvents = "none";
-    heart.style.zIndex = "1000";
-    heart.style.userSelect = "none";
+  // --- About game ---
+  "H-hey! Stop clicking so fast! You're making me dizzy! 🌀",
+  "Did you really just click me 1000 times? <span class='text-pink-500'>Get a life!</span> (But thanks...)",
+  "Ow! Be gentle with your cursor, you brute! 💢",
+  "You think clicking makes you a trader? ...Well, maybe a little. 🤏",
+  "Fine! Take your tokens! Just stop poking me! 🍅",
 
-    // Random animation
-    const angle = Math.random() * Math.PI * 2;
-    const distance = 40 + Math.random() * 60;
-    const duration = 0.8 + Math.random() * 0.4;
-    const size = 0.3 + Math.random() * 0.4;
+  // --- About Trading / TON ---
+  "Are you holding or just happy to see me? ...Don't answer that! 😳",
+  "You better not be looking at other coins on TON! <span class='text-red-500 font-bold'>I'm the only one!</span> 🔪",
+  "Gas fees are low, so you have NO excuse not to buy more! ⛽",
+  "Selling? Hmph. Go ahead. See if I care! ... <span class='text-xs text-gray-400'>(Please don't go)</span>",
+  "Don't look at my Market Cap! It's rude to ask a girl her size! 😡",
+  "We... we might go to the moon. But don't get ahead of yourself! 🚀",
+  "Is your wallet connected properly? <span class='text-blue-500'>Check it again, dummy!</span>",
 
-    // Create keyframes for this specific heart
-    const styleId = `heart-style-${Date.now()}-${i}`;
-    const keyframes = `
-            @keyframes ${styleId} {
-                0% {
-                    opacity: 1;
-                    transform: translate(0, 0) scale(1) rotate(0deg);
-                }
-                100% {
-                    opacity: 0;
-                    transform: 
-                        translate(${Math.cos(angle) * distance}px, ${
-      Math.sin(angle) * distance
-    }px) 
-                        scale(${size}) 
-                        rotate(${Math.random() * 360}deg);
-                }
-            }
-        `;
+  // --- Hidden Affection ---
+  "I guess... holding $TSUN isn't the worst decision you've made. 💕",
+  "You're still here? ...I suppose I don't mind your company. ☕",
+  "Make sure you DYOR... I don't want you to be broke, okay? 📚",
+  "Fine, you can brag about your bag. But just this once! ✨",
+  "If we hit 10M cap, maybe... just maybe... I'll be nice to you. 🤫",
 
-    const style = document.createElement("style");
-    style.id = styleId;
-    style.textContent = keyframes;
-    document.head.appendChild(style);
-
-    heart.style.animation = `${styleId} ${duration}s ease-out forwards`;
-    container.appendChild(heart);
-
-    // Remove heart and style after animation
-    setTimeout(() => {
-      if (heart.parentNode) {
-        heart.parentNode.removeChild(heart);
-      }
-      const styleElem = document.getElementById(styleId);
-      if (styleElem) {
-        styleElem.remove();
-      }
-    }, duration * 1000);
-  }
-}
+  // --- Aggressive/Funny ---
+  "<span class='baka-text text-red-400'>B-BAKA!</span> Don't just stare, BUY something! 💸",
+  "Ugh, you're such a noob. Do I have to explain slippage too? 📉",
+  "Only 1B supply... take it or leave it! (Please take it) 💎",
+];
 
 function changeBubbleTextWithEffect() {
-  const textVariations = [
-    "I-It's not like I want you to buy me or anything... B-BAKA!",
-    "Hmph! I don't care if you invest or not... idiot!",
-    "You better not think I'm doing this for you! Baka!",
-    "I'm only saying this once... it's not like I like you or anything!",
-    "Don't get the wrong idea! I'm not being nice to you!",
-    "It's not like I'm happy you're here or anything...",
-    "Why are you still looking at me? Go away!",
-    "I don't need your support... but you can stay if you want.",
-    "This project would be fine without you... probably.",
-    "Stop staring! It's not like I'm cute or anything!",
-    "I'm not doing this for your attention, you know!",
-    "You're really going to click that button? How predictable...",
-  ];
+  if (document.hidden) return;
 
-  const bubbleTexts = document.querySelectorAll(".bubble-text");
   const bubbles = document.querySelectorAll(".tsun-bubble");
-
-  if (!bubbleTexts.length || !bubbles.length) return;
-
-  // Get current text from first bubble
-  const currentText = bubbleTexts[0].textContent || bubbleTexts[0].innerText;
-
-  // Get random variation that's different from current
-  let newText;
-  let attempts = 0;
-  do {
-    newText = textVariations[Math.floor(Math.random() * textVariations.length)];
-    attempts++;
-    // Prevent infinite loop
-    if (attempts > 20) break;
-  } while (currentText.includes(newText.replace(/<[^>]*>/g, "")));
-
-  // Keep the BAKA span styling
-  if (
-    newText.includes("BAKA") ||
-    newText.includes("Baka") ||
-    newText.includes("idiot")
-  ) {
-    const bakaMatch = newText.match(/(B-BAKA|Baka|idiot)/);
-    if (bakaMatch) {
-      newText = newText.replace(
-        bakaMatch[0],
-        `<span class="baka-text">${bakaMatch[0]}</span>`
-      );
-    }
-  }
-
-  // Apply effects to all bubbles
   bubbles.forEach((bubble) => {
+    const textElement = bubble.querySelector(".bubble-text");
+    if (!textElement) return;
+
     bubble.classList.add("attention-grab");
-    bubble.style.animation = "bubble-shake 0.5s ease-in-out";
-    bubble.style.boxShadow = "0 0 30px rgba(236, 72, 153, 0.8)";
-  });
+    textElement.style.opacity = "0";
 
-  // Update text in all bubbles with transition
-  bubbleTexts.forEach((bubbleText) => {
-    bubbleText.style.opacity = "0";
-    bubbleText.style.transition = "opacity 0.3s ease"; // Немного медленнее исчезновение
-  });
-
-  setTimeout(() => {
-    bubbleTexts.forEach((bubbleText) => {
-      bubbleText.innerHTML = newText;
-      bubbleText.style.opacity = "1";
-    });
-
-    // Remove effects after animation - увеличенное время
     setTimeout(() => {
-      bubbles.forEach((bubble) => {
-        bubble.style.animation = "";
-        bubble.style.boxShadow = "0 8px 32px rgba(236, 72, 153, 0.3)";
-        bubble.classList.remove("attention-grab");
-      });
-    }, 1500); // Увеличено с 500 до 1500 мс
-  }, 300); // Увеличено с 200 до 300 мс
+      const randomPhrase =
+        tsunderePhrases[Math.floor(Math.random() * tsunderePhrases.length)];
+      textElement.innerHTML = randomPhrase;
+      textElement.style.opacity = "1";
+    }, 400);
+
+    setTimeout(() => {
+      bubble.classList.remove("attention-grab");
+    }, 1000);
+  });
 }
 
 function startAutoTextChange() {
-  function changeWithRandomInterval() {
-    // Увеличены интервалы: 15-45 секунд вместо 5-30
-    const randomDelay = Math.random() * 30000 + 15000; // 15-45 seconds
-    setTimeout(() => {
+  if (window.tsunBubbleTimer) clearTimeout(window.tsunBubbleTimer);
+
+  function scheduleNextChange() {
+    const minTime = 5000;
+    const variableTime = 7000;
+    const randomDelay = Math.random() * variableTime + minTime;
+
+    window.tsunBubbleTimer = setTimeout(() => {
       changeBubbleTextWithEffect();
-      changeWithRandomInterval();
+      scheduleNextChange();
     }, randomDelay);
   }
 
-  // Start the cycle
-  changeWithRandomInterval();
+  scheduleNextChange();
 }
 
-// Add CSS for explosion hearts
-if (!document.querySelector("#bubble-effects-styles")) {
-  const explosionStyles = `
-        .explosion-heart {
-            position: fixed;
-            pointer-events: none;
-            z-index: 1000;
-            user-select: none;
-            animation-timing-function: ease-out;
-        }
-    `;
+function createHeartExplosion(x, y) {
+  const isMobile = window.matchMedia("(max-width: 768px)").matches;
+  const particleCount = isMobile ? 5 : 12;
+  const hearts = ["💖", "❤️", "💕", "💗", "✨"];
 
-  const styleSheet = document.createElement("style");
-  styleSheet.id = "bubble-effects-styles";
-  styleSheet.textContent = explosionStyles;
-  document.head.appendChild(styleSheet);
+  for (let i = 0; i < particleCount; i++) {
+    const heart = document.createElement("div");
+    heart.className = "explosion-heart";
+    heart.innerText = hearts[Math.floor(Math.random() * hearts.length)];
+
+    const spreadX = (Math.random() - 0.5) * 150;
+    const spreadY = (Math.random() - 0.5) * 150 - 50;
+
+    heart.style.left = `${x}px`;
+    heart.style.top = `${y}px`;
+    heart.style.fontSize = `${Math.random() * 15 + 10}px`;
+
+    document.body.appendChild(heart);
+
+    const animation = heart.animate(
+      [
+        { transform: "translate(0, 0) scale(1)", opacity: 1 },
+        {
+          transform: `translate(${spreadX}px, ${spreadY}px) scale(0)`,
+          opacity: 0,
+        },
+      ],
+      {
+        duration: 800 + Math.random() * 400,
+        easing: "cubic-bezier(0, .9, .57, 1)",
+      }
+    );
+    animation.onfinish = () => heart.remove();
+  }
 }
-
-// Export functions for global access if needed
-window.tsunBubbleEffects = {
-  init: initBubbleEffects,
-  createExplosion: createHeartExplosion,
-  changeText: changeBubbleTextWithEffect,
-};
