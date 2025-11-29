@@ -4,10 +4,19 @@
  */
 
 document.addEventListener("DOMContentLoaded", function () {
+
+  AOS.init({
+    duration: 800,
+    easing: "ease-in-out",
+    once: true,
+    mirror: false,
+  });
+
   initChart();
   initMascot();
   initClipboard();
   initMobileMenu();
+
 });
 
 /* --- 1. Tokenomics Chart (Chart.js) --- */
