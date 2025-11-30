@@ -22,7 +22,7 @@ function initChart() {
       datasets: [
         {
           label: "Token Distribution",
-          data: [55, 20, 15, 10],
+          data: [50, 20, 15, 15],
           backgroundColor: [
             "#ff69b4", // Hot Pink (Game)
             "#0088cc", // TON Blue (Community)
