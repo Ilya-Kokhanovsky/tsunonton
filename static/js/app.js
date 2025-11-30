@@ -1,6 +1,6 @@
 /**
  * Tsun On TON - Main Application Logic
- * Handles Chart.js, Mascot Interactions, and UI Events
+ * Handles Chart.js, Mascot Interactions, UI Events, and Dark Mode
  */
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -8,12 +8,18 @@ document.addEventListener("DOMContentLoaded", function () {
   initMascot();
   initClipboard();
   initMobileMenu();
+  initThemeToggle();
 });
 
 /* --- 1. Tokenomics Chart (Chart.js) --- */
 function initChart() {
   const ctx = document.getElementById("tokenomicsChart");
   if (!ctx) return;
+
+  // Determine text color on initial load
+  const initialTextColor = document.documentElement.classList.contains("dark")
+    ? "#d1d5db"
+    : "#666";
 
   new Chart(ctx.getContext("2d"), {
     type: "doughnut",
@@ -44,6 +50,7 @@ function initChart() {
             font: { family: "'Nunito', sans-serif", size: 14 },
             padding: 20,
             usePointStyle: true,
+            color: initialTextColor, // Apply color
           },
         },
         tooltip: {
@@ -78,9 +85,7 @@ function initMascot() {
 
   if (!mascotZone || !bubbleText) return;
 
-  // Tsundere phrases
   const phrases = [
-    // --- Classic Tsundere (Classic) ---
     "Don't touch me!",
     "Idiot! Not there!",
     "It's not like I like you...",
@@ -89,15 +94,11 @@ function initMascot() {
     "Don't get the wrong idea!",
     "Ugh, you're so annoying!",
     "Stop staring at me!",
-
-    // --- Interaction (Reaction to clicks) ---
     "Stop clicking so fast!",
     "H-hey! That tickles!",
     "You have nothing better to do?",
     "My eyes are up here!",
     "Do you think this is a game?!",
-
-    // --- Crypto / TON Specific (Crypto Theme) ---
     "Buy $TSUN already!",
     "Ugh, fine. Take my tokens.",
     "Don't you dare sell me!",
@@ -106,8 +107,6 @@ function initMascot() {
     "Liquidity is locked, unlike your brain!",
     "Don't look at other coins! 😠",
     "Gas fees are low, so buy more!",
-
-    // --- Dere / Soft side (Rare Cuteness) ---
     "Fine, you can stay.",
     "I guess... you're not the worst.",
     "Thanks for holding... dummy.",
@@ -116,20 +115,17 @@ function initMascot() {
   ];
 
   mascotZone.addEventListener("click", (e) => {
-
     const randomPhrase = phrases[Math.floor(Math.random() * phrases.length)];
     bubbleText.innerText = randomPhrase;
 
-    // Bubble animation
     bubble.style.transform = "scale(1.1)";
     setTimeout(() => (bubble.style.transform = "scale(1)"), 150);
 
-    // Heart effect (Particles)
     createHeart(e.clientX, e.clientY);
   });
 }
 
-// Creating floating heart
+// Particle Effect
 function createHeart(x, y) {
   const heart = document.createElement("div");
   heart.innerHTML = "❤️";
@@ -144,7 +140,6 @@ function createHeart(x, y) {
 
   document.body.appendChild(heart);
 
-  // Animation of floating up and fading out
   requestAnimationFrame(() => {
     const randomX = (Math.random() - 0.5) * 50;
     heart.style.transform = `translate(${randomX}px, -100px) scale(1.5)`;
@@ -171,7 +166,6 @@ function initClipboard() {
     navigator.clipboard
       .writeText(realAddress)
       .then(() => {
-        // UI Feedback
         contractText.classList.add("text-green-600");
         contractText.innerText = "Copied!";
         toast.classList.remove("opacity-0");
@@ -184,7 +178,6 @@ function initClipboard() {
       })
       .catch((err) => {
         console.error("Failed to copy text: ", err);
-        // Fallback for older browsers (optional)
       });
   });
 }
@@ -198,7 +191,6 @@ function initMobileMenu() {
 
   btn.addEventListener("click", () => {
     menu.classList.toggle("hidden");
-    // Change icon (hamburger <-> cross)
     const icon = btn.querySelector("i");
     if (menu.classList.contains("hidden")) {
       icon.classList.remove("fa-xmark");
@@ -209,7 +201,7 @@ function initMobileMenu() {
     }
   });
 
-  // Close menu on link click
+  // Close menu when clicking links
   menu.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", () => {
       menu.classList.add("hidden");
@@ -218,4 +210,66 @@ function initMobileMenu() {
       icon.classList.add("fa-bars");
     });
   });
+}
+
+/* --- 5. Theme Toggle Logic --- */
+function initThemeToggle() {
+  const toggleDesktop = document.getElementById("theme-toggle-desktop");
+  const toggleMobile = document.getElementById("theme-toggle-mobile-top");
+  const html = document.documentElement;
+
+  const moonIcon = '<i class="fa-solid fa-moon"></i>';
+  const sunIcon = '<i class="fa-solid fa-sun"></i>';
+
+  function applyTheme(isDark) {
+    if (isDark) {
+      // Enable dark theme
+      html.classList.add("dark");
+      if (toggleDesktop) toggleDesktop.innerHTML = sunIcon;
+      if (toggleMobile) toggleMobile.innerHTML = sunIcon;
+      localStorage.setItem("theme", "dark");
+
+      // Update chart legend text color to light
+      updateChartColor("#d1d5db");
+    } else {
+      // Enable light theme
+      html.classList.remove("dark");
+      if (toggleDesktop) toggleDesktop.innerHTML = moonIcon;
+      if (toggleMobile) toggleMobile.innerHTML = moonIcon;
+      localStorage.setItem("theme", "light");
+
+      // Update chart legend text color to dark
+      updateChartColor("#666");
+    }
+  }
+
+  // Helper function to update chart color
+  function updateChartColor(color) {
+    if (window.Chart) {
+      const chartInstance = Chart.getChart("tokenomicsChart");
+      if (chartInstance) {
+        chartInstance.options.plugins.legend.labels.color = color;
+        chartInstance.update();
+      }
+    }
+  }
+
+  // Check saved settings on load
+  const savedTheme = localStorage.getItem("theme");
+  const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+  if (savedTheme === "dark" || (!savedTheme && systemDark)) {
+    applyTheme(true);
+  } else {
+    applyTheme(false);
+  }
+
+  // Click handler
+  const handleToggle = () => {
+    const isDarkNow = html.classList.contains("dark");
+    applyTheme(!isDarkNow);
+  };
+
+  if (toggleDesktop) toggleDesktop.addEventListener("click", handleToggle);
+  if (toggleMobile) toggleMobile.addEventListener("click", handleToggle);
 }
