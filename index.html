@@ -11,15 +11,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Tsun On TON ($TSUN) - The First Anime Clicker on TON Blockchain</title>
-    <meta name="description" content="Join the $TSUN ecosystem on TON. A community-driven anime clicker game with Tsundere mechanics. Locked liquidity, renounced contract. Play, hold, and earn.">
-    <meta name="keywords" content="Tsun on TON, TSUN token, TON blockchain, Anime Clicker, Tsundere, Crypto Game, Memecoin, Telegram Game, TON Coin, P2E">
+    <title>Tsun On TON ($TSUN) - The First Anime Clicker Game on TON Blockchain</title>
+    <meta name="description" content="Play Tsun On TON ($TSUN) — the first Anime Tsundere Clicker RPG on Telegram. Locked Liquidity, Renounced Contract. Start clicking and earning crypto rewards today!">
+    <meta name="keywords" content="Tsun on TON, TSUN token, TON blockchain, Anime Clicker, Tsundere, Crypto Game, Memecoin, Telegram Game, TON Coin, P2E, Clicker Game">
     <meta name="author" content="Tsun On TON Team">
     <meta name="robots" content="index, follow">
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://tsunonton.com/">
-    <meta property="og:title" content="$TSUN - It's not like I want you to click me!">
+    <meta property="og:title" content="Tsun On TON ($TSUN) - Anime Clicker Game">
     <meta property="og:description" content="The first Anime Tsundere Clicker on TON. Liquidity Locked & Contract Renounced. Join the Army!">
     <meta property="og:image" content="https://placehold.co/1200x630/ff69b4/ffffff?text=TSUN+On+TON+Preview">
 
@@ -30,10 +30,8 @@
 
     <link rel="icon" type="image/png" href="/static/img/favicon.ico">
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="/static/css/output.css">
 
     <script type="application/ld+json">
@@ -62,24 +60,25 @@
                 $TSUN
             </a>
             
-        <div class="hidden md:flex items-center space-x-8 font-bold text-gray-600 dark:text-gray-300">
-            <a href="#about" class="hover:text-tsun dark:hover:text-pink-400 transition-colors">Story</a>
-            <a href="#tokenomics" class="hover:text-tsun dark:hover:text-pink-400 transition-colors">Stats</a>
-            <a href="#roadmap" class="hover:text-tsun dark:hover:text-pink-400 transition-colors">Roadmap</a>
-            
-            <button id="theme-toggle-desktop" class="w-10 h-10 rounded-full bg-pink-100 dark:bg-gray-800 text-tsun dark:text-pink-400 flex items-center justify-center hover:scale-110 transition-transform">
-                <i class="fa-solid fa-moon"></i>
-            </button>
+            <div class="hidden md:flex items-center space-x-8 font-bold text-gray-600 dark:text-gray-300">
+                <a href="#about" class="hover:text-tsun dark:hover:text-pink-400 transition-colors">Story</a>
+                <a href="#tokenomics" class="hover:text-tsun dark:hover:text-pink-400 transition-colors">Stats</a>
+                <a href="#roadmap" class="hover:text-tsun dark:hover:text-pink-400 transition-colors">Roadmap</a>
+                <a href="#faq" class="hover:text-tsun dark:hover:text-pink-400 transition-colors">FAQ</a>
+                
+                <button id="theme-toggle-desktop" class="w-10 h-10 rounded-full bg-pink-100 dark:bg-gray-800 text-tsun dark:text-pink-400 flex items-center justify-center hover:scale-110 transition-transform" aria-label="Toggle Dark Mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
 
-            <a href="https://app.ston.fi/swap?ft=TON&tt=EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_" 
-               target="_blank"
-               class="bg-tsun text-white px-6 py-2 rounded-full font-bold hover:bg-pink-600 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-pink-300/50 dark:shadow-none">
-                Buy Now
-            </a>
-        </div>
+                <a href="https://app.ston.fi/swap?ft=TON&tt=EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_" 
+                   target="_blank"
+                   class="bg-tsun text-white px-6 py-2 rounded-full font-bold hover:bg-pink-600 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-pink-300/50 dark:shadow-none">
+                    Buy Now
+                </a>
+            </div>
 
             <div class="flex items-center gap-4 md:hidden">
-                <button id="theme-toggle-mobile-top" class="text-tsun dark:text-pink-400 text-xl">
+                <button id="theme-toggle-mobile-top" class="text-tsun dark:text-pink-400 text-xl" aria-label="Toggle Dark Mode">
                     <i class="fa-solid fa-moon"></i>
                 </button>
 
@@ -94,6 +93,7 @@
                 <a href="#about" class="py-2 hover:bg-pink-50 dark:hover:bg-gray-800 rounded-lg transition-colors">Story</a>
                 <a href="#tokenomics" class="py-2 hover:bg-pink-50 dark:hover:bg-gray-800 rounded-lg transition-colors">Stats</a>
                 <a href="#roadmap" class="py-2 hover:bg-pink-50 dark:hover:bg-gray-800 rounded-lg transition-colors">Roadmap</a>
+                <a href="#faq" class="py-2 hover:bg-pink-50 dark:hover:bg-gray-800 rounded-lg transition-colors">FAQ</a>
                 <a href="https://app.ston.fi/swap?ft=TON&tt=EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_" 
                    target="_blank"
                    class="block w-full bg-tsun text-white py-3 rounded-xl hover:bg-pink-600 transition-all duration-300 shadow-md">
@@ -111,9 +111,14 @@
                     <div class="inline-block bg-white dark:bg-gray-800 px-4 py-1 rounded-full text-sm font-bold text-tsun-dark dark:text-pink-400 mb-4 shadow-sm border border-pink-100 dark:border-gray-700 animate-fade-in-up">
                         <i class="fa-solid fa-gamepad mr-2"></i> The First Anime Clicker on TON
                     </div>
-                    <h1 class="text-4xl md:text-6xl font-anime text-gray-900 dark:text-white leading-tight mb-6">
-                        It's not like I <span class="text-tsun decoration-wavy">want</span> you to click me!
+                    
+                    <h1 class="text-3xl md:text-5xl font-anime text-gray-900 dark:text-white leading-tight mb-2">
+                        Tsun On TON ($TSUN)
                     </h1>
+                    <p class="text-2xl md:text-4xl font-bold text-gray-600 dark:text-gray-300 italic mb-6">
+                        "It's not like I <span class="text-tsun decoration-wavy underline">want</span> you to click me!"
+                    </p>
+
                     <p class="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed max-w-lg mx-auto md:mx-0">
                         Join the $TSUN army. A community-driven token with a real game, locked liquidity, and a serious attitude problem.
                     </p>
@@ -153,7 +158,7 @@
                         <div id="click-effects" class="absolute inset-0 pointer-events-none z-20"></div>
                         
                         <img src="/static/img/mascot-image.webp"
-                             alt="Tsun Mascot Anime Girl" 
+                             alt="Tsun On TON Anime Mascot - Tsundere Clicker Game Character" 
                              class="mascot-bounce w-64 md:w-80 lg:w-96 drop-shadow-2xl z-10 relative select-none">
                              
                         <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-pink-400 rounded-full blur-[80px] opacity-30 group-hover:opacity-50 transition-opacity"></div>
@@ -209,7 +214,7 @@
 
         <section id="roadmap" class="py-20 container mx-auto px-4">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-anime text-gray-800 dark:text-white mb-4">The Grand Plan</h2>
+                <h2 class="text-3xl md:text-4xl font-anime text-gray-800 dark:text-white mb-4">Roadmap: The Grand Plan</h2>
                 <p class="text-gray-600 dark:text-gray-300">We are taking over TON, one click at a time.</p>
             </div>
 
@@ -251,6 +256,124 @@
                 </div>
             </div>
         </section>
+
+        <section class="py-20 bg-gray-50 dark:bg-gray-900" id="faq">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <div class="mb-16">
+                        <div class="text-tsun font-bold text-lg mb-2">FAQ</div>
+                        <h2 class="text-3xl md:text-4xl font-anime text-gray-900 dark:text-white">
+                            Frequently Asked Questions
+                        </h2>
+                        <p class="mt-4 text-gray-600 dark:text-gray-400">
+                            Everything you need to know about $TSUN token, security, and gameplay.
+                        </p>
+                    </div>
+                    
+                    <div class="space-y-1">
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                What is Tsun On TON ($TSUN)?
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" fill="none" class="faq-question-icon">
+                                    <path stroke="#8D8F92" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 12 9.5 9.5L26 12"></path>
+                                </svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p><strong>Tsun On TON ($TSUN)</strong> is a hybrid GameFi project on the <strong>TON Blockchain</strong>. Unlike standard memecoins, we combine anime culture (Tsundere theme) with real utility through an addictive <strong>Clicker Game</strong> directly in Telegram. Play, interact with the mascot, and earn rewards.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                How to buy $TSUN token?
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" fill="none" class="faq-question-icon">
+                                    <path stroke="#8D8F92" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 12 9.5 9.5L26 12"></path>
+                                </svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>You can buy $TSUN on the <strong>STON.fi</strong> DEX. Follow these steps:</p>
+                                <ol class="list-decimal ml-5 mt-2 space-y-1">
+                                    <li>Download a TON wallet (e.g., <strong>Tonkeeper</strong>).</li>
+                                    <li>Top up your wallet with TON.</li>
+                                    <li>Visit <a href="https://app.ston.fi/swap?ft=TON&tt=EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_" target="_blank" class="text-tsun hover:underline">STON.fi</a> and connect your wallet.</li>
+                                    <li>Swap TON for $TSUN.</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                What is the $TSUN Contract Address (CA)?
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" fill="none" class="faq-question-icon">
+                                    <path stroke="#8D8F92" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 12 9.5 9.5L26 12"></path>
+                                </svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>The official contract address on The Open Network is:</p>
+                                <p class="font-mono bg-gray-100 dark:bg-gray-800 p-2 rounded mt-2 text-xs md:text-sm break-all select-all cursor-text">
+                                    EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_
+                                </p>
+                                <p class="mt-2 text-sm">Always verify the address before trading.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                Is $TSUN safe? (Liquidity & Ownership)
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" fill="none" class="faq-question-icon">
+                                    <path stroke="#8D8F92" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 12 9.5 9.5L26 12"></path>
+                                </svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Yes, security is our priority. We have taken measures to protect the community:</p>
+                                <ul class="list-disc ml-5 mt-2">
+                                    <li><strong>Liquidity Locked:</strong> 15% of the supply is permanently locked to ensure trading stability.</li>
+                                    <li><strong>Contract Renounced:</strong> The developer no longer has control over the contract functions, meaning no new tokens can be minted.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                How does the Clicker Game work?
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" fill="none" class="faq-question-icon">
+                                    <path stroke="#8D8F92" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 12 9.5 9.5L26 12"></path>
+                                </svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>The game features a "Tsundere" anime girl mascot. Players click to interact with her. As you play, you contribute to the ecosystem stats. Future updates (Phase 2 & 3) will introduce deeper <strong>P2E (Play-to-Earn)</strong> mechanics, leaderboards, and exclusive NFT rewards for top clickers.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                What is the Roadmap and future plans?
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" fill="none" class="faq-question-icon">
+                                    <path stroke="#8D8F92" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 12 9.5 9.5L26 12"></path>
+                                </svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>We are currently in Phase 2 (Development). Our roadmap includes:</p>
+                                <ul class="list-disc ml-5 mt-2">
+                                    <li>Expansion of Game features.</li>
+                                    <li><strong>CEX Listings</strong> (Centralized Exchanges).</li>
+                                    <li>NFT Collection launch.</li>
+                                    <li>Community Airdrops and contests.</li>
+                                </ul>
+                                <p>Follow our <a href="https://t.me/tsunonton" class="text-tsun hover:underline">Telegram Channel</a> for the latest news.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mt-8">
+                        <a href="https://t.me/tsunonton_chat" target="_blank" class="faq-link inline-flex items-center gap-2 text-tsun font-bold hover:text-pink-600 transition-colors">
+                            Join Community Chat
+                            <i class="fa-brands fa-telegram text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="bg-gray-900 text-white py-12 border-t-4 border-tsun">
@@ -274,6 +397,7 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="/static/js/app.min.js" defer></script>
 
 </body>

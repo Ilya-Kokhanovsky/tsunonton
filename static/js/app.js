@@ -1,6 +1,6 @@
 /**
  * Tsun On TON - Main Application Logic
- * Handles Chart.js, Mascot Interactions, UI Events, and Dark Mode
+ * Handles Chart.js, Mascot Interactions, UI Events, Dark Mode, and FAQ
  */
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
   initClipboard();
   initMobileMenu();
   initThemeToggle();
+  initFAQ();
 });
 
 /* --- 1. Tokenomics Chart (Chart.js) --- */
@@ -272,4 +273,35 @@ function initThemeToggle() {
 
   if (toggleDesktop) toggleDesktop.addEventListener("click", handleToggle);
   if (toggleMobile) toggleMobile.addEventListener("click", handleToggle);
+}
+
+/* --- 6. FAQ Accordion Functionality --- */
+function initFAQ() {
+  const faqItems = document.querySelectorAll('.faq-item');
+  
+  if (faqItems.length === 0) return;
+  
+  faqItems.forEach(item => {
+    const question = item.querySelector('.faq-question');
+    const answer = item.querySelector('.faq-answer');
+    
+    // Initially hide all answers
+    answer.style.display = 'none';
+    
+    question.addEventListener('click', () => {
+      const isActive = item.classList.contains('active');
+      
+      // Close all items
+      faqItems.forEach(otherItem => {
+        otherItem.classList.remove('active');
+        otherItem.querySelector('.faq-answer').style.display = 'none';
+      });
+      
+      // If the clicked item wasn't active, open it
+      if (!isActive) {
+        item.classList.add('active');
+        answer.style.display = 'block';
+      }
+    });
+  });
 }
