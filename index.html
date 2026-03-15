@@ -151,11 +151,9 @@
                 </button>
 
                 <div class="relative group flex items-center">
-                    <a href="https://app.ston.fi/swap?ft=TON&tt=EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_" 
-                       target="_blank" rel="noopener noreferrer"
-                       class="bg-tsun text-white px-6 py-2.5 rounded-full font-bold hover:bg-pink-600 hover:scale-105 transition-all duration-300 shadow-lg shadow-pink-300/50 dark:shadow-none whitespace-nowrap min-h-[44px] flex items-center">
+                    <button class="buy-now-btn bg-tsun text-white px-6 py-2.5 rounded-full font-bold hover:bg-pink-600 hover:scale-105 transition-all duration-300 shadow-lg shadow-pink-300/50 dark:shadow-none whitespace-nowrap min-h-[44px] flex items-center" data-url="https://app.ston.fi/swap?ft=TON&tt=EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_">
                         Buy Now
-                    </a>
+                    </button>
                     <div class="absolute top-full right-0 mt-2 w-56 p-2 bg-gray-800 text-white text-xs rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none z-50">
                         Cryptocurrency investments carry high risk. Prices can be volatile. You could lose all your money. <a href="risk.html" class="text-pink-400 underline pointer-events-auto">Read more</a>
                     </div>
@@ -183,11 +181,9 @@
                 <a href="#transparency" class="block w-full py-4 bg-gray-50/50 dark:bg-gray-800/50 hover:bg-pink-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Security</a>
                 <a href="knowledge.html" class="block w-full py-4 bg-gray-50/50 dark:bg-gray-800/50 hover:bg-pink-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Learn</a>
                 <div class="mt-4">
-                    <a href="https://app.ston.fi/swap?ft=TON&tt=EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_" 
-                       target="_blank" rel="noopener noreferrer"
-                       class="block w-full bg-tsun text-white py-4 rounded-xl hover:bg-pink-600 transition-all shadow-md">
+                    <button class="buy-now-btn block w-full bg-tsun text-white py-4 rounded-xl hover:bg-pink-600 transition-all shadow-md" data-url="https://app.ston.fi/swap?ft=TON&tt=EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_">
                         Buy Now on STON.fi
-                    </a>
+                    </button>
                     <p class="text-xs text-gray-500 mt-2 px-2 leading-tight">
                         Cryptocurrency investments carry high risk. Prices can be volatile. You could lose all your money. <a href="risk.html" class="text-pink-500 hover:text-pink-600 underline">Read more</a>
                     </p>
@@ -218,13 +214,13 @@
                     
                     <div class="flex flex-col w-full sm:w-auto gap-2 items-center flex-wrap shrink-0">
                         <div class="flex flex-col sm:flex-row w-full sm:w-auto gap-4 sm:gap-6 justify-center lg:justify-start px-2 sm:px-0">
-                            <a href="https://app.ston.fi/swap?ft=TON&tt=EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto bg-tsun text-white shadow-xl shadow-pink-300/40 dark:shadow-none font-bold py-4 min-h-[56px] px-8 rounded-2xl hover:bg-pink-600 hover:-translate-y-1 transition-transform duration-300 flex items-center justify-center gap-3 text-base sm:text-lg">
+                            <button class="buy-now-btn w-full sm:w-auto bg-tsun text-white shadow-xl shadow-pink-300/40 dark:shadow-none font-bold py-4 min-h-[56px] px-8 rounded-2xl hover:bg-pink-600 hover:-translate-y-1 transition-transform duration-300 flex items-center justify-center gap-3 text-base sm:text-lg" data-url="https://app.ston.fi/swap?ft=TON&tt=EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_">
                                 <i class="fa-solid fa-cart-shopping"></i> Buy $TSUN
-                            </a>
+                            </button>
 
-                            <a href="https://t.me/tsunonton_bot" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto bg-white dark:bg-gray-800 text-ton-blue dark:text-white border-2 border-ton-blue font-bold py-4 min-h-[56px] px-8 rounded-2xl hover:bg-blue-50 dark:hover:bg-gray-700 hover:-translate-y-1 transition-transform duration-300 flex items-center justify-center gap-3 text-base sm:text-lg">
-                                <i class="fa-brands fa-telegram text-xl"></i> Play Game
-                            </a>
+                            <div class="w-full sm:w-auto bg-white dark:bg-gray-800 text-ton-blue dark:text-white border-2 border-ton-blue font-bold py-4 min-h-[56px] px-8 rounded-2xl opacity-60 cursor-not-allowed flex items-center justify-center gap-3 text-base sm:text-lg" title="Game is currently in development">
+                                <i class="fa-brands fa-telegram text-xl"></i> Play Game (Soon)
+                            </div>
                         </div>
                         <p class="text-xs text-gray-500 mt-2 px-2 text-center lg:text-left w-full">
                             Cryptocurrency investments carry high risk. Prices can be volatile. You could lose all your money. <a href="risk.html" class="text-pink-500 hover:text-pink-600 underline">Read more</a>
@@ -300,17 +296,18 @@
         <!-- GAMEFI SECTION -->
         <section id="game" class="py-16 sm:py-20 md:py-24 container mx-auto px-4 sm:px-6 lg:px-8 xl:max-w-7xl">
             <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16 md:mb-20">
-                <div class="inline-flex items-center justify-center bg-pink-100 dark:bg-gray-800 px-5 py-2 rounded-full text-xs sm:text-sm font-bold text-tsun dark:text-pink-400 mb-6 border border-pink-200 dark:border-gray-700 w-auto">
+                <div class="inline-flex items-center justify-center bg-pink-100 dark:bg-gray-800 px-5 py-2 rounded-full text-xs sm:text-sm font-bold text-tsun dark:text-pink-400 mb-6 border border-pink-200 dark:border-gray-700 w-auto gap-2">
                     <i class="fa-solid fa-mobile-button mr-2"></i> Telegram Mini-App
+                    <span class="bg-amber-500 text-white dark:bg-amber-500 dark:text-gray-900 text-[10px] px-2 py-0.5 rounded-full uppercase tracking-wider font-bold shadow-sm">Under Development</span>
                 </div>
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-anime text-gray-900 dark:text-white mb-6">Play Tsun Clicker Now</h2>
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-anime text-gray-900 dark:text-white mb-6 flex flex-wrap justify-center items-center gap-3">Tsun Clicker <span class="text-lg md:text-2xl text-amber-500 bg-amber-100 dark:bg-amber-900/30 px-3 py-1 rounded-xl">Coming Soon</span></h2>
                 <p class="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300 px-2">
-                    Interact with our tsundere mascot directly inside Telegram. Tap to earn <strong>Tsun Points</strong> – a fun in-game score that tracks your activity, unlocks upgrades, and lets you compete on the global leaderboard. Tsun Points are not cryptocurrency and cannot be withdrawn or traded. While we plan to reward active community members in the future (e.g., through airdrops), any such rewards are at the project's discretion and are never guaranteed. The game is designed first and foremost for entertainment.
+                    The Tsun Clicker game is currently in active development. Soon, you will be able to interact with our tsundere mascot directly inside Telegram to earn <strong>Tsun Points</strong>, unlock upgrades, and compete on the global leaderboard. Check back soon or follow our updates to be the first to know when we launch!
                 </p>
                 <div class="mt-8 sm:mt-10 flex w-full justify-center px-2 sm:px-0">
-                    <a href="https://t.me/tsunonton_bot" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto bg-gray-900 text-white dark:bg-white dark:text-gray-900 px-8 py-4 sm:py-5 min-h-[56px] rounded-[1.25rem] font-bold text-lg sm:text-xl hover:bg-gray-800 dark:hover:bg-gray-100 hover:scale-[1.02] transition-all duration-300 flex items-center justify-center gap-3 shadow-xl">
-                        <i class="fa-brands fa-telegram text-2xl"></i> Launch App
-                    </a>
+                    <div class="w-full sm:w-auto bg-gray-400 dark:bg-gray-600 text-white px-8 py-4 sm:py-5 min-h-[56px] rounded-[1.25rem] font-bold text-lg sm:text-xl opacity-60 cursor-not-allowed flex items-center justify-center gap-3 shadow-xl" title="Game is currently in development">
+                        <i class="fa-brands fa-telegram text-2xl"></i> Coming Soon
+                    </div>
                 </div>
             </div>
 
@@ -319,18 +316,24 @@
                 <div class="flex flex-col items-center group w-full max-w-[320px] mx-auto">
                     <div class="relative w-[85%] bg-white dark:bg-gray-800 p-2 sm:p-3 rounded-[3rem] shadow-2xl border-4 border-gray-100 dark:border-gray-700 transform md:group-hover:-translate-y-3 transition-transform duration-300">
                         <!-- TODO: Replace placeholder with actual game screenshot -->
-                        <img src="https://placehold.co/300x600/f8f9fa/a8a8a8?text=App+Screenshot" loading="lazy" alt="Tsun On TON ($TSUN) GameFi Telegram Clicker Start Screen" class="rounded-[2.5rem] w-full block">
+                        <div class="relative w-full h-full">
+                            <div class="absolute inset-0 bg-black/30 dark:bg-black/50 rounded-[2.5rem] flex items-center justify-center text-white font-bold text-lg z-10 backdrop-blur-[2px]">Coming Soon</div>
+                            <img src="https://placehold.co/300x600/f8f9fa/a8a8a8?text=App+Screenshot" loading="lazy" alt="Tsun On TON ($TSUN) GameFi Telegram Clicker Start Screen" class="rounded-[2.5rem] w-full block opacity-50">
+                        </div>
                     </div>
                     <div class="mt-6 sm:mt-8 text-center px-2">
                         <h4 class="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-2">Tap & Earn</h4>
-                        <p class="text-sm sm:text-base text-gray-500 dark:text-gray-400">Click the mascot to collect Tsun Points – track your progress and have fun!</p>
+                        <p class="text-sm sm:text-base text-gray-500 dark:text-gray-400">Click the mascot to collect Tsun Points - track your progress and have fun!</p>
                     </div>
                 </div>
 
                 <div class="flex flex-col items-center group w-full max-w-[320px] mx-auto md:mt-12">
                     <div class="relative w-[85%] bg-white dark:bg-gray-800 p-2 sm:p-3 rounded-[3rem] shadow-2xl border-4 border-gray-100 dark:border-gray-700 transform md:group-hover:-translate-y-3 transition-transform duration-300">
                         <!-- TODO: Replace placeholder with actual game screenshot -->
-                        <img src="https://placehold.co/300x600/f8f9fa/a8a8a8?text=App+Screenshot" loading="lazy" alt="Tsun On TON ($TSUN) Clicker Game Upgrades Screen" class="rounded-[2.5rem] w-full block">
+                        <div class="relative w-full h-full">
+                            <div class="absolute inset-0 bg-black/30 dark:bg-black/50 rounded-[2.5rem] flex items-center justify-center text-white font-bold text-lg z-10 backdrop-blur-[2px]">Coming Soon</div>
+                            <img src="https://placehold.co/300x600/f8f9fa/a8a8a8?text=App+Screenshot" loading="lazy" alt="Tsun On TON ($TSUN) Clicker Game Upgrades Screen" class="rounded-[2.5rem] w-full block opacity-50">
+                        </div>
                     </div>
                     <div class="mt-6 sm:mt-8 text-center px-2">
                         <h4 class="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-2">Upgrade Stats</h4>
@@ -341,7 +344,10 @@
                 <div class="flex flex-col items-center group w-full max-w-[320px] mx-auto md:mt-24">
                     <div class="relative w-[85%] bg-white dark:bg-gray-800 p-2 sm:p-3 rounded-[3rem] shadow-2xl border-4 border-gray-100 dark:border-gray-700 transform md:group-hover:-translate-y-3 transition-transform duration-300">
                         <!-- TODO: Replace placeholder with actual game screenshot -->
-                        <img src="https://placehold.co/300x600/f8f9fa/a8a8a8?text=App+Screenshot" loading="lazy" alt="Tsun On TON ($TSUN) Daily Quests and Rewards" class="rounded-[2.5rem] w-full block">
+                        <div class="relative w-full h-full">
+                            <div class="absolute inset-0 bg-black/30 dark:bg-black/50 rounded-[2.5rem] flex items-center justify-center text-white font-bold text-lg z-10 backdrop-blur-[2px]">Coming Soon</div>
+                            <img src="https://placehold.co/300x600/f8f9fa/a8a8a8?text=App+Screenshot" loading="lazy" alt="Tsun On TON ($TSUN) Daily Quests and Rewards" class="rounded-[2.5rem] w-full block opacity-50">
+                        </div>
                     </div>
                     <div class="mt-6 sm:mt-8 text-center px-2">
                         <h4 class="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-2">Complete Quests</h4>
@@ -352,7 +358,7 @@
             
             <div class="mt-8 md:mt-12 max-w-3xl mx-auto text-center px-4">
                 <p class="text-sm text-gray-500 dark:text-gray-400 italic">
-                    <i class="fa-solid fa-info-circle mr-1"></i> <strong>Important:</strong> Tsun Points are a virtual in-game score only. They are not $TSUN tokens and have no monetary value. Any future airdrops or rewards are not guaranteed and are subject to change. The game is for entertainment – please play responsibly.
+                    <i class="fa-solid fa-info-circle mr-1"></i> <strong>Important:</strong> Tsun Points are a virtual in-game score only. They are not $TSUN tokens and have no monetary value. Any future airdrops or rewards are not guaranteed and are subject to change. The game is for entertainment - please play responsibly.
                 </p>
             </div>
         </section>
@@ -434,7 +440,7 @@
                                 <i class="fa-solid fa-file-contract text-ton-blue text-xl"></i> Contract Renounced
                             </div>
                             <div class="flex items-center justify-center md:justify-start gap-3 bg-white/50 dark:bg-gray-900/50 px-5 sm:px-6 py-3 sm:py-4 rounded-xl shadow-sm text-base sm:text-lg font-bold text-gray-800 dark:text-gray-200">
-                                <i class="fa-solid fa-lock text-purple-500 text-xl"></i> LP Locked Forever
+                                <i class="fa-solid fa-lock text-purple-500 text-xl"></i> LP Securely Locked
                             </div>
                         </div>
 
@@ -492,10 +498,10 @@
                         <span class="w-2.5 h-2.5 sm:w-3 sm:h-3 md:w-4 md:h-4 bg-white rounded-full"></span>
                     </div>
                     <div class="bg-pink-50/50 dark:bg-gray-800 p-6 sm:p-8 rounded-[1.5rem] shadow-md border border-pink-200 dark:border-pink-900 w-full sm:w-[90%] md:w-full relative overflow-hidden z-10">
-                        <div class="absolute top-4 right-4 sm:top-6 sm:right-6 bg-tsun text-white text-[10px] sm:text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Current</div>
+                        <div class="absolute top-4 right-4 sm:top-6 sm:right-6 bg-tsun text-white text-[10px] sm:text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">In Development</div>
                         <h4 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-4 pr-20">Phase 2: The Clicker</h4>
                         <ul class="space-y-3 text-sm sm:text-base md:text-lg text-gray-700 dark:text-gray-300 list-disc ml-4 sm:ml-5 marker:text-tsun">
-                            <li><span class="font-bold">Telegram Mini-App Game is LIVE</span></li>
+                            <li><span class="font-bold">Telegram Mini-App Game - in active development</span></li>
                             <li>Mass-scale functional daily tasks & referral tracking deployed</li>
                             <li>Tonkeeper Verification process formally initiated (In Progress)</li>
                             <li>CoinMarketCap & CoinGecko expedited listing applications drafted</li>
@@ -562,7 +568,7 @@
                                 <i class="fa-solid fa-chevron-down faq-question-icon transition-transform ml-4 shrink-0 text-gray-400"></i>
                             </button>
                             <div class="faq-answer px-5 sm:px-6 pb-5 sm:pb-6 text-sm md:text-base text-gray-600 dark:text-gray-300 leading-relaxed pt-2">
-                                <strong>Yes. Absolutely.</strong> The contract has been strictly audited and fully renounced, meaning the developers have zero control over the code. You can visually verify the renounced status independently on <a href="https://tonviewer.com/EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_" target="_blank" rel="noopener noreferrer" class="text-tsun font-bold hover:underline hover:text-pink-600 transition-colors">Tonviewer</a>. Transparency is our top priority.
+                                <strong>Yes. Absolutely.</strong> The contract has been fully renounced, meaning the developers have zero control over the code. You can visually verify the renounced status independently on <a href="https://tonviewer.com/EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_" target="_blank" rel="noopener noreferrer" class="text-tsun font-bold hover:underline hover:text-pink-600 transition-colors">Tonviewer</a>. Transparency is our top priority.
                             </div>
                         </div>
 
@@ -573,7 +579,7 @@
                                 <i class="fa-solid fa-chevron-down faq-question-icon transition-transform ml-4 shrink-0 text-gray-400"></i>
                             </button>
                             <div class="faq-answer px-5 sm:px-6 pb-5 sm:pb-6 text-sm md:text-base text-gray-600 dark:text-gray-300 leading-relaxed pt-2">
-                                100% of our initial liquidity has been locked and permanently blocked using reputable lockers on the TON network (<a href="https://tonraffles.app/lock/EQAaE2H90dF2OomdsrCQ2zMEg-C0UG_Jkt_dijf3-tkdCbQ7" target="_blank" rel="noopener noreferrer" class="text-tsun font-bold hover:underline hover:text-pink-600 transition-colors">TonRaffles</a>). The team holds zero LP tokens. Liquidity pools are designed to minimize risk of malicious removal.
+                                100% of our initial liquidity has been securely locked using reputable lockers on the TON network (<a href="https://tonraffles.app/lock/EQAaE2H90dF2OomdsrCQ2zMEg-C0UG_Jkt_dijf3-tkdCbQ7" target="_blank" rel="noopener noreferrer" class="text-tsun font-bold hover:underline hover:text-pink-600 transition-colors">TonRaffles</a>). The team holds zero LP tokens. Liquidity pools are designed to minimize risk of malicious removal.
                             </div>
                         </div>
 
@@ -584,7 +590,7 @@
                                 <i class="fa-solid fa-chevron-down faq-question-icon transition-transform ml-4 shrink-0 text-gray-400"></i>
                             </button>
                             <div class="faq-answer px-5 sm:px-6 pb-5 sm:pb-6 text-sm md:text-base text-gray-600 dark:text-gray-300 leading-relaxed pt-2">
-                                Simply open our official <a href="https://t.me/tsunonton_bot" target="_blank" rel="noopener noreferrer" class="text-tsun font-bold hover:underline hover:text-pink-600 transition-colors">Telegram Mini-App</a> on your phone or desktop. Start tapping the tsundere mascot to collect points, level up your stats, invite friends, and climb the leaderboards. Tsun Points you earn are for fun and leaderboard placement – they are not a tradable asset. For more details, consult our <a href="knowledge.html" class="text-pink-500 hover:underline">Knowledge Base</a>.
+                                Simply open our official <a href="https://t.me/tsunonton_bot" target="_blank" rel="noopener noreferrer" class="text-tsun font-bold hover:underline hover:text-pink-600 transition-colors">Telegram Mini-App</a> on your phone or desktop. Start tapping the tsundere mascot to collect points, level up your stats, invite friends, and climb the leaderboards. Tsun Points you earn are for fun and leaderboard placement - they are not a tradable asset. For more details, consult our <a href="knowledge.html" class="text-pink-500 hover:underline">Knowledge Base</a>.
                             </div>
                         </div>
 
@@ -595,7 +601,7 @@
                                 <i class="fa-solid fa-chevron-down faq-question-icon transition-transform ml-4 shrink-0 text-gray-400"></i>
                             </button>
                             <div class="faq-answer px-5 sm:px-6 pb-5 sm:pb-6 text-sm md:text-base text-gray-600 dark:text-gray-300 leading-relaxed pt-2">
-                                The definitive massive $TSUN airdrop is scheduled for <strong>Q3 2026</strong>. Active players grinding the Telegram clicker who complete in-game tasks and rank high on the leaderboards may receive directly claimable $TSUN tokens straight to their web3 wallets! Please note that any airdrop is a voluntary community reward, not a guaranteed return for playing. Participation in the game does not entitle you to receive tokens.
+                                The $TSUN airdrop is currently planned for <strong>Q3 2026</strong>. Active players grinding the Telegram clicker who complete in-game tasks and rank high on the leaderboards may receive directly claimable $TSUN tokens straight to their web3 wallets! Please note that any airdrop is a voluntary community reward, not a guaranteed return for playing. Participation in the game does not entitle you to receive tokens.
                             </div>
                         </div>
 
@@ -617,7 +623,7 @@
                                 <i class="fa-solid fa-chevron-down faq-question-icon transition-transform ml-4 shrink-0 text-gray-400"></i>
                             </button>
                             <div class="faq-answer px-5 sm:px-6 pb-5 sm:pb-6 text-sm md:text-base text-gray-600 dark:text-gray-300 leading-relaxed pt-2">
-                                There is a highly limited total supply of exactly <strong>1,000,000,000 $TSUN</strong> tokens. Zero taxes (0% buy/sell tax) ensure seamless trading. The majority of the tokens are injected into liquidity, with a dedicated chunk exclusively reserved for the community Airdrop.
+                                The total supply is exactly <strong>1,000,000,000 $TSUN</strong> tokens, with 0% buy/sell tax. The allocation is: 50% for game rewards, 20% for community initiatives, 15% locked as liquidity, and 15% for development and marketing. The community allocation will be used for future airdrops and ecosystem growth.
                             </div>
                         </div>
 
@@ -664,6 +670,7 @@
                 </div>
             </div>
         </section>
+
     </main>
 
     <!-- FOOTER -->
@@ -703,7 +710,7 @@
                     <a href="cookies.html" class="hover:text-pink-400 transition-colors underline decoration-gray-700 underline-offset-4">Cookie Policy</a>
                     <a href="knowledge.html" class="hover:text-pink-400 transition-colors underline decoration-gray-700 underline-offset-4">Knowledge Base</a>
                 </div>
-                <p class="font-bold text-gray-600">&copy; 2026 Tsun On TON. Verified Contract. All rights reserved.</p>
+                <p class="font-bold text-gray-600">&copy; 2026 Tsun On TON. Publicly Verifiable Contract. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -723,5 +730,22 @@
         </div>
     </div>
     
+
+    <!-- RISK MODAL -->
+    <div id="risk-modal" class="fixed inset-0 z-[200] flex items-center justify-center hidden">
+        <div class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
+        <div class="relative bg-white dark:bg-gray-800 rounded-2xl max-w-md w-full mx-4 p-6 shadow-2xl border border-gray-200 dark:border-gray-700">
+            <h3 class="text-2xl font-anime text-gray-900 dark:text-white mb-4">⚠️ Risk Warning</h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                Cryptocurrency investments carry high risk. Prices can be volatile and you could lose all your money. 
+                Please ensure you understand the risks before proceeding.
+            </p>
+            <div class="flex gap-3 justify-end">
+                <button id="risk-modal-cancel" class="px-5 py-2 rounded-xl bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white font-bold hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors">Cancel</button>
+                <button id="risk-modal-confirm" class="px-5 py-2 rounded-xl bg-tsun text-white font-bold hover:bg-pink-600 transition-colors">I Understand, Continue</button>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
