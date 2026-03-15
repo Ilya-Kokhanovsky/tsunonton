@@ -143,6 +143,14 @@ vite.config.ts.timestamp-*
 # Custom ignores
 src/input.css
 static/js/app.js
+static/js/clipboard.js
+static/js/cookies.js
+static/js/faq.js
+static/js/liveStats.js
+static/js/mascot.js
+static/js/mobileMenu.js
+static/js/modals.js
+static/js/themeToggle.js
 bubble-effects.js
 style.css
-bubble-effects.css
+bubble-effects.cssstatic/js/chart.js

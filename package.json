@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "tailwindcss -i ./src/input.css -o ./static/css/output.css --watch",
     "build": "tailwindcss -i ./src/input.css -o ./static/css/output.css --minify",
-    "build:js": "terser static/js/*.js -o static/js/app.min.js",
+    "build:js": "esbuild static/js/app.js --bundle --minify --outfile=static/js/app.min.js",
     "optimize": "npm run build && npm run build:js"
   },
   "keywords": [],
@@ -14,6 +14,7 @@
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.4.22",
+    "esbuild": "^0.27.4",
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.18",
     "terser": "^5.44.1"
