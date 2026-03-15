@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cookie Policy - Tsun On TON</title>
     <link rel="stylesheet" href="./static/css/output.css">
+
+    <!-- Prevent FOUC -->
+    <script>
+        if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans p-8 dark:bg-gray-900 dark:text-gray-100">
     <div class="max-w-4xl mx-auto bg-white p-10 rounded-2xl shadow-sm dark:bg-gray-800 border border-gray-100 dark:border-gray-700">
