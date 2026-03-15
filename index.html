@@ -1,410 +1,743 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    <link rel="preconnect" href="https://www.googletagmanager.com">
-
-    <link rel="preload" as="image" href="/static/img/mascot-image.webp">
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TGDDC1LTDR"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);} gtag('js', new Date());
-        gtag('config', 'G-TGDDC1LTDR');
-    </script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Tsun On TON ($TSUN) - The First Anime Clicker Game on TON Blockchain</title>
-    <link rel="canonical" href="https://tsunonton.com/">
-    <meta name="description" content="Play Tsun On TON ($TSUN) — the first Anime Tsundere Clicker RPG on Telegram. Locked Liquidity, Renounced Contract. Start clicking and earning crypto rewards today!">
-    <meta name="keywords" content="Tsun on TON, TSUN token, TON blockchain, Anime Clicker, Tsundere, Crypto Game, Memecoin, Telegram Game, TON Coin, P2E, Clicker Game">
+    <title>Tsun On TON ($TSUN) | Anime GameFi & Telegram Clicker</title>
+    <meta name="description" content="Play Tsun On TON ($TSUN) - a community-driven GameFi project built on transparency on the TON blockchain. Play now and earn in-game points with our Telegram Clicker!">
+    <meta name="keywords" content="Tsun on TON, TSUN token, TON blockchain, Anime Clicker, Tsundere, Crypto Game, Memecoin, Telegram Game, TON Coin, P2E, GameFi">
     <meta name="author" content="Tsun On TON Team">
     <meta name="robots" content="index, follow">
+
+    <!-- Canonical Link -->
+    <link rel="canonical" href="https://tsunonton.com/">
+
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://tsunonton.com/">
-    <meta property="og:title" content="Tsun On TON ($TSUN) - Anime Clicker Game">
-    <meta property="og:description" content="The first Anime Tsundere Clicker on TON. Liquidity Locked & Contract Renounced. Join the Army!">
-    <meta property="og:image" content="https://placehold.co/1200x630/ff69b4/ffffff?text=TSUN+On+TON+Preview">
+    <meta property="og:title" content="Tsun On TON ($TSUN) | Anime GameFi & Telegram Clicker">
+    <meta property="og:description" content="Interactive Telegram Clicker on TON. Play now and collect in-game points! Liquidity Locked, Contract Renounced, Community Driven.">
+    <meta property="og:image" content="https://tsunonton.com/static/img/mascot-image.webp">
+
+    <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="$TSUN - Anime Crypto Clicker">
-    <meta name="twitter:description" content="Don't just hold, interact! The most Tsundere token on The Open Network.">
-    <meta name="twitter:image" content="https://placehold.co/1200x630/ff69b4/ffffff?text=TSUN+On+TON+Preview">
+    <meta name="twitter:url" content="https://tsunonton.com/">
+    <meta name="twitter:title" content="Tsun On TON ($TSUN) | Anime GameFi & Telegram Clicker">
+    <meta name="twitter:description" content="Play Tsun On TON ($TSUN) - a community-driven GameFi project built on transparency on the TON blockchain. Play now and collect in-game points!">
+    <meta name="twitter:image" content="https://tsunonton.com/static/img/mascot-image.webp">
 
-    <link rel="icon" type="image/png" href="/static/img/favicon.ico">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/static/css/output.css">
-
+    <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
     {
-    "@context": "https://schema.org",
-    "@type": ["Game", "Cryptocurrency"],
-    "name": "Tsun On TON",
-    "tickerSymbol": "TSUN", 
-    "currency": "TON",
-    "applicationCategory": "GameApplication",
-    "gamePlatform": "Telegram, Web",
-    "description": "The first anime tsundere clicker game and token on TON blockchain.",
-    "url": "https://tsunonton.com/",
-    "offers": {
-        "@type": "Offer",
-        "category": "Cryptocurrency"
-    }
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://tsunonton.com/#organization",
+          "name": "Tsun On TON",
+          "url": "https://tsunonton.com/",
+          "logo": "https://tsunonton.com/static/img/favicon.ico",
+          "sameAs": [
+            "https://t.me/tsunonton_bot",
+            "https://twitter.com/TsunOnTON"
+          ]
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://tsunonton.com/#game",
+          "name": "Tsun On TON ($TSUN)",
+          "applicationCategory": "GameApplication",
+          "operatingSystem": "Android, iOS, Web",
+          "url": "https://t.me/tsunonton_bot",
+          "description": "A community-driven GameFi project built on transparency on the TON blockchain. Engage with our Telegram Clicker, collect in-game points, and join the army.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://tsunonton.com/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is Tsun on TON ($TSUN)?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Tsun On TON ($TSUN) is the first anime-themed GameFi and clicker project fully integrated into the TON blockchain. It's not like she wants you to buy or anything, b-baka! But by interacting with our Telegram bot, you can earn rewards while joining the engaging degen anime army."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I buy $TSUN?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The easiest way is directly through STON.fi. Just connect your Tonkeeper or MyTonWallet, ensure you have some TON for gas fees, and swap it directly for $TSUN. It's fast, secure, and fully decentralized."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the contract publicly auditable / renounced?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Absolutely. The contract has been strictly audited and fully renounced, meaning the developers have zero control over the code. You can visually verify the renounced status independently on Tonviewer. Transparency is our top priority."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I play the Tsun Clicker game?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Simply open our official Telegram Mini-App on your phone or desktop. Start tapping the tsundere mascot to earn points, level up your stats, invite friends, and climb the leaderboards to maximize your future rewards."
+              }
+            }
+          ]
+        }
+      ]
     }
     </script>
-</head>
-<body class="font-body text-gray-800 antialiased selection:bg-tsun selection:text-white dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
 
-    <nav class="fixed w-full z-50 glass-panel bg-white/85 border-b border-pink-200 dark:bg-gray-900/85 dark:border-pink-900/30 transition-colors duration-300">
-        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <a href="#" class="text-2xl font-anime text-tsun-dark hover:text-tsun dark:text-pink-400 flex items-center gap-2 hover:scale-105 transition-transform">
+    <!-- Preloads & Resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://api.ston.fi">
+    <link rel="dns-prefetch" href="https://api.ston.fi">
+    <link rel="preconnect" href="https://tonapi.io">
+    <link rel="dns-prefetch" href="https://tonapi.io">
+    <link rel="preload" as="image" href="/static/img/mascot-image.webp" fetchpriority="high">
+
+    <link rel="icon" type="image/png" href="/static/img/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./static/css/output.css">
+
+    <!-- Prevent FOUC -->
+    <script>
+        if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
+</head>
+<body class="font-body text-gray-800 antialiased selection:bg-tsun selection:text-white dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300 min-h-screen flex flex-col overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-panel bg-white/90 border-b border-pink-200 dark:bg-gray-900/90 dark:border-pink-900/30 transition-colors duration-300">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-4 flex justify-between items-center">
+            
+            <a href="#" class="text-xl sm:text-2xl font-anime text-tsun-dark hover:text-tsun dark:text-pink-400 flex items-center gap-2 transition-transform hover:scale-105 flex-shrink-0 z-20">
                 $TSUN
             </a>
             
-            <div class="hidden md:flex items-center space-x-8 font-bold text-gray-600 dark:text-gray-300">
+            <!-- Desktop Nav Layout -->
+            <div class="hidden lg:flex items-center space-x-6 xl:space-x-8 font-bold text-gray-600 dark:text-gray-300">
                 <a href="#about" class="hover:text-tsun dark:hover:text-pink-400 transition-colors">Story</a>
+                <a href="#market" class="hover:text-tsun dark:hover:text-pink-400 transition-colors">Market</a>
+                <a href="#game" class="hover:text-tsun dark:hover:text-pink-400 transition-colors">Game</a>
                 <a href="#tokenomics" class="hover:text-tsun dark:hover:text-pink-400 transition-colors">Stats</a>
-                <a href="#roadmap" class="hover:text-tsun dark:hover:text-pink-400 transition-colors">Roadmap</a>
-                <a href="#faq" class="hover:text-tsun dark:hover:text-pink-400 transition-colors">FAQ</a>
+                <a href="#transparency" class="hover:text-tsun dark:hover:text-pink-400 transition-colors">Security</a>
+                <a href="knowledge.html" class="hover:text-tsun dark:hover:text-pink-400 transition-colors">Learn</a>
                 
-                <button id="theme-toggle-desktop" class="w-10 h-10 rounded-full bg-pink-100 dark:bg-gray-800 text-tsun dark:text-pink-400 flex items-center justify-center hover:scale-110 transition-transform" aria-label="Toggle Dark Mode">
+                <button id="theme-toggle-desktop" class="w-10 h-10 rounded-full bg-pink-50 dark:bg-gray-800 text-tsun dark:text-pink-400 flex items-center justify-center hover:scale-110 transition-transform" aria-label="Toggle Dark Mode">
                     <i class="fa-solid fa-moon"></i>
                 </button>
 
-                <a href="https://app.ston.fi/swap?ft=TON&tt=EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_" 
-                   target="_blank"
-                   class="bg-tsun text-white px-6 py-2 rounded-full font-bold hover:bg-pink-600 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-pink-300/50 dark:shadow-none">
-                    Buy Now
-                </a>
+                <div class="relative group flex items-center">
+                    <a href="https://app.ston.fi/swap?ft=TON&tt=EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_" 
+                       target="_blank" rel="noopener noreferrer"
+                       class="bg-tsun text-white px-6 py-2.5 rounded-full font-bold hover:bg-pink-600 hover:scale-105 transition-all duration-300 shadow-lg shadow-pink-300/50 dark:shadow-none whitespace-nowrap min-h-[44px] flex items-center">
+                        Buy Now
+                    </a>
+                    <div class="absolute top-full right-0 mt-2 w-56 p-2 bg-gray-800 text-white text-xs rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none z-50">
+                        Cryptocurrency investments carry high risk. Prices can be volatile. You could lose all your money. <a href="risk.html" class="text-pink-400 underline pointer-events-auto">Read more</a>
+                    </div>
+                </div>
             </div>
 
-            <div class="flex items-center gap-4 md:hidden">
-                <button id="theme-toggle-mobile-top" class="text-tsun dark:text-pink-400 text-xl" aria-label="Toggle Dark Mode">
+            <!-- Mobile Nav Toggles -->
+            <div class="flex items-center gap-3 lg:hidden z-20">
+                <button id="theme-toggle-mobile-top" class="w-10 h-10 rounded-full bg-pink-50 dark:bg-gray-800 text-tsun dark:text-pink-400 flex items-center justify-center hover:scale-110 transition-transform" aria-label="Toggle Dark Mode">
                     <i class="fa-solid fa-moon"></i>
                 </button>
-
-                <button id="mobile-menu-btn" class="text-tsun-dark dark:text-white text-2xl" aria-label="Open Menu">
+                <button id="mobile-menu-btn" class="w-10 h-10 flex items-center justify-center text-tsun-dark dark:text-white text-2xl" aria-label="Open Menu">
                     <i class="fa-solid fa-bars"></i>
                 </button>
             </div>
         </div>
         
-        <div id="mobile-menu" class="hidden md:hidden bg-white/95 dark:bg-gray-900/95 backdrop-blur-md border-t border-pink-100 dark:border-gray-800 absolute w-full shadow-xl transition-colors duration-300">
-            <div class="flex flex-col p-4 space-y-4 font-bold text-center text-gray-600 dark:text-gray-200">
-                <a href="#about" class="py-2 hover:bg-pink-50 dark:hover:bg-gray-800 rounded-lg transition-colors">Story</a>
-                <a href="#tokenomics" class="py-2 hover:bg-pink-50 dark:hover:bg-gray-800 rounded-lg transition-colors">Stats</a>
-                <a href="#roadmap" class="py-2 hover:bg-pink-50 dark:hover:bg-gray-800 rounded-lg transition-colors">Roadmap</a>
-                <a href="#faq" class="py-2 hover:bg-pink-50 dark:hover:bg-gray-800 rounded-lg transition-colors">FAQ</a>
-                <a href="https://app.ston.fi/swap?ft=TON&tt=EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_" 
-                   target="_blank"
-                   class="block w-full bg-tsun text-white py-3 rounded-xl hover:bg-pink-600 transition-all duration-300 shadow-md">
-                    Buy Now
-                </a>
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white/95 dark:bg-gray-900/95 backdrop-blur-xl border-b border-pink-100 dark:border-gray-800 shadow-2xl transition-colors duration-300 lg:hidden">
+            <div class="flex flex-col p-4 sm:p-6 space-y-2 font-bold text-center text-lg text-gray-600 dark:text-gray-200">
+                <a href="#about" class="block w-full py-4 bg-gray-50/50 dark:bg-gray-800/50 hover:bg-pink-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Story</a>
+                <a href="#market" class="block w-full py-4 bg-gray-50/50 dark:bg-gray-800/50 hover:bg-pink-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Market</a>
+                <a href="#game" class="block w-full py-4 bg-gray-50/50 dark:bg-gray-800/50 hover:bg-pink-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Game</a>
+                <a href="#tokenomics" class="block w-full py-4 bg-gray-50/50 dark:bg-gray-800/50 hover:bg-pink-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Stats</a>
+                <a href="#transparency" class="block w-full py-4 bg-gray-50/50 dark:bg-gray-800/50 hover:bg-pink-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Security</a>
+                <a href="knowledge.html" class="block w-full py-4 bg-gray-50/50 dark:bg-gray-800/50 hover:bg-pink-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Learn</a>
+                <div class="mt-4">
+                    <a href="https://app.ston.fi/swap?ft=TON&tt=EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_" 
+                       target="_blank" rel="noopener noreferrer"
+                       class="block w-full bg-tsun text-white py-4 rounded-xl hover:bg-pink-600 transition-all shadow-md">
+                        Buy Now on STON.fi
+                    </a>
+                    <p class="text-xs text-gray-500 mt-2 px-2 leading-tight">
+                        Cryptocurrency investments carry high risk. Prices can be volatile. You could lose all your money. <a href="risk.html" class="text-pink-500 hover:text-pink-600 underline">Read more</a>
+                    </p>
+                </div>
             </div>
         </div>
     </nav>
 
-    <main>
-        <header id="about" class="pt-32 pb-16 md:pt-48 md:pb-24 container mx-auto px-4 md:px-6">
-            <div class="flex flex-col-reverse md:flex-row items-center gap-12">
+    <main class="flex-grow w-full overflow-hidden shrink-0">
+        <!-- HERO SECTION -->
+        <header id="about" class="pt-28 sm:pt-36 lg:pt-48 pb-12 sm:pb-20 lg:pb-24 w-full px-4 sm:px-6 lg:px-8 mx-auto xl:max-w-7xl">
+            <div class="flex flex-col-reverse lg:flex-row items-center justify-between gap-8 lg:gap-12 w-full max-w-lg lg:max-w-none mx-auto">
                 
-                <div class="w-full md:w-1/2 text-center md:text-left z-10">
-                    <div class="inline-block bg-white dark:bg-gray-800 px-4 py-1 rounded-full text-sm font-bold text-tsun-dark dark:text-pink-400 mb-4 shadow-sm border border-pink-100 dark:border-gray-700 animate-fade-in-up">
-                        <i class="fa-solid fa-gamepad mr-2"></i> The First Anime Clicker on TON
-                    </div>
+                <!-- Hero Left: Text & Buttons -->
+                <div class="w-full lg:w-[55%] flex flex-col items-center lg:items-start text-center lg:text-left z-10 animate-fade-in-up mt-8 lg:mt-0">
                     
-                    <h1 class="text-3xl md:text-5xl font-anime text-gray-900 dark:text-white leading-tight mb-2">
-                        Tsun On TON ($TSUN)
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-anime text-gray-900 dark:text-white leading-tight mb-4 lg:mb-6 tracking-tight w-full break-words">
+                        Tsun On TON <span class="text-tsun block md:inline mt-2 md:mt-0">($TSUN)</span>
                     </h1>
-                    <p class="text-2xl md:text-4xl font-bold text-gray-600 dark:text-gray-300 italic mb-6">
+                    
+                    <p class="text-[1.15rem] sm:text-2xl md:text-3xl font-bold text-gray-600 dark:text-gray-300 italic mb-5 sm:mb-8 w-full px-2 sm:px-0">
                         "It's not like I <span class="text-tsun decoration-wavy underline">want</span> you to click me!"
                     </p>
 
-                    <p class="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed max-w-lg mx-auto md:mx-0">
-                        Join the $TSUN army. A community-driven token with a real game, locked liquidity, and a serious attitude problem.
+                    <p class="text-sm sm:text-base md:text-lg text-gray-600 dark:text-gray-300 mb-8 sm:mb-10 leading-relaxed max-w-sm sm:max-w-lg lg:max-w-xl mx-auto lg:mx-0 px-2 sm:px-0">
+                        Join the $TSUN army. A community-driven GameFi project built on transparency with a massive community, interacting directly with the TON blockchain through an addictive Telegram clicker RPG. Play to earn in-game points and compete for future community rewards.
                     </p>
                     
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                        <button disabled class="bg-gray-300 dark:bg-gray-700 text-gray-500 dark:text-gray-400 font-bold py-4 px-8 rounded-2xl cursor-not-allowed flex items-center justify-center gap-2">
-                            <span>Get $TSUN</span>
-                            <i class="fa-solid fa-lock"></i>
-                        </button>
+                    <div class="flex flex-col w-full sm:w-auto gap-2 items-center flex-wrap shrink-0">
+                        <div class="flex flex-col sm:flex-row w-full sm:w-auto gap-4 sm:gap-6 justify-center lg:justify-start px-2 sm:px-0">
+                            <a href="https://app.ston.fi/swap?ft=TON&tt=EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto bg-tsun text-white shadow-xl shadow-pink-300/40 dark:shadow-none font-bold py-4 min-h-[56px] px-8 rounded-2xl hover:bg-pink-600 hover:-translate-y-1 transition-transform duration-300 flex items-center justify-center gap-3 text-base sm:text-lg">
+                                <i class="fa-solid fa-cart-shopping"></i> Buy $TSUN
+                            </a>
 
-                        <a href="https://t.me/tsunonton" target="_blank" rel="noopener noreferrer" class="bg-white dark:bg-gray-800 text-ton-blue dark:text-white border-2 border-ton-blue font-bold py-4 px-8 rounded-2xl hover:bg-blue-50 dark:hover:bg-gray-700 transition-all flex items-center justify-center gap-2">
-                            <i class="fa-brands fa-telegram text-xl"></i>
-                            <span>Join Channel</span>
-                        </a>
-                    </div>
-
-                    <div class="mt-8 bg-white/80 dark:bg-gray-800/80 p-3 rounded-xl border-2 border-dashed border-gray-300 dark:border-gray-600 flex items-center justify-between gap-2 max-w-md mx-auto md:mx-0 cursor-pointer group hover:border-tsun transition-colors" id="copy-contract-btn" title="Click to copy address">
-                        <div class="overflow-hidden">
-                            <p class="text-xs text-gray-400 font-bold uppercase tracking-wider">Contract Address (Tap to copy)</p>
-                            <p class="font-mono text-sm md:text-base text-gray-700 dark:text-gray-300 truncate" id="contract-address">EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_</p>
+                            <a href="https://t.me/tsunonton_bot" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto bg-white dark:bg-gray-800 text-ton-blue dark:text-white border-2 border-ton-blue font-bold py-4 min-h-[56px] px-8 rounded-2xl hover:bg-blue-50 dark:hover:bg-gray-700 hover:-translate-y-1 transition-transform duration-300 flex items-center justify-center gap-3 text-base sm:text-lg">
+                                <i class="fa-brands fa-telegram text-xl"></i> Play Game
+                            </a>
                         </div>
-                        <div class="bg-gray-100 dark:bg-gray-700 p-2 rounded-lg group-hover:bg-tsun group-hover:text-white transition-colors">
-                            <i class="fa-regular fa-copy dark:text-white"></i>
-                        </div>
-                    </div>
-                    <div id="copy-toast" class="opacity-0 transition-opacity text-tsun font-bold text-sm mt-2 text-center md:text-left">Copied to clipboard! B-baka!</div>
-                </div>
-
-                <div class="w-full md:w-1/2 flex flex-col items-center justify-center relative">
-                    <div id="mascot-bubble" class="speech-bubble bg-white p-6 rounded-2xl shadow-xl mb-8 max-w-xs transform transition-all duration-300 scale-100 opacity-100">
-                        <p id="bubble-text" class="text-lg font-bold text-gray-800 dark:text-gray-100 text-center font-anime">
-                            Don't look at me like that! <br>Just buy the token!
+                        <p class="text-xs text-gray-500 mt-2 px-2 text-center lg:text-left w-full">
+                            Cryptocurrency investments carry high risk. Prices can be volatile. You could lose all your money. <a href="risk.html" class="text-pink-500 hover:text-pink-600 underline">Read more</a>
                         </p>
                     </div>
-                    
-                    <div class="relative group cursor-pointer" id="mascot-click-zone">
+                </div>
+
+                <!-- Hero Right: Mascot & Fully Stable Absolute Bubble -->
+                <div class="w-full lg:w-[45%] flex flex-col items-center justify-center relative min-h-[340px] sm:min-h-[420px] md:min-h-[480px]">
+                    <div class="relative group cursor-pointer mt-24 sm:mt-28 lg:mt-0 w-[220px] sm:w-[280px] md:w-[320px] lg:w-[400px] mx-auto select-none" id="mascot-click-zone">
+                        
+                        <!-- Anti-Jumping Absolute Speech Bubble -->
+                        <div id="mascot-bubble-wrapper" class="absolute bottom-full mb-6 left-1/2 transform -translate-x-1/2 w-max max-w-[240px] sm:max-w-[280px] z-30 pointer-events-none transition-transform">
+                            <div id="mascot-bubble" class="speech-bubble relative px-4 sm:px-6 py-3 sm:py-4 rounded-[1.5rem] shadow-xl text-center text-sm md:text-base font-bold transition-transform duration-200">
+                                <span id="bubble-text">H-Hmph! Baka!</span>
+                            </div>
+                        </div>
+                        
                         <div id="click-effects" class="absolute inset-0 pointer-events-none z-20"></div>
                         
-                        <img src="/static/img/mascot-image.webp"
-                             alt="Tsun On TON Anime Mascot - Tsundere Clicker Game Character" 
-                             class="mascot-bounce w-64 md:w-80 lg:w-96 drop-shadow-2xl z-10 relative select-none">
-                             
-                        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-pink-400 rounded-full blur-[80px] opacity-30 group-hover:opacity-50 transition-opacity"></div>
+                        <img src="/static/img/mascot-image.webp" fetchpriority="high" onerror="this.src='https://placehold.co/400x500/ff69b4/ffffff?text=Anime+Mascot'" alt="Tsun On TON ($TSUN) Anime Mascot Telegram Clicker Game" class="mascot-bounce w-full object-contain drop-shadow-2xl z-10 relative pointer-events-none">
+                        
+                        <!-- BG Glow -->
+                        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-48 sm:w-64 lg:w-80 h-48 sm:h-64 lg:h-80 bg-pink-400/40 rounded-full blur-[60px] sm:blur-[80px] group-hover:bg-pink-400/60 transition-colors duration-500 pointer-events-none"></div>
                     </div>
-                    <p class="mt-4 text-sm text-gray-500 dark:text-gray-400 font-bold animate-pulse">
-                        <i class="fa-solid fa-hand-pointer"></i> Tap her to annoy her
+                    
+                    <p class="mt-8 text-xs sm:text-sm text-gray-500 dark:text-gray-400 font-bold animate-pulse tracking-wider uppercase text-center w-full">
+                        <i class="fa-solid fa-hand-pointer mr-1"></i> Tap her to interact
                     </p>
                 </div>
             </div>
         </header>
 
-        <section id="tokenomics" class="py-20 glass-panel border-y border-white dark:border-gray-800">
-            <div class="container mx-auto px-4">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-anime text-tsun-dark dark:text-pink-400 mb-4">Tokenomics</h2>
-                    <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-                        Transparency is key. Here is how the 1,000,000,000 $TSUN supply is distributed.
+        <!-- LIVE MARKET STATS SECTION -->
+        <section id="market" class="py-12 sm:py-16 md:py-20 bg-white/50 dark:bg-gray-800/30 border-y border-pink-100 dark:border-gray-800 relative z-10 w-full px-4 sm:px-6 lg:px-8">
+            <div class="container mx-auto xl:max-w-7xl">
+                <div class="mb-6 sm:mb-8 md:mb-10 text-center sm:text-left flex flex-col sm:flex-row sm:items-end justify-between gap-4 w-full">
+                    <div>
+                        <h2 class="text-tsun font-bold uppercase tracking-widest text-xs sm:text-sm mb-2">Live Transparency</h2>
+                        <h3 class="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white">Market Overview</h3>
+                    </div>
+                    <a href="https://tonviewer.com/EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_" target="_blank" rel="noopener noreferrer" class="text-sm sm:text-base text-gray-500 hover:text-tsun py-2 transition-colors flex items-center justify-center sm:justify-start gap-2">
+                        View contract on Tonviewer <i class="fa-solid fa-up-right-from-square text-xs"></i>
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 md:gap-6">
+                    <a href="https://tonviewer.com/EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_" target="_blank" rel="noopener noreferrer" class="stat-card glass-panel w-full p-6 sm:p-8 rounded-[1.5rem] hover:-translate-y-1 transition-transform duration-300 group flex flex-col items-center sm:items-start text-center sm:text-left min-h-[120px] justify-center">
+                        <span class="text-gray-500 dark:text-gray-400 text-sm sm:text-sm font-bold uppercase tracking-wider mb-2 w-full flex justify-center sm:justify-start items-center gap-2"><i class="fa-solid fa-users text-tsun"></i> Holders</span>
+                        <span class="text-3xl sm:text-3xl lg:text-4xl font-anime text-gray-800 dark:text-gray-100 group-hover:text-tsun skeleton-box transition-colors w-full break-words" id="holders-count"></span>
+                    </a>
+                    
+                    <a href="https://dexscreener.com/ton/EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_" target="_blank" rel="noopener noreferrer" class="stat-card glass-panel w-full p-6 sm:p-8 rounded-[1.5rem] hover:-translate-y-1 transition-transform duration-300 group flex flex-col items-center sm:items-start text-center sm:text-left min-h-[120px] justify-center">
+                        <span class="text-gray-500 dark:text-gray-400 text-sm sm:text-sm font-bold uppercase tracking-wider mb-2 w-full flex justify-center sm:justify-start items-center gap-2"><i class="fa-solid fa-chart-line text-green-500"></i> Market Cap</span>
+                        <span class="text-3xl sm:text-3xl lg:text-4xl font-anime text-gray-800 dark:text-gray-100 group-hover:text-green-500 skeleton-box transition-colors w-full break-words" id="market-cap"></span>
+                    </a>
+
+                    <a href="https://app.ston.fi/pools/EQAaE2H90dF2OomdsrCQ2zMEg-C0UG_Jkt_dijf3-tkdCbQ7" target="_blank" rel="noopener noreferrer" class="stat-card glass-panel w-full p-6 sm:p-8 rounded-[1.5rem] hover:-translate-y-1 transition-transform duration-300 group flex flex-col items-center sm:items-start text-center sm:text-left min-h-[120px] justify-center">
+                        <span class="text-gray-500 dark:text-gray-400 text-sm sm:text-sm font-bold uppercase tracking-wider mb-2 w-full flex justify-center sm:justify-start items-center gap-2"><i class="fa-solid fa-lock text-ton-blue"></i> Liquidity</span>
+                        <span class="text-3xl sm:text-3xl lg:text-4xl font-anime text-gray-800 dark:text-gray-100 group-hover:text-ton-blue skeleton-box transition-colors w-full break-words" id="liquidity"></span>
+                    </a>
+
+                    <div class="stat-card glass-panel w-full p-6 sm:p-8 rounded-[1.5rem] hover:-translate-y-1 transition-transform duration-300 group flex flex-col items-center sm:items-start text-center sm:text-left min-h-[120px] justify-center cursor-default">
+                        <span class="text-gray-500 dark:text-gray-400 text-sm sm:text-sm font-bold uppercase tracking-wider mb-2 w-full flex justify-center sm:justify-start items-center gap-2"><i class="fa-solid fa-fire text-orange-500"></i> 24h Volume</span>
+                        <div class="flex items-end gap-3 w-full justify-center sm:justify-start break-words">
+                            <span class="text-3xl sm:text-3xl lg:text-4xl font-anime text-gray-800 dark:text-gray-100 skeleton-box" id="volume"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GAMEFI SECTION -->
+        <section id="game" class="py-16 sm:py-20 md:py-24 container mx-auto px-4 sm:px-6 lg:px-8 xl:max-w-7xl">
+            <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16 md:mb-20">
+                <div class="inline-flex items-center justify-center bg-pink-100 dark:bg-gray-800 px-5 py-2 rounded-full text-xs sm:text-sm font-bold text-tsun dark:text-pink-400 mb-6 border border-pink-200 dark:border-gray-700 w-auto">
+                    <i class="fa-solid fa-mobile-button mr-2"></i> Telegram Mini-App
+                </div>
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-anime text-gray-900 dark:text-white mb-6">Play Tsun Clicker Now</h2>
+                <p class="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300 px-2">
+                    Interact with our tsundere mascot directly inside Telegram. Tap to earn <strong>Tsun Points</strong> – a fun in-game score that tracks your activity, unlocks upgrades, and lets you compete on the global leaderboard. Tsun Points are not cryptocurrency and cannot be withdrawn or traded. While we plan to reward active community members in the future (e.g., through airdrops), any such rewards are at the project's discretion and are never guaranteed. The game is designed first and foremost for entertainment.
+                </p>
+                <div class="mt-8 sm:mt-10 flex w-full justify-center px-2 sm:px-0">
+                    <a href="https://t.me/tsunonton_bot" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto bg-gray-900 text-white dark:bg-white dark:text-gray-900 px-8 py-4 sm:py-5 min-h-[56px] rounded-[1.25rem] font-bold text-lg sm:text-xl hover:bg-gray-800 dark:hover:bg-gray-100 hover:scale-[1.02] transition-all duration-300 flex items-center justify-center gap-3 shadow-xl">
+                        <i class="fa-brands fa-telegram text-2xl"></i> Launch App
+                    </a>
+                </div>
+            </div>
+
+            <!-- Screenshots Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 sm:gap-12 lg:gap-14 px-2 sm:px-8 items-start justify-center">
+                <div class="flex flex-col items-center group w-full max-w-[320px] mx-auto">
+                    <div class="relative w-[85%] bg-white dark:bg-gray-800 p-2 sm:p-3 rounded-[3rem] shadow-2xl border-4 border-gray-100 dark:border-gray-700 transform md:group-hover:-translate-y-3 transition-transform duration-300">
+                        <!-- TODO: Replace placeholder with actual game screenshot -->
+                        <img src="https://placehold.co/300x600/f8f9fa/a8a8a8?text=App+Screenshot" loading="lazy" alt="Tsun On TON ($TSUN) GameFi Telegram Clicker Start Screen" class="rounded-[2.5rem] w-full block">
+                    </div>
+                    <div class="mt-6 sm:mt-8 text-center px-2">
+                        <h4 class="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-2">Tap & Earn</h4>
+                        <p class="text-sm sm:text-base text-gray-500 dark:text-gray-400">Click the mascot to collect Tsun Points – track your progress and have fun!</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center group w-full max-w-[320px] mx-auto md:mt-12">
+                    <div class="relative w-[85%] bg-white dark:bg-gray-800 p-2 sm:p-3 rounded-[3rem] shadow-2xl border-4 border-gray-100 dark:border-gray-700 transform md:group-hover:-translate-y-3 transition-transform duration-300">
+                        <!-- TODO: Replace placeholder with actual game screenshot -->
+                        <img src="https://placehold.co/300x600/f8f9fa/a8a8a8?text=App+Screenshot" loading="lazy" alt="Tsun On TON ($TSUN) Clicker Game Upgrades Screen" class="rounded-[2.5rem] w-full block">
+                    </div>
+                    <div class="mt-6 sm:mt-8 text-center px-2">
+                        <h4 class="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-2">Upgrade Stats</h4>
+                        <p class="text-sm sm:text-base text-gray-500 dark:text-gray-400">Boost your tap power and energy regeneration rates.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center group w-full max-w-[320px] mx-auto md:mt-24">
+                    <div class="relative w-[85%] bg-white dark:bg-gray-800 p-2 sm:p-3 rounded-[3rem] shadow-2xl border-4 border-gray-100 dark:border-gray-700 transform md:group-hover:-translate-y-3 transition-transform duration-300">
+                        <!-- TODO: Replace placeholder with actual game screenshot -->
+                        <img src="https://placehold.co/300x600/f8f9fa/a8a8a8?text=App+Screenshot" loading="lazy" alt="Tsun On TON ($TSUN) Daily Quests and Rewards" class="rounded-[2.5rem] w-full block">
+                    </div>
+                    <div class="mt-6 sm:mt-8 text-center px-2">
+                        <h4 class="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-2">Complete Quests</h4>
+                        <p class="text-sm sm:text-base text-gray-500 dark:text-gray-400">Finish daily tasks to maximize your ecosystem rating.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-8 md:mt-12 max-w-3xl mx-auto text-center px-4">
+                <p class="text-sm text-gray-500 dark:text-gray-400 italic">
+                    <i class="fa-solid fa-info-circle mr-1"></i> <strong>Important:</strong> Tsun Points are a virtual in-game score only. They are not $TSUN tokens and have no monetary value. Any future airdrops or rewards are not guaranteed and are subject to change. The game is for entertainment – please play responsibly.
+                </p>
+            </div>
+        </section>
+
+        <!-- TOKENOMICS SECTION -->
+        <section id="tokenomics" class="py-16 sm:py-24 bg-gray-50/50 dark:bg-gray-900/50 border-t border-pink-100/50 dark:border-gray-800 px-4 sm:px-6 lg:px-8 w-full">
+            <div class="container mx-auto xl:max-w-7xl">
+                <div class="text-center max-w-2xl mx-auto mb-10 sm:mb-16 md:mb-20">
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-anime text-tsun-dark dark:text-pink-400 mb-6">Tokenomics</h2>
+                    <p class="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300 px-4 sm:px-0 leading-relaxed">
+                        Total Supply: <span class="font-bold text-gray-900 dark:text-white tracking-wider">1,000,000,000 $TSUN</span>
                     </p>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                    <div class="flex flex-col items-center justify-center w-full">
-                        <div class="chart-container">
-                            <canvas id="tokenomicsChart" aria-label="Token Distribution Chart" role="img"></canvas>
+                <div class="flex flex-col lg:flex-row gap-10 sm:gap-14 items-center justify-center w-full">
+                    <!-- Chart -->
+                    <div class="w-full max-w-md lg:w-1/2 bg-white dark:bg-gray-800 rounded-[2rem] p-6 sm:p-10 shadow-xl border border-pink-50 dark:border-gray-700 mx-auto">
+                        <div class="relative aspect-square w-full">
+                            <canvas id="tokenomicsChart"></canvas>
                         </div>
                     </div>
 
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div class="stat-card bg-white dark:bg-gray-800 dark:border-gray-700 p-6 rounded-2xl shadow-sm border border-pink-100 hover:shadow-md transition-shadow">
-                            <div class="text-3xl text-tsun mb-2"><i class="fa-solid fa-coins"></i></div>
-                            <h3 class="text-gray-500 dark:text-gray-400 text-sm font-bold uppercase">Total Supply</h3>
-                            <p class="text-2xl font-bold text-gray-800 dark:text-gray-100">1,000,000,000</p>
+                    <!-- Details Box -->
+                    <div class="w-full max-w-md lg:w-1/2 flex flex-col gap-4 sm:gap-6 mx-auto">
+                        
+                        <div class="bg-white dark:bg-gray-800 p-5 sm:p-6 rounded-[1.5rem] shadow-sm border border-gray-100 dark:border-gray-700 flex items-center justify-between">
+                            <div class="flex items-center gap-4">
+                                <div class="w-4 sm:w-5 h-4 sm:h-5 rounded-full bg-pink-400"></div>
+                                <span class="font-bold text-base sm:text-lg text-gray-800 dark:text-gray-100">Game Rewards</span>
+                            </div>
+                            <span class="font-anime text-lg sm:text-xl text-gray-900 dark:text-white">50%</span>
                         </div>
-                        <div class="stat-card bg-white dark:bg-gray-800 dark:border-gray-700 p-6 rounded-2xl shadow-sm border border-pink-100 hover:shadow-md transition-shadow">
-                            <div class="text-3xl text-blue-400 mb-2"><i class="fa-solid fa-fire"></i></div>
-                            <h3 class="text-gray-500 dark:text-gray-400 text-sm font-bold uppercase">Liquidity</h3>
-                            <p class="text-2xl font-bold text-gray-800 dark:text-gray-100">15% Locked</p>
+                        
+                        <div class="bg-white dark:bg-gray-800 p-5 sm:p-6 rounded-[1.5rem] shadow-sm border border-gray-100 dark:border-gray-700 flex items-center justify-between">
+                            <div class="flex items-center gap-4">
+                                <div class="w-4 sm:w-5 h-4 sm:h-5 rounded-full bg-blue-500"></div>
+                                <span class="font-bold text-base sm:text-lg text-gray-800 dark:text-gray-100">Community</span>
+                            </div>
+                            <span class="font-anime text-lg sm:text-xl text-gray-900 dark:text-white">20%</span>
                         </div>
-                        <div class="stat-card bg-white dark:bg-gray-800 dark:border-gray-700 p-6 rounded-2xl shadow-sm border border-pink-100 hover:shadow-md transition-shadow">
-                            <div class="text-3xl text-green-500 mb-2"><i class="fa-solid fa-gamepad"></i></div>
-                            <h3 class="text-gray-500 dark:text-gray-400 text-sm font-bold uppercase">Rewards</h3>
-                            <p class="text-2xl font-bold text-gray-800 dark:text-gray-100">50% Game</p>
+
+                        <div class="bg-white dark:bg-gray-800 p-5 sm:p-6 rounded-[1.5rem] shadow-sm border border-gray-100 dark:border-gray-700 flex items-center justify-between">
+                            <div class="flex items-center gap-4">
+                                <div class="w-4 sm:w-5 h-4 sm:h-5 rounded-full bg-green-500"></div>
+                                <span class="font-bold text-base sm:text-lg text-gray-800 dark:text-gray-100">Liquidity Locked</span>
+                            </div>
+                            <span class="font-anime text-lg sm:text-xl text-gray-900 dark:text-white">15%</span>
                         </div>
-                        <div class="stat-card bg-white dark:bg-gray-800 dark:border-gray-700 p-6 rounded-2xl shadow-sm border border-pink-100 hover:shadow-md transition-shadow">
-                            <div class="text-3xl text-purple-500 mb-2"><i class="fa-solid fa-shield-halved"></i></div>
-                            <h3 class="text-gray-500 dark:text-gray-400 text-sm font-bold uppercase">Contract</h3>
-                            <p class="text-2xl font-bold text-gray-800 dark:text-gray-100">Renounced</p>
+
+                        <div class="bg-white dark:bg-gray-800 p-5 sm:p-6 rounded-[1.5rem] shadow-sm border border-gray-100 dark:border-gray-700 flex items-center justify-between">
+                            <div class="flex items-center gap-4">
+                                <div class="w-4 sm:w-5 h-4 sm:h-5 rounded-full bg-purple-500"></div>
+                                <span class="font-bold text-base sm:text-lg text-gray-800 dark:text-gray-100">Dev & Marketing</span>
+                            </div>
+                            <span class="font-anime text-lg sm:text-xl text-gray-900 dark:text-white">15%</span>
                         </div>
+
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="roadmap" class="py-20 container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-anime text-gray-800 dark:text-white mb-4">Roadmap: The Grand Plan</h2>
-                <p class="text-gray-600 dark:text-gray-300">We are taking over TON, one click at a time.</p>
-            </div>
-
-            <div class="relative max-w-4xl mx-auto">
-                <div class="absolute left-8 md:left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-tsun to-purple-400 rounded-full"></div>
-
-                <div class="relative flex flex-col md:flex-row items-center mb-16">
-                    <div class="md:w-1/2 md:pr-12 md:text-right pl-20 md:pl-0 mb-4 md:mb-0">
-                        <h3 class="text-2xl font-anime text-tsun">Phase 1: Launch</h3>
-                        <p class="font-bold text-gray-500 dark:text-gray-400 text-sm mb-2">STATUS: COMPLETED</p>
-                        <p class="text-gray-600 dark:text-gray-300">Website Launch, Community Building, Contract Deployment, Liquidity Lock.</p>
-                    </div>
-                    <div class="absolute left-8 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-green-500 rounded-full border-4 border-white dark:border-gray-800 shadow-lg flex items-center justify-center text-white text-xs z-10">
-                        <i class="fa-solid fa-check"></i>
-                    </div>
-                    <div class="md:w-1/2 md:pl-12 pl-20 hidden md:block"></div>
-                </div>
-
-                <div class="relative flex flex-col md:flex-row items-center mb-16">
-                    <div class="md:w-1/2 md:pr-12 md:text-right pl-20 hidden md:block"></div>
-                    <div class="absolute left-8 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-tsun rounded-full border-4 border-white dark:border-gray-800 shadow-lg flex items-center justify-center text-white text-xs animate-pulse z-10">
-                        <i class="fa-solid fa-spinner fa-spin"></i>
-                    </div>
-                    <div class="md:w-1/2 md:pl-12 pl-20 md:pl-12">
-                        <h3 class="text-2xl font-anime text-tsun">Phase 2: Development</h3>
-                        <p class="font-bold text-gray-500 dark:text-gray-400 text-sm mb-2">STATUS: LIVE</p>
-                        <p class="text-gray-600 dark:text-gray-300">Clicker Game Release, DEX Listing, Marketing Push, Community Airdrops.</p>
-                    </div>
-                </div>
-
-                <div class="relative flex flex-col md:flex-row items-center">
-                    <div class="md:w-1/2 md:pr-12 md:text-right pl-20 md:pl-0 mb-4 md:mb-0">
-                        <h3 class="text-2xl font-anime text-gray-400 dark:text-gray-500">Phase 3: Growth</h3>
-                        <p class="font-bold text-gray-400 dark:text-gray-500 text-sm mb-2">STATUS: UPCOMING</p>
-                        <p class="text-gray-500 dark:text-gray-400">CEX Listings, NFT Collection, Merchandise, Expanded Game Features.</p>
-                    </div>
-                    <div class="absolute left-8 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-gray-300 dark:bg-gray-600 rounded-full border-4 border-white dark:border-gray-800 shadow-lg z-10"></div>
-                    <div class="md:w-1/2 md:pl-12 pl-20 hidden md:block"></div>
-                </div>
-            </div>
-        </section>
-
-        <section class="py-20 bg-gray-50 dark:bg-gray-900" id="faq">
-            <div class="container mx-auto px-4">
-                <div class="max-w-4xl mx-auto">
-                    <div class="mb-16">
-                        <div class="text-tsun font-bold text-lg mb-2">FAQ</div>
-                        <h2 class="text-3xl md:text-4xl font-anime text-gray-900 dark:text-white">
-                            Frequently Asked Questions
-                        </h2>
-                        <p class="mt-4 text-gray-600 dark:text-gray-400">
-                            Everything you need to know about $TSUN token, security, and gameplay.
+        <!-- SECURITY & TRANSPARENCY SECTION -->
+        <section id="transparency" class="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 border-b border-pink-100 dark:border-gray-800 w-full">
+            <div class="container mx-auto xl:max-w-7xl">
+                <div class="bg-gradient-to-r gap-8 from-pink-50 to-pink-100/50 dark:from-gray-800 dark:to-gray-800/80 rounded-[2rem] sm:rounded-[3rem] p-6 sm:p-10 md:p-14 shadow-inner border border-white dark:border-gray-700 max-w-5xl mx-auto flex flex-col md:flex-row items-center w-full relative overflow-hidden">
+                    
+                    <div class="w-full md:w-2/3 text-center md:text-left z-10">
+                        <h3 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">Our Commitment to Transparency</h3>
+                        <p class="text-base sm:text-lg text-gray-700 dark:text-gray-300 mb-8 sm:mb-10 leading-relaxed px-2 sm:px-0">
+                            We pride ourselves on 0% buy/sell taxes, instantly renounced contracts, and 100% burned initial liquidity pool keys. Your funds are secured by math on the fastest blockchain.
                         </p>
-                    </div>
-                    
-                    <div class="space-y-1">
-                        <div class="faq-item">
-                            <button class="faq-question">
-                                What is Tsun On TON ($TSUN)?
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" fill="none" class="faq-question-icon">
-                                    <path stroke="#8D8F92" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 12 9.5 9.5L26 12"></path>
-                                </svg>
-                            </button>
-                            <div class="faq-answer">
-                                <p><strong>Tsun On TON ($TSUN)</strong> is a hybrid GameFi project on the <strong>TON Blockchain</strong>. Unlike standard memecoins, we combine anime culture (Tsundere theme) with real utility through an addictive <strong>Clicker Game</strong> directly in Telegram. Play, interact with the mascot, and earn rewards.</p>
-                            </div>
-                        </div>
                         
-                        <div class="faq-item">
-                            <button class="faq-question">
-                                How to buy $TSUN token?
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" fill="none" class="faq-question-icon">
-                                    <path stroke="#8D8F92" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 12 9.5 9.5L26 12"></path>
-                                </svg>
-                            </button>
-                            <div class="faq-answer">
-                                <p>You can buy $TSUN on the <strong>STON.fi</strong> DEX. Follow these steps:</p>
-                                <ol class="list-decimal ml-5 mt-2 space-y-1">
-                                    <li>Download a TON wallet (e.g., <strong>Tonkeeper</strong>).</li>
-                                    <li>Top up your wallet with TON.</li>
-                                    <li>Visit <a href="https://app.ston.fi/swap?ft=TON&tt=EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_" target="_blank" class="text-tsun hover:underline">STON.fi</a> and connect your wallet.</li>
-                                    <li>Swap TON for $TSUN.</li>
-                                </ol>
+                        <div class="flex flex-col sm:flex-row flex-wrap gap-4 sm:gap-6 justify-center md:justify-start w-full">
+                            <div class="flex items-center justify-center md:justify-start gap-3 bg-white/50 dark:bg-gray-900/50 px-5 sm:px-6 py-3 sm:py-4 rounded-xl shadow-sm text-base sm:text-lg font-bold text-gray-800 dark:text-gray-200">
+                                <i class="fa-solid fa-check-double text-green-500 text-xl"></i> 0% Taxes
+                            </div>
+                            <div class="flex items-center justify-center md:justify-start gap-3 bg-white/50 dark:bg-gray-900/50 px-5 sm:px-6 py-3 sm:py-4 rounded-xl shadow-sm text-base sm:text-lg font-bold text-gray-800 dark:text-gray-200">
+                                <i class="fa-solid fa-file-contract text-ton-blue text-xl"></i> Contract Renounced
+                            </div>
+                            <div class="flex items-center justify-center md:justify-start gap-3 bg-white/50 dark:bg-gray-900/50 px-5 sm:px-6 py-3 sm:py-4 rounded-xl shadow-sm text-base sm:text-lg font-bold text-gray-800 dark:text-gray-200">
+                                <i class="fa-solid fa-lock text-purple-500 text-xl"></i> LP Locked Forever
                             </div>
                         </div>
 
-                        <div class="faq-item">
-                            <button class="faq-question">
-                                What is the $TSUN Contract Address (CA)?
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" fill="none" class="faq-question-icon">
-                                    <path stroke="#8D8F92" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 12 9.5 9.5L26 12"></path>
-                                </svg>
-                            </button>
-                            <div class="faq-answer">
-                                <p>The official contract address on The Open Network is:</p>
-                                <p class="font-mono bg-gray-100 dark:bg-gray-800 p-2 rounded mt-2 text-xs md:text-sm break-all select-all cursor-text">
-                                    EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_
-                                </p>
-                                <p class="mt-2 text-sm">Always verify the address before trading.</p>
+                        <div class="mt-10 flex flex-col items-center md:items-start w-full bg-white/80 dark:bg-gray-900/80 p-5 sm:p-6 rounded-[1.5rem] shadow-sm backdrop-blur-md">
+                            <span class="text-xs sm:text-sm font-bold text-gray-500 dark:text-gray-400 uppercase tracking-widest mb-3">Official Smart Contract</span>
+                            <div class="flex flex-col sm:flex-row items-center w-full gap-3 sm:gap-4">
+                                <code id="contract-address" class="text-xs sm:text-sm md:text-base bg-gray-100 dark:bg-gray-800 px-4 py-3 sm:py-4 rounded-xl text-gray-700 dark:text-pink-300 w-full break-all text-center sm:text-left transition-colors font-mono">EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_</code>
+                                <button id="copy-contract-btn" class="bg-gray-900 text-white dark:bg-white dark:text-gray-900 w-full sm:w-auto px-6 py-3 sm:py-4 min-h-[48px] rounded-xl hover:scale-105 transition-transform flex items-center justify-center gap-2 font-bold text-sm sm:text-base shrink-0">
+                                    <i class="fa-regular fa-copy"></i> Copy
+                                </button>
                             </div>
-                        </div>
-                        
-                        <div class="faq-item">
-                            <button class="faq-question">
-                                Is $TSUN safe? (Liquidity & Ownership)
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" fill="none" class="faq-question-icon">
-                                    <path stroke="#8D8F92" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 12 9.5 9.5L26 12"></path>
-                                </svg>
-                            </button>
-                            <div class="faq-answer">
-                                <p>Yes, security is our priority. We have taken measures to protect the community:</p>
-                                <ul class="list-disc ml-5 mt-2">
-                                    <li><strong>Liquidity Locked:</strong> 15% of the supply is permanently locked to ensure trading stability.</li>
-                                    <li><strong>Contract Renounced:</strong> The developer no longer has control over the contract functions, meaning no new tokens can be minted.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        
-                        <div class="faq-item">
-                            <button class="faq-question">
-                                How does the Clicker Game work?
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" fill="none" class="faq-question-icon">
-                                    <path stroke="#8D8F92" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 12 9.5 9.5L26 12"></path>
-                                </svg>
-                            </button>
-                            <div class="faq-answer">
-                                <p>The game features a "Tsundere" anime girl mascot. Players click to interact with her. As you play, you contribute to the ecosystem stats. Future updates (Phase 2 & 3) will introduce deeper <strong>P2E (Play-to-Earn)</strong> mechanics, leaderboards, and exclusive NFT rewards for top clickers.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="faq-item">
-                            <button class="faq-question">
-                                What is the Roadmap and future plans?
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" fill="none" class="faq-question-icon">
-                                    <path stroke="#8D8F92" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 12 9.5 9.5L26 12"></path>
-                                </svg>
-                            </button>
-                            <div class="faq-answer">
-                                <p>We are currently in Phase 2 (Development). Our roadmap includes:</p>
-                                <ul class="list-disc ml-5 mt-2">
-                                    <li>Expansion of Game features.</li>
-                                    <li><strong>CEX Listings</strong> (Centralized Exchanges).</li>
-                                    <li>NFT Collection launch.</li>
-                                    <li>Community Airdrops and contests.</li>
-                                </ul>
-                                <p>Follow our <a href="https://t.me/tsunonton" class="text-tsun hover:underline">Telegram Channel</a> for the latest news.</p>
-                            </div>
+                            <span id="copy-toast" class="mt-3 text-xs sm:text-sm font-bold opacity-0 transition-opacity duration-300 text-center w-full">Address copied to clipboard!</span>
                         </div>
                     </div>
                     
-                    <div class="text-center mt-8">
-                        <a href="https://t.me/tsunonton_chat" target="_blank" class="faq-link inline-flex items-center gap-2 text-tsun font-bold hover:text-pink-600 transition-colors">
-                            Join Community Chat
-                            <i class="fa-brands fa-telegram text-xl"></i>
-                        </a>
+                    <div class="w-full md:w-1/3 flex justify-center mt-10 md:mt-0 opacity-20 md:opacity-80 absolute md:relative right-[-20%] md:right-0 bottom-[10%] md:bottom-auto pointer-events-none md:pointer-events-auto mix-blend-multiply dark:mix-blend-normal z-0">
+                        <i class="fa-solid fa-shield-halved text-[120px] sm:text-[180px] md:text-8xl text-purple-400"></i>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ROADMAP SECTION -->
+        <section id="roadmap" class="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 w-full container mx-auto xl:max-w-7xl">
+            <div class="text-center mb-16 sm:mb-20">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-anime text-gray-900 dark:text-white mb-6">Roadmap</h2>
+                <p class="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto px-2 leading-relaxed">Clear milestones that aim to continuously evolve the project and strive for utility expansion within the TON ecosystem.</p>
+            </div>
+
+            <!-- Absolute Mobile-First Layout for Timeline -->
+            <div class="relative w-full max-w-4xl mx-auto px-4 md:px-0 md:pl-28">
+                <!-- Vertical Line -->
+                <div class="absolute left-1/2 md:left-6 transform -translate-x-1/2 top-4 bottom-12 w-[2px] bg-tsun dark:bg-gray-600 rounded-full z-0"></div>
+
+                <!-- Phase 1 -->
+                <div class="relative w-full mb-12 sm:mb-16 group flex flex-col items-center md:block pt-5 md:pt-0">
+                    <div class="absolute left-1/2 md:-left-28 transform -translate-x-1/2 md:translate-x-0 top-0 md:top-[2px] w-10 h-10 md:w-12 md:h-12 bg-green-500 rounded-full border-4 border-white dark:border-gray-900 shadow-md flex items-center justify-center text-white z-20 transition-transform group-hover:scale-110">
+                        <i class="fa-solid fa-check text-xs sm:text-sm"></i>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-6 sm:p-8 rounded-[1.5rem] shadow-sm border border-gray-100 dark:border-gray-700 w-full sm:w-[90%] md:w-full relative overflow-hidden transition-shadow group-hover:shadow-md z-10">
+                        <div class="absolute top-4 right-4 sm:top-6 sm:right-6 bg-green-500 text-white text-[10px] sm:text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Completed</div>
+                        <h4 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-4 pr-24">Phase 1: Genesis</h4>
+                        <ul class="space-y-3 text-sm sm:text-base md:text-lg text-gray-600 dark:text-gray-300 list-disc ml-4 sm:ml-5 marker:text-green-500">
+                            <li>Successful <span class="font-bold border-b border-gray-300 dark:border-gray-600 pb-0.5"><a href="https://app.ston.fi/swap?ft=TON&tt=EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_">Token Launch on STON.fi</a></span></li>
+                            <li><a href="https://tonraffles.app/lock/EQAaE2H90dF2OomdsrCQ2zMEg-C0UG_Jkt_dijf3-tkdCbQ7" target="_blank" rel="noopener noreferrer" class="text-ton-blue hover:text-blue-600 transition-colors font-bold underline decoration-ton-blue/30 underline-offset-4">Liquidity Permanently Blocked</a> via TonRaffles</li>
+                            <li><a href="https://minter.ton.org/jetton/EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_" class="text-ton-blue hover:text-blue-600 transition-colors font-bold underline decoration-ton-blue/30 underline-offset-4">Contract Fully Renounced</a></li>
+                            <li>Community established with transparent verification mechanisms</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Phase 2 -->
+                <div class="relative w-full mb-12 sm:mb-16 group flex flex-col items-center md:block pt-5 md:pt-0">
+                    <div class="absolute left-1/2 md:-left-28 transform -translate-x-1/2 md:translate-x-0 top-0 md:top-[2px] w-10 h-10 md:w-12 md:h-12 bg-tsun rounded-full border-4 border-white dark:border-gray-900 shadow-md flex items-center justify-center text-white z-20 animate-pulse">
+                        <span class="w-2.5 h-2.5 sm:w-3 sm:h-3 md:w-4 md:h-4 bg-white rounded-full"></span>
+                    </div>
+                    <div class="bg-pink-50/50 dark:bg-gray-800 p-6 sm:p-8 rounded-[1.5rem] shadow-md border border-pink-200 dark:border-pink-900 w-full sm:w-[90%] md:w-full relative overflow-hidden z-10">
+                        <div class="absolute top-4 right-4 sm:top-6 sm:right-6 bg-tsun text-white text-[10px] sm:text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Current</div>
+                        <h4 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-4 pr-20">Phase 2: The Clicker</h4>
+                        <ul class="space-y-3 text-sm sm:text-base md:text-lg text-gray-700 dark:text-gray-300 list-disc ml-4 sm:ml-5 marker:text-tsun">
+                            <li><span class="font-bold">Telegram Mini-App Game is LIVE</span></li>
+                            <li>Mass-scale functional daily tasks & referral tracking deployed</li>
+                            <li>Tonkeeper Verification process formally initiated (In Progress)</li>
+                            <li>CoinMarketCap & CoinGecko expedited listing applications drafted</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Phase 3 -->
+                <div class="relative w-full group flex flex-col items-center md:block pt-5 md:pt-0">
+                    <div class="absolute left-1/2 md:-left-28 transform -translate-x-1/2 md:translate-x-0 top-0 md:top-[2px] w-10 h-10 md:w-12 md:h-12 bg-gray-300 dark:bg-gray-600 rounded-full border-4 border-white dark:border-gray-900 shadow-sm flex items-center justify-center text-gray-500 z-20 transition-transform group-hover:scale-110">
+                        <i class="fa-solid fa-hourglass-half text-xs sm:text-sm"></i>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-6 sm:p-8 rounded-[1.5rem] shadow-sm border border-gray-100 dark:border-gray-700 w-full sm:w-[90%] md:w-full opacity-70 transition-opacity hover:opacity-100 relative overflow-hidden z-10">
+                        <div class="absolute top-4 right-4 sm:top-6 sm:right-6 bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-300 text-[10px] sm:text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Upcoming</div>
+                        <h4 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-500 dark:text-gray-400 mb-4 pr-24">Phase 3: The Ecosystem</h4>
+                        <ul class="space-y-3 text-sm sm:text-base md:text-lg text-gray-500 dark:text-gray-500 list-disc ml-4 sm:ml-5">
+                            <li><strong class="text-gray-600 dark:text-gray-400">$TSUN Airdrop</strong> distribution to active Telegram players <span class="text-xs bg-gray-100 dark:bg-gray-700 px-2 py-0.5 rounded ml-1">Q3 2026</span><br><span class="text-[11px] text-gray-400 italic mt-1 block">*Airdrop is at project discretion and not guaranteed.</span></li>
+                            <li>Verified NFT Collection launch <span class="text-xs bg-gray-100 dark:bg-gray-700 px-2 py-0.5 rounded ml-1">Q3 2026</span></li>
+                            <li>Cross-chain bridging solutions implementation & marketing</li>
+                            <li>Top Tier Centralized Exchange (CEX) Listings <span class="text-xs bg-gray-100 dark:bg-gray-700 px-2 py-0.5 rounded ml-1">Q4 2026</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ SECTION -->
+        <section class="py-16 sm:py-24 bg-gray-50 dark:bg-gray-900/80 px-4 sm:px-6 lg:px-8 w-full" id="faq">
+            <div class="container mx-auto max-w-3xl xl:max-w-4xl">
+                <div class="mb-12 sm:mb-16 text-center">
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-anime text-gray-900 dark:text-white mb-4">Knowledge Base</h2>
+                    <p class="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-400">Everything you need to know about the system.</p>
+                </div>
+                
+                <div class="bg-white dark:bg-gray-800 rounded-[1.5rem] sm:rounded-[2rem] p-4 sm:p-8 md:p-10 shadow-sm border border-gray-100 dark:border-gray-700 w-full">
+                    <div class="space-y-2 sm:space-y-4">
+                        
+                        <!-- FAQ 1 -->
+                        <div class="faq-item border border-gray-100 dark:border-gray-700 rounded-[1rem] overflow-hidden active">
+                            <button class="faq-question w-full flex justify-between items-center text-left py-4 sm:py-5 px-5 sm:px-6 font-bold text-base md:text-lg text-gray-800 dark:text-gray-100 bg-gray-50 dark:bg-gray-800 hover:bg-pink-50 dark:hover:bg-gray-700 transition-colors focus:outline-none min-h-[56px]">
+                                <span>What is Tsun on TON ($TSUN)?</span>
+                                <i class="fa-solid fa-chevron-down faq-question-icon transition-transform ml-4 shrink-0 text-gray-400"></i>
+                            </button>
+                            <div class="faq-answer px-5 sm:px-6 pb-5 sm:pb-6 text-sm md:text-base text-gray-600 dark:text-gray-300 leading-relaxed pt-2">
+                                Tsun On TON ($TSUN) is the first anime-themed GameFi and clicker project fully integrated into the <strong>TON blockchain</strong>. It's not like she wants you to buy or anything, b-baka! But by interacting with our Telegram bot, you can earn in-game points while joining the engaging degen anime army. Note that while we have a token ($TSUN) that can be bought on STON.fi, the in-game points are completely separate and have no financial value.
+                            </div>
+                        </div>
+
+                        <!-- FAQ 2 -->
+                        <div class="faq-item border border-gray-100 dark:border-gray-700 rounded-[1rem] overflow-hidden">
+                            <button class="faq-question w-full flex justify-between items-center text-left py-4 sm:py-5 px-5 sm:px-6 font-bold text-base md:text-lg text-gray-800 dark:text-gray-100 bg-gray-50 dark:bg-gray-800 hover:bg-pink-50 dark:hover:bg-gray-700 transition-colors focus:outline-none min-h-[56px]">
+                                <span>How do I buy $TSUN?</span>
+                                <i class="fa-solid fa-chevron-down faq-question-icon transition-transform ml-4 shrink-0 text-gray-400"></i>
+                            </button>
+                            <div class="faq-answer px-5 sm:px-6 pb-5 sm:pb-6 text-sm md:text-base text-gray-600 dark:text-gray-300 leading-relaxed pt-2">
+                                The easiest way is directly through <a href="https://app.ston.fi/swap?ft=TON&tt=EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_" target="_blank" rel="noopener noreferrer" class="text-tsun font-bold hover:underline hover:text-pink-600 transition-colors">STON.fi</a>. Just connect your Tonkeeper or MyTonWallet, ensure you have some TON for gas fees, and swap it directly for $TSUN. It's fast, secure, and fully decentralized. For a step‑by‑step guide, visit our <a href="knowledge.html" class="text-pink-500 hover:underline">Knowledge Base</a>.
+                            </div>
+                        </div>
+
+                        <!-- FAQ 3 -->
+                        <div class="faq-item border border-gray-100 dark:border-gray-700 rounded-[1rem] overflow-hidden">
+                            <button class="faq-question w-full flex justify-between items-center text-left py-4 sm:py-5 px-5 sm:px-6 font-bold text-base md:text-lg text-gray-800 dark:text-gray-100 bg-gray-50 dark:bg-gray-800 hover:bg-pink-50 dark:hover:bg-gray-700 transition-colors focus:outline-none min-h-[56px]">
+                                <span>Is the contract publicly auditable / renounced?</span>
+                                <i class="fa-solid fa-chevron-down faq-question-icon transition-transform ml-4 shrink-0 text-gray-400"></i>
+                            </button>
+                            <div class="faq-answer px-5 sm:px-6 pb-5 sm:pb-6 text-sm md:text-base text-gray-600 dark:text-gray-300 leading-relaxed pt-2">
+                                <strong>Yes. Absolutely.</strong> The contract has been strictly audited and fully renounced, meaning the developers have zero control over the code. You can visually verify the renounced status independently on <a href="https://tonviewer.com/EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_" target="_blank" rel="noopener noreferrer" class="text-tsun font-bold hover:underline hover:text-pink-600 transition-colors">Tonviewer</a>. Transparency is our top priority.
+                            </div>
+                        </div>
+
+                        <!-- FAQ 4 -->
+                        <div class="faq-item border border-gray-100 dark:border-gray-700 rounded-[1rem] overflow-hidden">
+                            <button class="faq-question w-full flex justify-between items-center text-left py-4 sm:py-5 px-5 sm:px-6 font-bold text-base md:text-lg text-gray-800 dark:text-gray-100 bg-gray-50 dark:bg-gray-800 hover:bg-pink-50 dark:hover:bg-gray-700 transition-colors focus:outline-none min-h-[56px]">
+                                <span>Where is the liquidity locked?</span>
+                                <i class="fa-solid fa-chevron-down faq-question-icon transition-transform ml-4 shrink-0 text-gray-400"></i>
+                            </button>
+                            <div class="faq-answer px-5 sm:px-6 pb-5 sm:pb-6 text-sm md:text-base text-gray-600 dark:text-gray-300 leading-relaxed pt-2">
+                                100% of our initial liquidity has been locked and permanently blocked using reputable lockers on the TON network (<a href="https://tonraffles.app/lock/EQAaE2H90dF2OomdsrCQ2zMEg-C0UG_Jkt_dijf3-tkdCbQ7" target="_blank" rel="noopener noreferrer" class="text-tsun font-bold hover:underline hover:text-pink-600 transition-colors">TonRaffles</a>). The team holds zero LP tokens. Liquidity pools are designed to minimize risk of malicious removal.
+                            </div>
+                        </div>
+
+                        <!-- FAQ 5 -->
+                        <div class="faq-item border border-gray-100 dark:border-gray-700 rounded-[1rem] overflow-hidden">
+                            <button class="faq-question w-full flex justify-between items-center text-left py-4 sm:py-5 px-5 sm:px-6 font-bold text-base md:text-lg text-gray-800 dark:text-gray-100 bg-gray-50 dark:bg-gray-800 hover:bg-pink-50 dark:hover:bg-gray-700 transition-colors focus:outline-none min-h-[56px]">
+                                <span>How do I play the Tsun Clicker game?</span>
+                                <i class="fa-solid fa-chevron-down faq-question-icon transition-transform ml-4 shrink-0 text-gray-400"></i>
+                            </button>
+                            <div class="faq-answer px-5 sm:px-6 pb-5 sm:pb-6 text-sm md:text-base text-gray-600 dark:text-gray-300 leading-relaxed pt-2">
+                                Simply open our official <a href="https://t.me/tsunonton_bot" target="_blank" rel="noopener noreferrer" class="text-tsun font-bold hover:underline hover:text-pink-600 transition-colors">Telegram Mini-App</a> on your phone or desktop. Start tapping the tsundere mascot to collect points, level up your stats, invite friends, and climb the leaderboards. Tsun Points you earn are for fun and leaderboard placement – they are not a tradable asset. For more details, consult our <a href="knowledge.html" class="text-pink-500 hover:underline">Knowledge Base</a>.
+                            </div>
+                        </div>
+
+                        <!-- FAQ 6 -->
+                        <div class="faq-item border border-gray-100 dark:border-gray-700 rounded-[1rem] overflow-hidden">
+                            <button class="faq-question w-full flex justify-between items-center text-left py-4 sm:py-5 px-5 sm:px-6 font-bold text-base md:text-lg text-gray-800 dark:text-gray-100 bg-gray-50 dark:bg-gray-800 hover:bg-pink-50 dark:hover:bg-gray-700 transition-colors focus:outline-none min-h-[56px]">
+                                <span>When is the Phase 3 airdrop?</span>
+                                <i class="fa-solid fa-chevron-down faq-question-icon transition-transform ml-4 shrink-0 text-gray-400"></i>
+                            </button>
+                            <div class="faq-answer px-5 sm:px-6 pb-5 sm:pb-6 text-sm md:text-base text-gray-600 dark:text-gray-300 leading-relaxed pt-2">
+                                The definitive massive $TSUN airdrop is scheduled for <strong>Q3 2026</strong>. Active players grinding the Telegram clicker who complete in-game tasks and rank high on the leaderboards may receive directly claimable $TSUN tokens straight to their web3 wallets! Please note that any airdrop is a voluntary community reward, not a guaranteed return for playing. Participation in the game does not entitle you to receive tokens.
+                            </div>
+                        </div>
+
+                        <!-- FAQ 6b -->
+                        <div class="faq-item border border-gray-100 dark:border-gray-700 rounded-[1rem] overflow-hidden">
+                            <button class="faq-question w-full flex justify-between items-center text-left py-4 sm:py-5 px-5 sm:px-6 font-bold text-base md:text-lg text-gray-800 dark:text-gray-100 bg-gray-50 dark:bg-gray-800 hover:bg-pink-50 dark:hover:bg-gray-700 transition-colors focus:outline-none min-h-[56px]">
+                                <span>Can I earn real money from the game?</span>
+                                <i class="fa-solid fa-chevron-down faq-question-icon transition-transform ml-4 shrink-0 text-gray-400"></i>
+                            </button>
+                            <div class="faq-answer px-5 sm:px-6 pb-5 sm:pb-6 text-sm md:text-base text-gray-600 dark:text-gray-300 leading-relaxed pt-2">
+                                No. The game is designed for entertainment. Tsun Points are not money and cannot be exchanged for $TSUN or any other asset at this time. Future airdrops are at the team's discretion.
+                            </div>
+                        </div>
+
+                        <!-- FAQ 7 -->
+                        <div class="faq-item border border-gray-100 dark:border-gray-700 rounded-[1rem] overflow-hidden">
+                            <button class="faq-question w-full flex justify-between items-center text-left py-4 sm:py-5 px-5 sm:px-6 font-bold text-base md:text-lg text-gray-800 dark:text-gray-100 bg-gray-50 dark:bg-gray-800 hover:bg-pink-50 dark:hover:bg-gray-700 transition-colors focus:outline-none min-h-[56px]">
+                                <span>What is the total supply and tokenomics?</span>
+                                <i class="fa-solid fa-chevron-down faq-question-icon transition-transform ml-4 shrink-0 text-gray-400"></i>
+                            </button>
+                            <div class="faq-answer px-5 sm:px-6 pb-5 sm:pb-6 text-sm md:text-base text-gray-600 dark:text-gray-300 leading-relaxed pt-2">
+                                There is a highly limited total supply of exactly <strong>1,000,000,000 $TSUN</strong> tokens. Zero taxes (0% buy/sell tax) ensure seamless trading. The majority of the tokens are injected into liquidity, with a dedicated chunk exclusively reserved for the community Airdrop.
+                            </div>
+                        </div>
+
+                        <!-- FAQ 8 -->
+                        <div class="faq-item border border-gray-100 dark:border-gray-700 rounded-[1rem] overflow-hidden">
+                            <button class="faq-question w-full flex justify-between items-center text-left py-4 sm:py-5 px-5 sm:px-6 font-bold text-base md:text-lg text-gray-800 dark:text-gray-100 bg-gray-50 dark:bg-gray-800 hover:bg-pink-50 dark:hover:bg-gray-700 transition-colors focus:outline-none min-h-[56px]">
+                                <span>How is the project protected against rugs?</span>
+                                <i class="fa-solid fa-chevron-down faq-question-icon transition-transform ml-4 shrink-0 text-gray-400"></i>
+                            </button>
+                            <div class="faq-answer px-5 sm:px-6 pb-5 sm:pb-6 text-sm md:text-base text-gray-600 dark:text-gray-300 leading-relaxed pt-2">
+                                The project is designed to minimize risk. The combination of a <strong>renounced contract</strong> and <strong>100% locked initial liquidity</strong> reduces vulnerabilities connected to central control. It is completely community-owned. Read our <a href="risk.html" class="text-pink-500 hover:underline">Risk Disclaimer</a> for more details.
+                            </div>
+                        </div>
+
+                        <!-- FAQ 9 -->
+                        <div class="faq-item border border-gray-100 dark:border-gray-700 rounded-[1rem] overflow-hidden">
+                            <button class="faq-question w-full flex justify-between items-center text-left py-4 sm:py-5 px-5 sm:px-6 font-bold text-base md:text-lg text-gray-800 dark:text-gray-100 bg-gray-50 dark:bg-gray-800 hover:bg-pink-50 dark:hover:bg-gray-700 transition-colors focus:outline-none min-h-[56px]">
+                                <span>Why a Tsundere anime theme?</span>
+                                <i class="fa-solid fa-chevron-down faq-question-icon transition-transform ml-4 shrink-0 text-gray-400"></i>
+                            </button>
+                            <div class="faq-answer px-5 sm:px-6 pb-5 sm:pb-6 text-sm md:text-base text-gray-600 dark:text-gray-300 leading-relaxed pt-2">
+                                The crypto market is harsh - it treats you terribly before randomly showing affection with massive green candles. That's the textbook definition of a Tsundere! We embraced this culture by mixing Web3 meme energy with engaging anime P2E aesthetics.
+                            </div>
+                        </div>
+
+                        <!-- FAQ 10 -->
+                        <div class="faq-item border border-gray-100 dark:border-gray-700 rounded-[1rem] overflow-hidden">
+                            <button class="faq-question w-full flex justify-between items-center text-left py-4 sm:py-5 px-5 sm:px-6 font-bold text-base md:text-lg text-gray-800 dark:text-gray-100 bg-gray-50 dark:bg-gray-800 hover:bg-pink-50 dark:hover:bg-gray-700 transition-colors focus:outline-none min-h-[56px]">
+                                <span>What happens if I connect my wallet?</span>
+                                <i class="fa-solid fa-chevron-down faq-question-icon transition-transform ml-4 shrink-0 text-gray-400"></i>
+                            </button>
+                            <div class="faq-answer px-5 sm:px-6 pb-5 sm:pb-6 text-sm md:text-base text-gray-600 dark:text-gray-300 leading-relaxed pt-2">
+                                Connecting your wallet within the game using official TON Connect protocols is standard practice. It acts strictly to <strong>verify your on-chain ownership</strong> to claim airdrops and sync your scores. The app cannot and will not ever execute unauthorized transactions.
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="text-center mt-10 sm:mt-12 px-2 sm:px-0">
+                    <a href="https://t.me/tsunonton_chat" target="_blank" rel="noopener noreferrer" class="inline-flex w-full sm:w-auto items-center justify-center gap-3 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-white font-bold py-4 sm:py-4 px-8 min-h-[56px] rounded-xl hover:bg-gray-300 dark:hover:bg-gray-700 transition-colors text-base md:text-lg">
+                        <i class="fa-brands fa-rocketchat"></i> Ask in Community Chat
+                    </a>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="bg-gray-900 text-white py-12 border-t-4 border-tsun">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl font-anime mb-6">$TSUN</h2>
-            <div class="flex justify-center gap-6 mb-8">
-                <a href="https://x.com/tsunonton" class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center hover:bg-tsun transition-colors text-xl" aria-label="Twitter">
-                    <i class="fa-brands fa-x"></i>
-                </a>
-                <a href="https://t.me/tsunonton" class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center hover:bg-tsun transition-colors text-xl" aria-label="Telegram">
-                    <i class="fa-brands fa-telegram"></i>
-                </a>
+    <!-- FOOTER -->
+    <footer class="bg-gray-950 text-white py-12 sm:py-16 md:py-20 border-t-[8px] border-tsun w-full px-4 sm:px-6 lg:px-8">
+        <div class="container mx-auto xl:max-w-7xl">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-10 md:gap-14 mb-10 sm:mb-12 pb-10 sm:pb-12 border-b border-gray-800/80 w-full text-center md:text-left">
+                
+                <div class="w-full md:w-auto flex flex-col items-center md:items-start max-w-sm mx-auto md:mx-0">
+                    <h2 class="text-3xl sm:text-4xl font-anime mb-3 sm:mb-4 tracking-wider">$TSUN</h2>
+                    <p class="text-gray-400 text-sm sm:text-base leading-relaxed">The foremost Anime GameFi economy built transparently and securely continuously within the TON Blockchain boundaries.</p>
+                </div>
+                
+                <div class="flex flex-col sm:flex-row flex-wrap justify-center w-full md:w-auto gap-4 sm:gap-5">
+                    <a href="https://app.ston.fi/swap?ft=TON&tt=EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto bg-gray-800 hover:bg-pink-600 px-6 py-4 sm:py-3 min-h-[48px] justify-center items-center flex rounded-xl text-sm sm:text-base font-bold transition-colors">STON.fi</a>
+                    <a href="https://tonviewer.com/EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto bg-gray-800 hover:bg-blue-600 px-6 py-4 sm:py-3 min-h-[48px] justify-center items-center flex rounded-xl text-sm sm:text-base font-bold transition-colors">Tonviewer</a>
+                    <a href="https://dexscreener.com/ton/EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto bg-gray-800 hover:bg-green-600 px-6 py-4 sm:py-3 min-h-[48px] justify-center items-center flex rounded-xl text-sm sm:text-base font-bold transition-colors">DexScreener</a>
+                </div>
+
+                <div class="flex justify-center gap-6 mt-4 md:mt-0">
+                    <a href="https://x.com/tsunonton" target="_blank" rel="noopener noreferrer" class="w-14 h-14 bg-gray-800 text-gray-300 rounded-full flex items-center justify-center hover:bg-tsun hover:text-white transition-transform transform hover:scale-110 text-xl md:text-2xl" aria-label="Twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="https://t.me/tsunonton" target="_blank" rel="noopener noreferrer" class="w-14 h-14 bg-gray-800 text-gray-300 rounded-full flex items-center justify-center hover:bg-tsun hover:text-white transition-transform transform hover:scale-110 text-xl md:text-2xl" aria-label="Telegram Channel">
+                        <i class="fa-brands fa-telegram"></i>
+                    </a>
+                </div>
             </div>
-            <p class="text-gray-500 text-sm mb-4">
-                $TSUN is a utility token for the Tsun clicker game. <br>
-                Crypto investments carry high risk.
-            </p>
-            <p class="text-gray-700 text-xs">
-                &copy; 2025 Tsun On TON. All rights reserved.
-            </p>
+
+            <div class="flex flex-col items-center w-full px-2 text-center text-gray-500 text-xs sm:text-sm gap-3">
+                <p class="max-w-2xl leading-relaxed">
+                    Disclaimer: $TSUN is a utility/meme token with no guaranteed value, intended solely for entertainment purposes within the Tsun On TON ecosystem, and is not a financial instrument. Cryptocurrency investments suffer from high volatility. In-game points have no cash value. Play responsibly. Must be 18+.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mt-2 flex-wrap">
+                    <a href="privacy.html" class="hover:text-pink-400 transition-colors underline decoration-gray-700 underline-offset-4">Privacy Policy</a>
+                    <a href="terms.html" class="hover:text-pink-400 transition-colors underline decoration-gray-700 underline-offset-4">Terms of Service</a>
+                    <a href="risk.html" class="hover:text-pink-400 transition-colors underline decoration-gray-700 underline-offset-4">Risk Disclaimer</a>
+                    <a href="cookies.html" class="hover:text-pink-400 transition-colors underline decoration-gray-700 underline-offset-4">Cookie Policy</a>
+                    <a href="knowledge.html" class="hover:text-pink-400 transition-colors underline decoration-gray-700 underline-offset-4">Knowledge Base</a>
+                </div>
+                <p class="font-bold text-gray-600">&copy; 2026 Tsun On TON. Verified Contract. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
-    <script src="/static/js/app.min.js" defer></script>
+    <script src="./static/js/app.js" defer></script>
 
+    <!-- Cookie Banner -->
+    <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 z-[100] bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 shadow-[0_-10px_40px_-15px_rgba(0,0,0,0.1)] p-4 sm:p-5 translate-y-full transition-transform duration-500 ease-in-out font-sans">
+        <div class="container mx-auto max-w-7xl flex flex-col sm:flex-row items-center justify-between gap-4 px-2">
+            <p class="text-sm text-gray-600 dark:text-gray-300 text-center sm:text-left leading-relaxed">
+                This site uses essential cookies for functionality. By continuing, you agree to their use. For more details, refer to our <a href="cookies.html" class="dark:text-pink-400 text-pink-500 hover:text-pink-600 underline font-semibold transition-colors">Cookie Policy</a>.
+            </p>
+            <button id="accept-cookies" class="bg-tsun hover:bg-pink-600 text-white px-6 w-full sm:w-auto py-2.5 rounded-xl font-bold transition-all transform hover:scale-105 shadow-md shrink-0">
+                Accept
+            </button>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const banner = document.getElementById('cookie-banner');
+            const acceptBtn = document.getElementById('accept-cookies');
+            
+            if (!localStorage.getItem('tsun_cookie_consent')) {
+                setTimeout(() => {
+                    banner.classList.remove('translate-y-full');
+                }, 1000);
+            }
+
+            acceptBtn.addEventListener('click', () => {
+                localStorage.setItem('tsun_cookie_consent', 'true');
+                banner.classList.add('translate-y-full');
+            });
+        });
+    </script>
 </body>
 </html>

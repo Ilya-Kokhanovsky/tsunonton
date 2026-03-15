@@ -1,6 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /static/css/
-Disallow: /static/js/
 
 Sitemap: https://tsunonton.com/sitemap.xml
