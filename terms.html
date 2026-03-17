@@ -1,9 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms of Service - Tsun On TON</title>
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
     <link rel="stylesheet" href="./static/css/terms.min.css">
 
     <!-- Prevent FOUC -->
@@ -15,37 +23,180 @@
         }
     </script>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans p-8 dark:bg-gray-900 dark:text-gray-100">
-    <div class="max-w-4xl mx-auto bg-white p-10 rounded-2xl shadow-sm dark:bg-gray-800 border border-gray-100 dark:border-gray-700">
-        <h1 class="text-4xl font-bold mb-6 text-gray-900 dark:text-white">Terms of Service</h1>
-        <p class="mb-4 text-sm text-gray-500">Effective Date: March 15, 2026</p>
+<body class="font-body text-gray-800 antialiased selection:bg-tsun selection:text-white dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300 min-h-screen flex flex-col overflow-x-hidden">
 
-        <h2 class="text-2xl font-semibold mt-8 mb-4">1. Acceptance of Terms</h2>
-        <p class="mb-4">By accessing the Tsun On TON website, using the Telegram Mini-App, or interacting with the $TSUN token (collectively, the "Services"), you agree to be bound by these Terms of Service. You must be at least 18 years old or the legal age of majority in your jurisdiction to use these Services.</p>
+<!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-panel bg-white/90 border-b border-pink-200 dark:bg-gray-900/90 dark:border-pink-900/30 transition-colors duration-300">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-4 flex justify-between items-center">
+            
+            <a href="index.html" class="text-xl sm:text-2xl font-anime text-tsun-dark hover:text-tsun dark:text-pink-400 flex items-center gap-2 transition-transform hover:scale-105 flex-shrink-0 z-20">
+                $TSUN
+            </a>
+            
+            <!-- Desktop Nav Layout -->
+            <div class="hidden lg:flex items-center space-x-6 xl:space-x-8 font-bold text-gray-600 dark:text-gray-300">
+                <a href="index.html#about" class="hover:text-tsun dark:hover:text-pink-400 transition-colors">Story</a>
+                <a href="index.html#market" class="hover:text-tsun dark:hover:text-pink-400 transition-colors">Market</a>
+                <a href="index.html#game" class="hover:text-tsun dark:hover:text-pink-400 transition-colors">Game</a>
+                <a href="index.html#tokenomics" class="hover:text-tsun dark:hover:text-pink-400 transition-colors">Stats</a>
+                <a href="index.html#transparency" class="hover:text-tsun dark:hover:text-pink-400 transition-colors">Security</a>
+                <a href="knowledge.html" class="hover:text-tsun dark:hover:text-pink-400 transition-colors">Learn</a>
+                
+                <button id="theme-toggle-desktop" class="w-10 h-10 rounded-full bg-pink-50 dark:bg-gray-800 text-tsun dark:text-pink-400 flex items-center justify-center hover:scale-110 transition-transform" aria-label="Toggle Dark Mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
 
-        <h2 class="text-2xl font-semibold mt-8 mb-4">2. Nature of the Project</h2>
-        <p class="mb-4">Tsun On TON ($TSUN) is strictly an entertainment-focused GameFi ecosystem and meme token operating on the TON blockchain. The $TSUN token has no intrinsic value, is not a financial instrument, and guarantees no financial return. The ecosystem is designed purely for utility within the game and community engagement.</p>
+                <div class="relative group flex items-center">
+                    <button class="buy-now-btn bg-tsun text-white px-6 py-2.5 rounded-full font-bold hover:bg-pink-600 hover:scale-105 transition-all duration-300 shadow-lg shadow-pink-300/50 dark:shadow-none whitespace-nowrap min-h-[44px] flex items-center" data-url="https://app.ston.fi/swap?ft=TON&tt=EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_">
+                        Buy Now
+                    </button>
+                    <div class="absolute top-full right-0 mt-2 w-56 p-2 bg-gray-800 text-white text-xs rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none z-50">
+                        Cryptocurrency investments carry high risk. Prices can be volatile. You could lose all your money. <a href="risk.html" class="text-pink-400 underline pointer-events-auto">Read more</a>
+                    </div>
+                </div>
+            </div>
 
-        <h2 class="text-2xl font-semibold mt-8 mb-4">3. No Financial Advice</h2>
-        <p class="mb-4">The content provided on this website, in our Telegram bot, and in any related communications is for informational and entertainment purposes only. It does not constitute financial, investment, legal, or tax advice. The Tsun On TON team is not a registered financial advisor, and nothing on this site should be interpreted as a recommendation to buy, sell, or hold any cryptocurrency or token. Any statements about potential value or future plans are forward-looking and subject to change without notice.</p>
-        <p class="mb-4">You acknowledge that any decision to acquire $TSUN tokens or participate in the game is made solely by you, based on your own assessment of the risks and merits. We strongly encourage you to do your own research (DYOR) and consult with a qualified professional before engaging with any crypto asset.</p>
-
-        <h2 class="text-2xl font-semibold mt-8 mb-4">4. Assumption of Risk</h2>
-        <p class="mb-4">Engaging with decentralized applications (dApps) and cryptocurrencies involves significant risks. By using our Services, you explicitly acknowledge and assume all risks, including but not volatility of the asset, technological vulnerabilities, smart contract bugs, regulatory changes, and complete loss of funds. You are solely responsible for securing your private keys and wallets.</p>
-
-        <h2 class="text-2xl font-semibold mt-8 mb-4">5. Limitation of Liability</h2>
-        <p class="mb-4">To the maximum extent permitted by applicable law, the Tsun On TON team, its developers, associates, and affiliates shall not be liable for any direct, indirect, incidental, special, consequential, or exemplary damages, including but not limited to financial losses, loss of profits, loss of data, or damages resulting from your use or inability to use the Services or interact with the $TSUN token.</p>
-        <p class="mb-4">The code and smart contracts are provided "as is" and "as available," without warranty of any kind, express or implied.</p>
-
-        <h2 class="text-2xl font-semibold mt-8 mb-4">6. Governing Law and Jurisdiction</h2>
-        <p class="mb-4">These Terms of Service and any separate agreements whereby we provide you Services shall be governed by and construed in accordance with the laws of Norway and applicable regulations of the European Economic Area (EEA), including alignment with MiCA (Markets in Crypto-Assets) standards where applicable. Any disputes arising out of these terms shall be subject to the exclusive jurisdiction of the courts of Norway.</p>
-
-        <h2 class="text-2xl font-semibold mt-8 mb-4">7. Amendments</h2>
-        <p class="mb-4">We reserve the right to amend or modify these terms at any time without prior notice. Continuous use of the Services implies your acceptance of any changes.</p>
-
-        <div class="mt-12 text-center">
-            <a href="index.html" class="text-pink-500 hover:underline">← Back to Home</a>
+            <!-- Mobile Nav Toggles -->
+            <div class="flex items-center gap-3 lg:hidden z-20">
+                <button id="theme-toggle-mobile-top" class="w-10 h-10 rounded-full bg-pink-50 dark:bg-gray-800 text-tsun dark:text-pink-400 flex items-center justify-center hover:scale-110 transition-transform" aria-label="Toggle Dark Mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <button id="mobile-menu-btn" class="w-10 h-10 flex items-center justify-center text-tsun-dark dark:text-white text-2xl" aria-label="Open Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
         </div>
-    </div>
+        
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white/95 dark:bg-gray-900/95 backdrop-blur-xl border-b border-pink-100 dark:border-gray-800 shadow-2xl transition-colors duration-300 lg:hidden">
+            <div class="flex flex-col p-4 sm:p-6 space-y-2 font-bold text-center text-lg text-gray-600 dark:text-gray-200">
+                <a href="index.html#about" class="block w-full py-4 bg-gray-50/50 dark:bg-gray-800/50 hover:bg-pink-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Story</a>
+                <a href="index.html#market" class="block w-full py-4 bg-gray-50/50 dark:bg-gray-800/50 hover:bg-pink-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Market</a>
+                <a href="index.html#game" class="block w-full py-4 bg-gray-50/50 dark:bg-gray-800/50 hover:bg-pink-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Game</a>
+                <a href="index.html#tokenomics" class="block w-full py-4 bg-gray-50/50 dark:bg-gray-800/50 hover:bg-pink-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Stats</a>
+                <a href="index.html#transparency" class="block w-full py-4 bg-gray-50/50 dark:bg-gray-800/50 hover:bg-pink-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Security</a>
+                <a href="knowledge.html" class="block w-full py-4 bg-gray-50/50 dark:bg-gray-800/50 hover:bg-pink-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Learn</a>
+                <div class="mt-4">
+                    <button class="buy-now-btn block w-full bg-tsun text-white py-4 rounded-xl hover:bg-pink-600 transition-all shadow-md" data-url="https://app.ston.fi/swap?ft=TON&tt=EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_">
+                        Buy Now on STON.fi
+                    </button>
+                    <p class="text-xs text-gray-500 mt-2 px-2 leading-tight">
+                        Cryptocurrency investments carry high risk. Prices can be volatile. You could lose all your money. <a href="risk.html" class="text-pink-500 hover:text-pink-600 underline">Read more</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow w-full overflow-hidden pt-28 sm:pt-36 lg:pt-40 pb-16 sm:pb-24">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+            <div class="text-center mb-12 sm:mb-16">
+                <div class="inline-flex items-center justify-center bg-pink-100 dark:bg-gray-800 px-5 py-2 rounded-full text-xs sm:text-sm font-bold text-tsun dark:text-pink-400 mb-6 border border-pink-200 dark:border-gray-700 w-auto">
+                    <i class="fa-solid fa-scale-balanced mr-2"></i> Terms & Rules
+                </div>
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-anime text-gray-900 dark:text-white mb-6 leading-tight">Terms of Service <span class="block text-2xl sm:text-3xl mt-2 text-tsun dark:text-pink-400">Please Read Carefully</span></h1>
+                <p class="text-lg sm:text-xl text-gray-600 dark:text-gray-300 italic max-w-2xl mx-auto px-2">
+                    "These rules keep the community safe and the game fair. If you use the services, you agree to them."
+                </p>
+            </div>
+
+            <div class="bg-white dark:bg-gray-800 rounded-[1.5rem] sm:rounded-[2rem] p-4 sm:p-8 md:p-10 pb-12 sm:pb-16 shadow-sm border border-gray-100 dark:border-gray-700 w-full">
+                <div class="inline-flex items-center gap-2 bg-gray-50 dark:bg-gray-900/50 text-gray-500 dark:text-gray-300 px-3 py-1.5 rounded-full text-xs sm:text-sm font-semibold border border-gray-200 dark:border-gray-700 mb-6">
+                    <i class="fa-solid fa-calendar-days"></i> Effective Date: March 15, 2026
+                </div>
+
+                <div class="flex flex-col gap-6 sm:gap-8">
+                    <section class="bg-gray-50 dark:bg-gray-800/70 p-5 sm:p-6 rounded-[1rem] border border-gray-100 dark:border-gray-700">
+                        <h2 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-3">1. Acceptance of Terms</h2>
+                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed">By accessing the Tsun On TON website, using the Telegram Mini-App, or interacting with the $TSUN token (collectively, the "Services"), you agree to be bound by these Terms of Service. You must be at least 18 years old or the legal age of majority in your jurisdiction to use these Services.</p>
+                    </section>
+
+                    <section class="bg-gray-50 dark:bg-gray-800/70 p-5 sm:p-6 rounded-[1rem] border border-gray-100 dark:border-gray-700">
+                        <h2 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-3">2. Nature of the Project</h2>
+                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed">Tsun On TON ($TSUN) is strictly an entertainment-focused GameFi ecosystem and meme token operating on the TON blockchain. The $TSUN token has no intrinsic value, is not a financial instrument, and guarantees no financial return. The ecosystem is designed purely for utility within the game and community engagement.</p>
+                    </section>
+
+                    <section class="bg-gray-50 dark:bg-gray-800/70 p-5 sm:p-6 rounded-[1rem] border border-gray-100 dark:border-gray-700">
+                        <h2 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-3">3. No Financial Advice</h2>
+                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">The content provided on this website, in our Telegram bot, and in any related communications is for informational and entertainment purposes only. It does not constitute financial, investment, legal, or tax advice. The Tsun On TON team is not a registered financial advisor, and nothing on this site should be interpreted as a recommendation to buy, sell, or hold any cryptocurrency or token. Any statements about potential value or future plans are forward-looking and subject to change without notice.</p>
+                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed">You acknowledge that any decision to acquire $TSUN tokens or participate in the game is made solely by you, based on your own assessment of the risks and merits. We strongly encourage you to do your own research (DYOR) and consult with a qualified professional before engaging with any crypto asset.</p>
+                    </section>
+
+                    <section class="bg-gray-50 dark:bg-gray-800/70 p-5 sm:p-6 rounded-[1rem] border border-gray-100 dark:border-gray-700">
+                        <h2 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-3">4. Assumption of Risk</h2>
+                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed">Engaging with decentralized applications (dApps) and cryptocurrencies involves significant risks. By using our Services, you explicitly acknowledge and assume all risks, including but not volatility of the asset, technological vulnerabilities, smart contract bugs, regulatory changes, and complete loss of funds. You are solely responsible for securing your private keys and wallets.</p>
+                    </section>
+
+                    <section class="bg-gray-50 dark:bg-gray-800/70 p-5 sm:p-6 rounded-[1rem] border border-gray-100 dark:border-gray-700">
+                        <h2 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-3">5. Limitation of Liability</h2>
+                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">To the maximum extent permitted by applicable law, the Tsun On TON team, its developers, associates, and affiliates shall not be liable for any direct, indirect, incidental, special, consequential, or exemplary damages, including but not limited to financial losses, loss of profits, loss of data, or damages resulting from your use or inability to use the Services or interact with the $TSUN token.</p>
+                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed">The code and smart contracts are provided "as is" and "as available," without warranty of any kind, express or implied.</p>
+                    </section>
+
+                    <section class="bg-gray-50 dark:bg-gray-800/70 p-5 sm:p-6 rounded-[1rem] border border-gray-100 dark:border-gray-700">
+                        <h2 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-3">6. Governing Law and Jurisdiction</h2>
+                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed">These Terms of Service and any separate agreements whereby we provide you Services shall be governed by and construed in accordance with the laws of Norway and applicable regulations of the European Economic Area (EEA), including alignment with MiCA (Markets in Crypto-Assets) standards where applicable. Any disputes arising out of these terms shall be subject to the exclusive jurisdiction of the courts of Norway.</p>
+                    </section>
+
+                    <section class="bg-gray-50 dark:bg-gray-800/70 p-5 sm:p-6 rounded-[1rem] border border-gray-100 dark:border-gray-700">
+                        <h2 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-3">7. Amendments</h2>
+                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed">We reserve the right to amend or modify these terms at any time without prior notice. Continuous use of the Services implies your acceptance of any changes.</p>
+                    </section>
+                </div>
+            </div>
+
+            <div class="mt-24 sm:mt-32 text-center mb-16">
+                <a href="index.html" class="inline-flex items-center gap-3 bg-tsun text-white hover:bg-pink-600 px-8 py-4 rounded-xl font-bold transition-transform transform hover:scale-105 shadow-lg shadow-pink-300/50 dark:shadow-none text-lg">
+                    <i class="fa-solid fa-arrow-left"></i> Back to Home
+                </a>
+            </div>
+        </div>
+    </main>
+
+<!-- FOOTER -->
+    <footer class="bg-gray-950 text-white py-12 sm:py-16 md:py-20 border-t-[8px] border-tsun w-full px-4 sm:px-6 lg:px-8">
+        <div class="container mx-auto xl:max-w-7xl">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-10 md:gap-14 mb-10 sm:mb-12 pb-10 sm:pb-12 border-b border-gray-800/80 w-full text-center md:text-left">
+                
+                <div class="w-full md:w-auto flex flex-col items-center md:items-start max-w-sm mx-auto md:mx-0">
+                    <h2 class="text-3xl sm:text-4xl font-anime mb-3 sm:mb-4 tracking-wider">$TSUN</h2>
+                    <p class="text-gray-400 text-sm sm:text-base leading-relaxed">The foremost Anime GameFi economy built transparently and securely continuously within the TON Blockchain boundaries.</p>
+                </div>
+                
+                <div class="flex flex-col sm:flex-row flex-wrap justify-center w-full md:w-auto gap-4 sm:gap-5">
+                    <a href="https://app.ston.fi/swap?ft=TON&tt=EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto bg-gray-800 hover:bg-pink-600 px-6 py-4 sm:py-3 min-h-[48px] justify-center items-center flex rounded-xl text-sm sm:text-base font-bold transition-colors">STON.fi</a>
+                    <a href="https://tonviewer.com/EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto bg-gray-800 hover:bg-blue-600 px-6 py-4 sm:py-3 min-h-[48px] justify-center items-center flex rounded-xl text-sm sm:text-base font-bold transition-colors">Tonviewer</a>
+                    <a href="https://dexscreener.com/ton/EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto bg-gray-800 hover:bg-green-600 px-6 py-4 sm:py-3 min-h-[48px] justify-center items-center flex rounded-xl text-sm sm:text-base font-bold transition-colors">DexScreener</a>
+                </div>
+
+                <div class="flex justify-center gap-6 mt-4 md:mt-0">
+                    <a href="https://x.com/tsunonton" target="_blank" rel="noopener noreferrer" class="w-14 h-14 bg-gray-800 text-gray-300 rounded-full flex items-center justify-center hover:bg-tsun hover:text-white transition-transform transform hover:scale-110 text-xl md:text-2xl" aria-label="Twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="https://t.me/tsunonton" target="_blank" rel="noopener noreferrer" class="w-14 h-14 bg-gray-800 text-gray-300 rounded-full flex items-center justify-center hover:bg-tsun hover:text-white transition-transform transform hover:scale-110 text-xl md:text-2xl" aria-label="Telegram Channel">
+                        <i class="fa-brands fa-telegram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center w-full px-2 text-center text-gray-500 text-xs sm:text-sm gap-3">
+                <p class="max-w-2xl leading-relaxed">
+                    Disclaimer: $TSUN is a utility/meme token with no guaranteed value, intended solely for entertainment purposes within the Tsun On TON ecosystem, and is not a financial instrument. Cryptocurrency investments suffer from high volatility. In-game points have no cash value. Play responsibly. Must be 18+.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mt-2 flex-wrap">
+                    <a href="privacy.html" class="hover:text-pink-400 transition-colors underline decoration-gray-700 underline-offset-4">Privacy Policy</a>
+                    <a href="terms.html" class="hover:text-pink-400 transition-colors underline decoration-gray-700 underline-offset-4">Terms of Service</a>
+                    <a href="risk.html" class="hover:text-pink-400 transition-colors underline decoration-gray-700 underline-offset-4">Risk Disclaimer</a>
+                    <a href="cookies.html" class="hover:text-pink-400 transition-colors underline decoration-gray-700 underline-offset-4">Cookie Policy</a>
+                    <a href="knowledge.html" class="hover:text-pink-400 transition-colors underline decoration-gray-700 underline-offset-4">Knowledge Base</a>
+                </div>
+                <p class="font-bold text-gray-600">&copy; 2026 Tsun On TON. Publicly Verifiable Contract. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./static/js/app.min.js" defer></script>
 </body>
 </html>
