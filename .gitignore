@@ -155,3 +155,6 @@ static/js/themeToggle.js
 bubble-effects.js
 style.css
 bubble-effects.cssstatic/js/chart.js
+
+# Source CSS
+src/css/pages/*.input.css

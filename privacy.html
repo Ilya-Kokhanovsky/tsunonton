@@ -1,66 +1,247 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Tsun On TON</title>
-    <link rel="stylesheet" href="./static/css/output.css">
+    
+    <!-- SEO & Meta Tags - 2026 Standards -->
+    <title>Privacy Policy | Tsunonton – Anime GameFi on TON Blockchain</title>
+    <meta name="description" content="Tsunonton Privacy Policy – we collect only minimal data (Telegram ID + TON wallet). Full GDPR & CCPA compliance. No tracking. Read how we protect your privacy in our anime GameFi project.">
+    <meta name="keywords" content="Tsunonton privacy, TON blockchain privacy, GameFi data protection, wallet address privacy, crypto anime, GDPR rights">
+    <meta name="author" content="Tsunonton Project">
+    <meta name="theme-color" content="#0a0f1c">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tsunonton.com/privacy.html">
+    <meta property="og:title" content="Privacy Policy | Tsunonton – Anime GameFi on TON Blockchain">
+    <meta property="og:description" content="Tsunonton Privacy Policy – we collect only minimal data (Telegram ID + TON wallet). Full GDPR & CCPA compliance. No tracking.">
+    <meta property="og:image" content="https://tsunonton.com/static/img/og-image.jpg">
 
-    <!-- Prevent FOUC -->
-    <script>
-        if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            document.documentElement.classList.add('dark');
-        } else {
-            document.documentElement.classList.remove('dark');
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://tsunonton.com/privacy.html">
+    <meta property="twitter:title" content="Privacy Policy | Tsunonton – Anime GameFi on TON Blockchain">
+    <meta property="twitter:description" content="Tsunonton Privacy Policy – we collect only minimal data (Telegram ID + TON wallet). Full GDPR & CCPA compliance. No tracking.">
+    <meta property="twitter:image" content="https://tsunonton.com/static/img/og-image.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://tsunonton.com/privacy.html">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./static/css/privacy.min.css">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "PrivacyPolicy",
+      "name": "Tsunonton Privacy Policy",
+      "url": "https://tsunonton.com/privacy.html",
+      "dateModified": "2026-03-17",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Tsunonton Project",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://tsunonton.com/static/img/logos/tsun-logo.png"
         }
+      }
+    }
     </script>
+
+    <!-- Fonts & Icons from Main Page for Header -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans p-8 dark:bg-gray-900 dark:text-gray-100">
-    <div class="max-w-4xl mx-auto bg-white p-10 rounded-2xl shadow-sm dark:bg-gray-800 border border-gray-100 dark:border-gray-700">
-        <h1 class="text-4xl font-bold mb-6 text-gray-900 dark:text-white">Privacy Policy</h1>
-        <p class="mb-4 text-sm text-gray-500">Effective Date: March 15, 2026</p>
-        
-        <h2 class="text-2xl font-semibold mt-8 mb-4">1. Data Controller & Contact</h2>
-        <p class="mb-4">Tsun On TON ($TSUN) is a decentralized web3 community project operating on the TON blockchain. No legal entity entity acts as a formal data centralized controller. For privacy-related inquiries, you can contact the community team at our official Telegram handle <strong>@TsunOnTON</strong>.</p>
-        
-        <h2 class="text-2xl font-semibold mt-8 mb-4">2. What Personal Data is Processed</h2>
-        <p class="mb-4">To enable functionality and engagement within our GameFi ecosystem, we process the bare minimum data:</p>
-        <ul class="list-disc pl-6 mb-4">
-            <li><strong>Telegram User ID:</strong> Your unique Telegram identifier, parsed when launching our Telegram mini-app, to distinguish accounts and save in-game progress.</li>
-            <li><strong>TON Wallet Address:</strong> Your public wallet address, should you choose to connect a Web3 wallet, to facilitate token distributions, potential discretionary rewards, and leaderboards.</li>
-            <li><strong>Theme Preference:</strong> A purely localized value stored in your browser's `localStorage` to retain light/dark modes.</li>
-        </ul>
-        <p class="mb-4">We do <strong>not</strong> collect names, email addresses, IP logs mapped to identities, or physical addresses.</p>
+<body class="bg-[#0a0f1c] text-gray-200 font-sans antialiased selection:bg-[#ff69b4] selection:text-white flex flex-col min-h-screen">
 
-        <h2 class="text-2xl font-semibold mt-8 mb-4">3. Legal Basis for Processing</h2>
-        <p class="mb-4">Data is processed based on <strong>Legitimate Interest</strong> to ensure the core game mechanics and <strong>Consent</strong> implicitly provided by engaging the GameFi mini-app, connecting your TON wallet, or relying on strict <a href="cookies.html" class="text-pink-500 hover:underline">essential cookies/localStorage</a>.</p>
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-panel bg-white/90 border-b border-pink-200 dark:bg-gray-900/90 dark:border-pink-900/30 transition-colors duration-300">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-4 flex justify-between items-center">
+            
+            <a href="index.html" class="text-xl sm:text-2xl font-anime text-tsun-dark hover:text-tsun dark:text-pink-400 flex items-center gap-2 transition-transform hover:scale-105 flex-shrink-0 z-20">
+                $TSUN
+            </a>
+            
+            <!-- Desktop Nav Layout -->
+            <div class="hidden lg:flex items-center space-x-6 xl:space-x-8 font-bold text-gray-600 dark:text-gray-300">
+                <a href="index.html#about" class="hover:text-tsun dark:hover:text-pink-400 transition-colors">Story</a>
+                <a href="index.html#market" class="hover:text-tsun dark:hover:text-pink-400 transition-colors">Market</a>
+                <a href="index.html#game" class="hover:text-tsun dark:hover:text-pink-400 transition-colors">Game</a>
+                <a href="index.html#tokenomics" class="hover:text-tsun dark:hover:text-pink-400 transition-colors">Stats</a>
+                <a href="index.html#transparency" class="hover:text-tsun dark:hover:text-pink-400 transition-colors">Security</a>
+                <a href="knowledge.html" class="hover:text-tsun dark:hover:text-pink-400 transition-colors">Learn</a>
+                
+                <button id="theme-toggle-desktop" class="w-10 h-10 rounded-full bg-pink-50 dark:bg-gray-800 text-tsun dark:text-pink-400 flex items-center justify-center hover:scale-110 transition-transform" aria-label="Toggle Dark Mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
 
-        <h2 class="text-2xl font-semibold mt-8 mb-4">4. Users Rights Under GDPR</h2>
-        <p class="mb-4">Subject to technological feasibility (notably regarding immutable blockchains), users residing in the EEA are afforded the right to:</p>
-        <ul class="list-disc pl-6 mb-4">
-            <li><strong>Access:</strong> Inquire about what data is logged under your Telegram ID.</li>
-            <li><strong>Rectification:</strong> Request correction to any localized progress incorrectly attributed.</li>
-            <li><strong>Erasure / Restriction:</strong> Disconnect the bot internally to cease processing new actions.</li>
-            <li><strong>Data Portability:</strong> Obtain a structured report of your GameFi logs mapped to us.</li>
-            <li><strong>Objection:</strong> Refuse future inclusion in aggregated leaderboard exports.</li>
-        </ul>
-        <p class="mb-4">Please contact the team at the address above to exercise these rights.</p>
+                <div class="relative group flex items-center">
+                    <button class="buy-now-btn bg-tsun text-white px-6 py-2.5 rounded-full font-bold hover:bg-pink-600 hover:scale-105 transition-all duration-300 shadow-lg shadow-pink-300/50 dark:shadow-none whitespace-nowrap min-h-[44px] flex items-center" data-url="https://app.ston.fi/swap?ft=TON&tt=EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_">
+                        Buy Now
+                    </button>
+                    <div class="absolute top-full right-0 mt-2 w-56 p-2 bg-gray-800 text-white text-xs rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none z-50">
+                        Cryptocurrency investments carry high risk. Prices can be volatile. You could lose all your money. <a href="risk.html" class="text-pink-400 underline pointer-events-auto">Read more</a>
+                    </div>
+                </div>
+            </div>
 
-        <h2 class="text-2xl font-semibold mt-8 mb-4">5. Blockchain Data Immutability</h2>
-        <p class="mb-4"><strong>Crucial Notice:</strong> Data published directly onto the TON blockchain (including transaction history, token balances, and interacting wallet addresses) is immutable. The Tsun On TON team cannot restrict, alter, or erase data deployed continuously on the global decentralized ledger. By connecting your wallet, you consent to public blockchain accessibility.</p>
-
-        <h2 class="text-2xl font-semibold mt-8 mb-4">6. Data Retention Period</h2>
-        <p class="mb-4">GameFi progression mapping to your Telegram ID is stored as long as you actively participate in the ecosystem. LocalStorage properties last indefinitely until flushed by the user. If you purposefully disconnect the bot, non-blockchain data is set to be naturally superseded. Wallet addresses stored on-chain remain forever.</p>
-
-        <h2 class="text-2xl font-semibold mt-8 mb-4">7. International Transfers</h2>
-        <p class="mb-4">Because we integrate directly with Telegram, structural data logging may be routed through globally distributed Telegram servers outside of the EEA. The project team leverages localized decentralized nodes around the globe. By participating, you accept this decentralized data transfer.</p>
-
-        <h2 class="text-2xl font-semibold mt-8 mb-4">8. Automated Decision-Making & Cookies</h2>
-        <p class="mb-4">Tsun On TON does not subject users to automated profiling for financial or legal decisions. We strictly use localized storage (read our <a href="cookies.html" class="text-pink-500 hover:underline">Cookie Policy</a>) and employ no third-party marketing cookies.</p>
-
-        <div class="mt-12 text-center border-t border-gray-100 dark:border-gray-700 pt-6">
-            <a href="index.html" class="text-pink-500 hover:underline font-bold">← Back to Home</a>
+            <!-- Mobile Nav Toggles -->
+            <div class="flex items-center gap-3 lg:hidden z-20">
+                <button id="theme-toggle-mobile-top" class="w-10 h-10 rounded-full bg-pink-50 dark:bg-gray-800 text-tsun dark:text-pink-400 flex items-center justify-center hover:scale-110 transition-transform" aria-label="Toggle Dark Mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <button id="mobile-menu-btn" class="w-10 h-10 flex items-center justify-center text-tsun-dark dark:text-white text-2xl" aria-label="Open Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
         </div>
-    </div>
+        
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white/95 dark:bg-gray-900/95 backdrop-blur-xl border-b border-pink-100 dark:border-gray-800 shadow-2xl transition-colors duration-300 lg:hidden">
+            <div class="flex flex-col p-4 sm:p-6 space-y-2 font-bold text-center text-lg text-gray-600 dark:text-gray-200">
+                <a href="index.html#about" class="block w-full py-4 bg-gray-50/50 dark:bg-gray-800/50 hover:bg-pink-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Story</a>
+                <a href="index.html#market" class="block w-full py-4 bg-gray-50/50 dark:bg-gray-800/50 hover:bg-pink-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Market</a>
+                <a href="index.html#game" class="block w-full py-4 bg-gray-50/50 dark:bg-gray-800/50 hover:bg-pink-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Game</a>
+                <a href="index.html#tokenomics" class="block w-full py-4 bg-gray-50/50 dark:bg-gray-800/50 hover:bg-pink-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Stats</a>
+                <a href="index.html#transparency" class="block w-full py-4 bg-gray-50/50 dark:bg-gray-800/50 hover:bg-pink-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Security</a>
+                <a href="knowledge.html" class="block w-full py-4 bg-gray-50/50 dark:bg-gray-800/50 hover:bg-pink-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Learn</a>
+                <div class="mt-4">
+                    <button class="buy-now-btn block w-full bg-tsun text-white py-4 rounded-xl hover:bg-pink-600 transition-all shadow-md" data-url="https://app.ston.fi/swap?ft=TON&tt=EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_">
+                        Buy Now on STON.fi
+                    </button>
+                    <p class="text-xs text-gray-500 mt-2 px-2 leading-tight">
+                        Cryptocurrency investments carry high risk. Prices can be volatile. You could lose all your money. <a href="risk.html" class="text-pink-500 hover:text-pink-600 underline">Read more</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow pt-28 pb-16 px-4 sm:px-6 lg:px-8">
+        <article class="max-w-4xl mx-auto glass-panel bg-[#111827]/70 p-8 sm:p-12 rounded-3xl border border-[#00ffff]/20 shadow-[0_0_40px_rgba(0,255,255,0.05)] relative overflow-hidden group hover:shadow-[0_0_50px_rgba(255,105,180,0.1)] transition-all duration-500">
+            <!-- Neon Accents -->
+            <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#ff69b4] via-[#00ffff] to-[#00ff9d]"></div>
+            <div class="absolute -top-32 -right-32 w-64 h-64 bg-[#ff69b4] opacity-10 rounded-full blur-[100px] group-hover:opacity-20 transition-opacity duration-700"></div>
+            <div class="absolute -bottom-32 -left-32 w-64 h-64 bg-[#00ffff] opacity-10 rounded-full blur-[100px] group-hover:opacity-20 transition-opacity duration-700"></div>
+            
+            <div class="relative z-10">
+                <header class="mb-12 border-b border-gray-800 pb-8">
+                    <h1 class="text-4xl md:text-5xl font-black mb-4 text-transparent bg-clip-text bg-gradient-to-r from-[#ff69b4] to-[#00ffff] drop-shadow-[0_0_10px_rgba(255,105,180,0.3)]">
+                        Tsunonton Privacy Policy
+                    </h1>
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="px-3 py-1 bg-[#00ff9d]/10 border border-[#00ff9d]/30 text-[#00ff9d] text-xs font-mono rounded-full drop-shadow-[0_0_5px_rgba(0,255,157,0.5)]">Updated: March 17, 2026</span>
+                    </div>
+                    <div class="bg-[#a855f7]/10 border-l-4 border-[#a855f7] p-4 rounded-r-lg mt-6">
+                        <p class="text-lg text-gray-300 italic">"It's not like we *want* your data anyway, b-baka! We collect the absolute minimum tracking needed to make the game work. Don't get the wrong idea!"</p>
+                    </div>
+                </header>
+
+                <div class="prose prose-invert prose-lg max-w-none prose-headings:text-white prose-a:text-[#00ffff] hover:prose-a:text-[#ff69b4] prose-a:transition-colors">
+                    
+                    <h2 class="text-2xl font-bold mt-8 mb-4 flex items-center gap-2 group/h2">
+                        <span class="text-[#a855f7] group-hover/h2:drop-shadow-[0_0_8px_rgba(168,85,247,0.8)] transition-all">#</span> 1. Data Controller & Your Waifu Guides
+                    </h2>
+                    <p>
+                        Welcome to the <strong>Tsunonton Project</strong>, an exclusively community-operated decentralized web3 GameFi ecosystem on the TON blockchain. There is no centralized corporate entity tracking you. The Data Controller (if you want to use boring legal terms) is the collective "Tsunonton Project, operated by the community." If you have any privacy concerns, slide into our DMs at our official Telegram <a href="https://t.me/TsunOnTON" target="_blank" rel="noopener noreferrer" class="font-bold underline decoration-[#ff69b4]">@TsunOnTON</a>.
+                    </p>
+
+                    <h2 class="text-2xl font-bold mt-10 mb-4 flex items-center gap-2 group/h2">
+                        <span class="text-[#00ffff] group-hover/h2:drop-shadow-[0_0_8px_rgba(0,255,255,0.8)] transition-all">#</span> 2. The Minimal Data We Collect (Really, That's It!)
+                    </h2>
+                    <p>Unlike those creepy corporate overlords, we don't care about your real name or your dog's birthday. To power our Telegram Mini App & TON GameFi mechanics, we only collect:</p>
+                    <ul class="list-disc pl-6 mb-4 space-y-2 border-l-2 border-[#ff69b4] ml-2 marker:text-[#ff69b4]">
+                        <li><strong class="text-white">Telegram User ID:</strong> Your unique Telegram number for saving in-game progression.</li>
+                        <li><strong class="text-white">TON Wallet Address:</strong> Only when you actively connect it, so we can send you rewards and log scores on the blockchain.</li>
+                        <li><strong class="text-white">Theme Preference:</strong> A basic string stored locally in your browser (LocalStorage) so you don't go blind opening the app at 3 AM.</li>
+                    </ul>
+                    <div class="font-bold text-[#ff69b4] bg-[#ff69b4]/10 p-5 rounded-xl border border-[#ff69b4]/30 my-8 shadow-[0_0_20px_rgba(255,105,180,0.1)] hover:shadow-[0_0_25px_rgba(255,105,180,0.2)] transition-shadow">
+                        Strictly NO IP address logging. NO email collection. NO KYC. NO third-party targeted advertising trackers. We don't sell your data to anyone. End of story.
+                    </div>
+
+                    <h2 class="text-2xl font-bold mt-10 mb-4 flex items-center gap-2 group/h2">
+                        <span class="text-[#00ff9d] group-hover/h2:drop-shadow-[0_0_8px_rgba(0,255,157,0.8)] transition-all">#</span> 3. Legal Basis (Why We Process Your Data)
+                    </h2>
+                    <p>Under GDPR, UK GDPR, and CCPA/CPRA, we need a legal excuse to process your Telegram ID. We utilize:</p>
+                    <ul class="list-disc pl-6 mb-4 space-y-2 marker:text-[#00ff9d]">
+                        <li><strong class="text-white">Legitimate Interest & Performance of Contract:</strong> To run the GameFi app, maintain leaderboards, and execute core gameplay mechanics.</li>
+                        <li><strong class="text-white">Explicit Consent:</strong> By opening the Mini App or connecting your Web3 wallet, you consent to this localized and blockchain interaction.</li>
+                    </ul>
+
+                    <h2 class="text-2xl font-bold mt-10 mb-4 flex items-center gap-2 group/h2">
+                        <span class="text-red-400 group-hover/h2:drop-shadow-[0_0_8px_rgba(248,113,113,0.8)] transition-all">#</span> 4. Blockchain Immutability & Public Nature of Data
+                    </h2>
+                    <p><strong>Pay Attention:</strong> The TON blockchain is a decentralized, immutable public ledger. Your wallet address, token balances, GameFi transactions, and NFTs are publicly visible to everyone forever.</p>
+                    <p>We cannot delete, alter, or restrict anything written to the blockchain. By participating in Web3 and GameFi data protection protocols, you accept full responsibility for your pseudo-anonymity. <strong class="text-[#00ffff] drop-shadow-[0_0_4px_rgba(0,255,255,0.4)]">No Liability for Blockchain Risks:</strong> The Tsunonton community is not liable for data published permanently on TON.</p>
+
+                    <h2 class="text-2xl font-bold mt-10 mb-4 flex items-center gap-2 group/h2">
+                        <span class="text-[#a855f7] group-hover/h2:drop-shadow-[0_0_8px_rgba(168,85,247,0.8)] transition-all">#</span> 5. Your Unassailable User Rights (GDPR & CCPA)
+                    </h2>
+                    <p>Subject to the absolute limitations of blockchain immutability, you have the right to:</p>
+                    <ul class="list-disc pl-6 mb-4 space-y-2 border-l-2 border-[#00ffff] ml-2 marker:text-[#00ffff]">
+                        <li><strong class="text-white">Access:</strong> Ask us what data we hold (it’s just your Telegram ID).</li>
+                        <li><strong class="text-white">Rectification:</strong> Fix incorrect off-chain data.</li>
+                        <li><strong class="text-white">Erasure / "Right to be Forgotten":</strong> Tell us to wipe your off-chain Telegram ID mapping from our bot servers.</li>
+                        <li><strong class="text-white">Restriction & Objection:</strong> Opt out of our global off-chain leaderboards.</li>
+                        <li><strong class="text-white">Data Portability:</strong> Get an export of your GameFi stats.</li>
+                    </ul>
+                    
+                    <div class="mt-8 bg-gray-800/50 p-6 rounded-2xl border border-gray-700">
+                        <h3 class="text-xl font-semibold mb-3 text-white">How to Exercise Your Rights</h3>
+                        <p class="m-0">To exercise any of these, contact <a href="https://t.me/TsunOnTON" target="_blank" rel="noopener" class="font-bold underline decoration-[#00ffff]">@TsunOnTON</a> on Telegram. Include your Telegram User ID. We process requests within 30 days. No fees, no hassle.</p>
+                    </div>
+
+                    <h2 class="text-2xl font-bold mt-10 mb-4 flex items-center gap-2 group/h2">
+                        <span class="text-[#ff69b4] group-hover/h2:drop-shadow-[0_0_8px_rgba(255,105,180,0.8)] transition-all">#</span> 6. Data Retention Periods & Security
+                    </h2>
+                    <p>We keep your Telegram ID mapping for a <strong>maximum of 3 years</strong> after your last login, or until you manually detach your wallet and request deletion. Our security is top-tier: encrypted server communications, renounced token contracts, and zero centralized SQL databases holding personal identifiers.</p>
+
+                    <h2 class="text-2xl font-bold mt-10 mb-4 flex items-center gap-2 group/h2">
+                        <span class="text-[#00ff9d] group-hover/h2:drop-shadow-[0_0_8px_rgba(0,255,157,0.8)] transition-all">#</span> 7. International Transfers & Global Nodes
+                    </h2>
+                    <p>Tsunonton is global. We route data through Telegram's worldwide servers and localized decentralised TON nodes. While we prioritize European nodes when possible, participating means your standard Telegram/Wallet data may traverse jurisdictions outside the EEA. We rely on Standard Contractual Clauses implicitly upheld by Telegram infrastructure.</p>
+
+                    <h2 class="text-2xl font-bold mt-10 mb-4 flex items-center gap-2 group/h2">
+                        <span class="text-[#00ffff] group-hover/h2:drop-shadow-[0_0_8px_rgba(0,255,255,0.8)] transition-all">#</span> 8. Children’s Privacy (COPPA)
+                    </h2>
+                    <p>Crypto and tsunderes are for adults. Our GameFi ecosystem strictly prohibits users under the age of 13. If you are under 13, close this app immediately. We do not knowingly collect data from children.</p>
+
+                    <h2 class="text-2xl font-bold mt-10 mb-4 flex items-center gap-2 group/h2">
+                        <span class="text-[#a855f7] group-hover/h2:drop-shadow-[0_0_8px_rgba(168,85,247,0.8)] transition-all">#</span> 9. Changes to this Policy
+                    </h2>
+                    <p>We might update this policy when the lawyers yell at us or new 2026 regulations drop. We provide a 30-day notice via our Telegram Announcement channel before critical changes take effect. Continued use means you accept the updated terms.</p>
+
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-[#ff69b4]/20 bg-[#0a0f1c] py-12 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="text-2xl font-black mb-4 text-transparent bg-clip-text bg-gradient-to-r from-[#ff69b4] to-[#00ffff]">
+                Tsunon<span class="text-white">TON</span>
+            </h3>
+            <p class="text-gray-400 mb-6 text-sm max-w-lg mx-auto">
+                The premium anime GameFi project built natively on the TON blockchain. Don't touch our donut. And protect your private keys, idiot.
+            </p>
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="https://t.me/TsunOnTON" target="_blank" class="text-gray-400 hover:text-[#00ffff] hover:drop-shadow-[0_0_5px_rgba(0,255,255,0.8)] transition-all"><span class="sr-only">Telegram</span><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.888-.662 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></a>
+                <a href="https://x.com/tsunonton" target="_blank" class="text-gray-400 hover:text-[#ff69b4] hover:drop-shadow-[0_0_5px_rgba(255,105,180,0.8)] transition-all"><span class="sr-only">Twitter</span><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg></a>
+            </div>
+            <div class="flex flex-wrap justify-center gap-4 text-xs text-gray-500 mb-4">
+                <a href="privacy.html" class="hover:text-[#00ffff] transition-colors">Privacy Policy</a>
+                <a href="terms.html" class="hover:text-[#a855f7] transition-colors">Terms of Service</a>
+                <a href="cookies.html" class="hover:text-[#00ff9d] transition-colors">Cookies</a>
+            </div>
+            <p class="text-xs text-gray-600">&copy; 2026 Tsunonton. All rights reserved on the TON ecosystem.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts (Lazy load for Core Web Vitals) -->
+    <script src="./static/js/app.min.js" defer></script>
 </body>
 </html>
