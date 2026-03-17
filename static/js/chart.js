@@ -18,12 +18,12 @@ export function initChart() {
       labels: [
         "Game Rewards",
         "Community",
-        "Liquidity Locked",
+        "Liquidity Pools (Live on DEX)",
         "Dev/Marketing",
       ],
       datasets: [
         {
-          data: [50, 20, 15, 15],
+          data: [40, 24.4, 17.3, 18.3],
           backgroundColor: ["#ff69b4", "#0EA5E9", "#22c55e", "#a855f7"],
           borderWidth: 2,
           borderColor: isDark ? "#1f2937" : "#ffffff",

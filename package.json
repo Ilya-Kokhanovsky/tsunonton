@@ -7,6 +7,7 @@
     "dev": "tailwindcss -i ./src/input.css -o ./static/css/output.css --watch",
     "build": "tailwindcss -i ./src/input.css -o ./static/css/output.css --minify",
     "build:js": "esbuild static/js/app.js --bundle --minify --outfile=static/js/app.min.js",
+    "obfuscate": "esbuild static/js/app.js --bundle --minify --minify-whitespace --minify-identifiers --minify-syntax --tree-shaking=true --drop:console --drop:debugger --legal-comments=none --format=esm --target=es2020 --outfile=static/js/app.min.js",
     "optimize": "npm run build && npm run build:js"
   },
   "keywords": [],
