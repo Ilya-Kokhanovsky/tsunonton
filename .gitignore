@@ -158,3 +158,27 @@ bubble-effects.cssstatic/js/chart.js
 
 # Source CSS
 src/css/pages/*.input.css
+
+# Ignore all source JavaScript / TypeScript
+**/*.js
+**/*.ts
+**/*.tsx
+**/*.mjs
+**/*.cjs
+
+# Allow tool config files
+!postcss.config.js
+!tailwind.config.js
+!vite.config.js
+!vite.config.mjs
+!vite.config.cjs
+!rollup.config.js
+!esbuild.config.js
+
+# Explicitly allow production minified files
+!**/*.min.js
+!**/*.min.css
+!dist/
+!dist/**/*.min.js
+!build/
+!build/**/*.min.js

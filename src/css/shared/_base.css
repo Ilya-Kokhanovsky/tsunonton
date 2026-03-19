@@ -4,6 +4,10 @@
 
 /* Tsun On TON Custom Styles - Strict Mobile First */
 
+:root {
+    color-scheme: light dark;
+}
+
 /* --- Base & Background --- */
 body {
     background-color: #fff0f5;
@@ -12,6 +16,7 @@ body {
         radial-gradient(rgba(255, 105, 180, 0.15) 1px, #fff0f5 1px);
     background-size: 24px 24px;
     background-position: 0 0, 12px 12px;
+    font-family: 'Nunito', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
 }
 
 /* Force purely responsive width boundaries to avert X-axis overflow on small devices */
@@ -129,6 +134,11 @@ body {
 .faq-item.active .faq-question-icon {
     transform: rotate(180deg);
     color: #ff69b4;
+}
+
+details > summary::marker,
+details > summary::-webkit-details-marker {
+    display: none;
 }
 /* Skeleton Loader */
 .skeleton-box {

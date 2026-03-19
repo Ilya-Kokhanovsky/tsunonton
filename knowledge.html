@@ -8,6 +8,8 @@
     <meta name="keywords" content="Tsunonton knowledge base, TON GameFi guide, Telegram mini app, TON wallet, STON.fi swap, TSUN token, TON blockchain safety">
     <meta name="author" content="Tsun On TON Team">
     <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; form-action 'self'; object-src 'none'; frame-ancestors 'self'; upgrade-insecure-requests; img-src 'self' data: https://tsunonton.com https://placehold.co; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://api.ston.fi https://tonapi.io https://api.geckoterminal.com;">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
         <link rel="canonical" href="https://tsunonton.com/knowledge.html">
 
         <!-- Open Graph -->
@@ -27,80 +29,17 @@
         <meta name="twitter:description" content="Learn TON basics, wallets, DEX swaps, and safe Telegram GameFi play in the Tsunonton Knowledge Base. Clear steps and $TSUN safety tips.">
         <meta name="twitter:image" content="https://tsunonton.com/static/img/mascot-image.webp">
 
-        <!-- Schema.org JSON-LD -->
-        <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@graph": [
-                {
-                    "@type": "Organization",
-                    "@id": "https://tsunonton.com/#organization",
-                    "name": "Tsunonton",
-                    "url": "https://tsunonton.com/",
-                    "logo": "https://tsunonton.com/static/img/favicon.ico",
-                    "sameAs": [
-                        "https://t.me/tsunonton",
-                        "https://t.me/tsunonton_bot",
-                        "https://t.me/tsunonton_chat",
-                        "https://x.com/tsunonton"
-                    ]
-                },
-                {
-                    "@type": "WebPage",
-                    "@id": "https://tsunonton.com/knowledge.html#webpage",
-                    "url": "https://tsunonton.com/knowledge.html",
-                    "name": "Tsunonton Knowledge Base | TON GameFi & Telegram Guide 2026",
-                    "description": "Learn TON basics, wallets, DEX swaps, and safe Telegram GameFi play in the Tsunonton Knowledge Base.",
-                    "isPartOf": {
-                        "@id": "https://tsunonton.com/#organization"
-                    },
-                    "primaryImageOfPage": {
-                        "@type": "ImageObject",
-                        "url": "https://tsunonton.com/static/img/mascot-image.webp"
-                    },
-                    "inLanguage": "en"
-                },
-                {
-                    "@type": "BreadcrumbList",
-                    "@id": "https://tsunonton.com/knowledge.html#breadcrumb",
-                    "itemListElement": [
-                        {
-                            "@type": "ListItem",
-                            "position": 1,
-                            "name": "Home",
-                            "item": "https://tsunonton.com/"
-                        },
-                        {
-                            "@type": "ListItem",
-                            "position": 2,
-                            "name": "Knowledge Base",
-                            "item": "https://tsunonton.com/knowledge.html"
-                        }
-                    ]
-                }
-            ]
-        }
-        </script>
+        <script type="module" src="./static/js/schema/knowledge.min.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="icon" type="image/png" href="/static/img/favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
     <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="./static/css/knowledge.min.css">
     <link rel="stylesheet" href="./static/css/knowledge.min.css">
-    <script>
-        if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            document.documentElement.classList.add('dark');
-        } else {
-            document.documentElement.classList.remove('dark');
-        }
-    </script>
-    <style>
-        details > summary::marker,
-        details > summary::-webkit-details-marker {
-            display: none;
-        }
-    </style>
+    <script type="module" src="./static/js/modules/theme-preload.min.js"></script>
 </head>
 <body class="font-body text-gray-800 antialiased selection:bg-tsun selection:text-white dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300 min-h-screen flex flex-col overflow-x-hidden">
 
@@ -506,24 +445,8 @@
         </div>
     </footer>
 
-    <script src="./static/js/app.min.js" defer></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const backToTopBtn = document.getElementById('back-to-top');
-            window.addEventListener('scroll', () => {
-                if (window.scrollY > 300) {
-                    backToTopBtn.classList.remove('translate-y-20', 'opacity-0');
-                    backToTopBtn.classList.add('translate-y-0', 'opacity-100');
-                } else {
-                    backToTopBtn.classList.add('translate-y-20', 'opacity-0');
-                    backToTopBtn.classList.remove('translate-y-0', 'opacity-100');
-                }
-            });
-            backToTopBtn.addEventListener('click', () => {
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            });
-        });
-    </script>
+    <script type="module" src="./static/js/main.min.js" defer></script>
+    <script type="module" src="./static/js/pages/knowledge.min.js" defer></script>
 
     <!-- RISK MODAL -->
     <div id="risk-modal" class="fixed inset-0 z-[200] flex items-center justify-center hidden">

@@ -9,6 +9,8 @@
     <meta name="keywords" content="Tsunonton, Tsunonton token, TSUN token, TON GameFi, anime TON game, play to earn TON, Telegram clicker, Tsundere, TON blockchain, GameFi">
     <meta name="author" content="Tsun On TON Team">
     <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; form-action 'self'; object-src 'none'; frame-ancestors 'self'; upgrade-insecure-requests; img-src 'self' data: https://tsunonton.com https://placehold.co; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://api.ston.fi https://tonapi.io https://api.geckoterminal.com;">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
 
     <!-- Canonical Link -->
     <link rel="canonical" href="https://tsunonton.com/">
@@ -30,106 +32,7 @@
     <meta name="twitter:description" content="Play Tsunonton ($TSUN), a TON GameFi anime clicker. Tap in Telegram to collect in-game points (no monetary value) and join the community. Crypto is high risk.">
     <meta name="twitter:image" content="https://tsunonton.com/static/img/mascot-image.webp">
 
-    <!-- Schema.org JSON-LD -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-                {
-                    "@type": "Organization",
-                    "@id": "https://tsunonton.com/#organization",
-                    "name": "Tsunonton",
-                    "url": "https://tsunonton.com/",
-                    "logo": "https://tsunonton.com/static/img/favicon.ico",
-                    "sameAs": [
-                        "https://t.me/tsunonton",
-                        "https://t.me/tsunonton_bot",
-                        "https://t.me/tsunonton_chat",
-                        "https://x.com/tsunonton"
-                    ]
-                },
-                {
-                    "@type": "WebPage",
-                    "@id": "https://tsunonton.com/#webpage",
-                    "url": "https://tsunonton.com/",
-                    "name": "Tsunonton Token | TON GameFi Anime Telegram Clicker 2026",
-                    "description": "Play Tsunonton ($TSUN), the TON GameFi anime clicker. Tap in Telegram, earn points, and join the community.",
-                    "isPartOf": {
-                        "@id": "https://tsunonton.com/#organization"
-                    },
-                    "primaryImageOfPage": {
-                        "@type": "ImageObject",
-                        "url": "https://tsunonton.com/static/img/mascot-image.webp"
-                    },
-                    "inLanguage": "en"
-                },
-                {
-                    "@type": "SoftwareApplication",
-                    "@id": "https://tsunonton.com/#game",
-                    "name": "Tsunonton Telegram Clicker",
-                    "applicationCategory": "GameApplication",
-                    "operatingSystem": "Android, iOS, Web",
-                    "url": "https://t.me/tsunonton_bot",
-                    "description": "A community-driven TON GameFi anime clicker. Tap in Telegram to collect in-game points (no monetary value) and join the Tsunonton community.",
-                    "offers": {
-                        "@type": "Offer",
-                        "price": "0",
-                        "priceCurrency": "USD"
-                    }
-                },
-                {
-                    "@type": "BreadcrumbList",
-                    "@id": "https://tsunonton.com/#breadcrumb",
-                    "itemListElement": [
-                        {
-                            "@type": "ListItem",
-                            "position": 1,
-                            "name": "Home",
-                            "item": "https://tsunonton.com/"
-                        }
-                    ]
-                },
-        {
-          "@type": "FAQPage",
-          "@id": "https://tsunonton.com/#faq",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "What is Tsun on TON ($TSUN)?",
-                            "acceptedAnswer": {
-                "@type": "Answer",
-                                "text": "Tsun On TON ($TSUN) is an anime-themed GameFi and clicker project on the TON blockchain. It's not like she wants you to buy or anything, b-baka! By interacting with our Telegram bot, you can collect in-game points (no monetary value) while joining the community."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "How do I buy $TSUN?",
-                            "acceptedAnswer": {
-                "@type": "Answer",
-                                "text": "A common option is STON.fi. Connect your Tonkeeper or MyTonWallet, ensure you have some TON for gas fees, and swap for $TSUN. Always verify the contract address and understand the risks before trading."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Is the contract publicly auditable / renounced?",
-                            "acceptedAnswer": {
-                "@type": "Answer",
-                                "text": "Community reports indicate the contract is renounced; you can verify current status on Tonviewer. Renounced contracts reduce admin control but do not eliminate risks such as bugs, exploits, or market volatility."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "How do I play the Tsun Clicker game?",
-                            "acceptedAnswer": {
-                "@type": "Answer",
-                                "text": "Open our official Telegram Mini-App and tap the tsundere mascot to collect in-game points, level up your stats, invite friends, and climb the leaderboards. Any future rewards are discretionary and not guaranteed."
-              }
-            }
-          ]
-        }
-      ]
-    }
-    </script>
+        <script type="module" src="./static/js/schema/index.min.js" defer></script>
 
     <!-- Preloads & Resources -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -148,16 +51,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
     <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="./static/css/index.min.css">
     <link rel="stylesheet" href="./static/css/index.min.css">
 
-    <!-- Prevent FOUC -->
-    <script>
-        if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            document.documentElement.classList.add('dark');
-        } else {
-            document.documentElement.classList.remove('dark');
-        }
-    </script>
+    <link rel="modulepreload" href="./static/js/main.min.js">
+    <link rel="preload" as="script" href="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js">
+
+    <style>
+        :root { color-scheme: light dark; }
+        body { margin: 0; min-height: 100vh; }
+        .glass-panel { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+    </style>
+
+    <script type="module" src="./static/js/modules/theme-preload.min.js"></script>
 </head>
 <body class="font-body text-gray-800 antialiased selection:bg-tsun selection:text-white dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300 min-h-screen flex flex-col overflow-x-hidden">
 
@@ -349,7 +255,7 @@
                         <!-- TODO: Replace placeholder with actual game screenshot -->
                         <div class="relative w-full h-full">
                             <div class="absolute inset-0 bg-black/30 dark:bg-black/50 rounded-[2.5rem] flex items-center justify-center text-white font-bold text-lg z-10 backdrop-blur-[2px]">Coming Soon</div>
-                            <img src="https://placehold.co/300x600/f8f9fa/a8a8a8?text=App+Screenshot" loading="lazy" alt="Tsunonton game start screen for the Telegram clicker" class="rounded-[2.5rem] w-full block opacity-50">
+                            <img src="https://placehold.co/300x600/f8f9fa/a8a8a8?text=App+Screenshot" loading="lazy" fetchpriority="low" decoding="async" alt="Tsunonton game start screen for the Telegram clicker" class="rounded-[2.5rem] w-full block opacity-50">
                         </div>
                     </div>
                     <div class="mt-6 sm:mt-8 text-center px-2">
@@ -363,7 +269,7 @@
                         <!-- TODO: Replace placeholder with actual game screenshot -->
                         <div class="relative w-full h-full">
                             <div class="absolute inset-0 bg-black/30 dark:bg-black/50 rounded-[2.5rem] flex items-center justify-center text-white font-bold text-lg z-10 backdrop-blur-[2px]">Coming Soon</div>
-                            <img src="https://placehold.co/300x600/f8f9fa/a8a8a8?text=App+Screenshot" loading="lazy" alt="Tsunonton Telegram clicker upgrades screen" class="rounded-[2.5rem] w-full block opacity-50">
+                            <img src="https://placehold.co/300x600/f8f9fa/a8a8a8?text=App+Screenshot" loading="lazy" fetchpriority="low" decoding="async" alt="Tsunonton Telegram clicker upgrades screen" class="rounded-[2.5rem] w-full block opacity-50">
                         </div>
                     </div>
                     <div class="mt-6 sm:mt-8 text-center px-2">
@@ -377,7 +283,7 @@
                         <!-- TODO: Replace placeholder with actual game screenshot -->
                         <div class="relative w-full h-full">
                             <div class="absolute inset-0 bg-black/30 dark:bg-black/50 rounded-[2.5rem] flex items-center justify-center text-white font-bold text-lg z-10 backdrop-blur-[2px]">Coming Soon</div>
-                            <img src="https://placehold.co/300x600/f8f9fa/a8a8a8?text=App+Screenshot" loading="lazy" alt="Tsunonton daily quests and rewards in the TON GameFi mini-app" class="rounded-[2.5rem] w-full block opacity-50">
+                            <img src="https://placehold.co/300x600/f8f9fa/a8a8a8?text=App+Screenshot" loading="lazy" fetchpriority="low" decoding="async" alt="Tsunonton daily quests and rewards in the TON GameFi mini-app" class="rounded-[2.5rem] w-full block opacity-50">
                         </div>
                     </div>
                     <div class="mt-6 sm:mt-8 text-center px-2">
@@ -749,8 +655,8 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
-    <script src="./static/js/app.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js" defer></script>
+    <script type="module" src="./static/js/main.min.js" defer></script>
 
     <!-- Cookie Banner -->
     <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 z-[100] bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 shadow-[0_-10px_40px_-15px_rgba(0,0,0,0.1)] p-4 sm:p-5 translate-y-full transition-transform duration-500 ease-in-out font-sans">

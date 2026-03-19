@@ -5,10 +5,12 @@
   "main": "index.js",
   "scripts": {
     "dev": "npm run dev:css",
-    "build": "npm run build:css:all",
-    "build:js": "esbuild static/js/app.js --bundle --minify --outfile=static/js/app.min.js",
-    "obfuscate": "esbuild static/js/app.js --bundle --minify --minify-whitespace --minify-identifiers --minify-syntax --tree-shaking=true --drop:console --drop:debugger --legal-comments=none --format=esm --target=es2020 --outfile=static/js/app.min.js",
-    "optimize": "npm run build:css:all && npm run build:js",
+    "build": "npm run build:css:all && npm run build:js:obfuscate",
+    "build:js": "vite build",
+    "build:js:obfuscate": "npm run build:js && javascript-obfuscator static/js/main.min.js --output static/js/main.min.js --compact true --control-flow-flattening true --dead-code-injection true --string-array true --string-array-encoding base64 && javascript-obfuscator static/js/modules/theme-preload.min.js --output static/js/modules/theme-preload.min.js --compact true --control-flow-flattening true --dead-code-injection true --string-array true --string-array-encoding base64 && javascript-obfuscator static/js/pages/knowledge.min.js --output static/js/pages/knowledge.min.js --compact true --control-flow-flattening true --dead-code-injection true --string-array true --string-array-encoding base64 && javascript-obfuscator static/js/schema/index.min.js --output static/js/schema/index.min.js --compact true --control-flow-flattening true --dead-code-injection true --string-array true --string-array-encoding base64 && javascript-obfuscator static/js/schema/knowledge.min.js --output static/js/schema/knowledge.min.js --compact true --control-flow-flattening true --dead-code-injection true --string-array true --string-array-encoding base64 && javascript-obfuscator static/js/schema/privacy.min.js --output static/js/schema/privacy.min.js --compact true --control-flow-flattening true --dead-code-injection true --string-array true --string-array-encoding base64 && javascript-obfuscator static/js/schema/cookies.min.js --output static/js/schema/cookies.min.js --compact true --control-flow-flattening true --dead-code-injection true --string-array true --string-array-encoding base64",
+    "obfuscate": "npm run build:js:obfuscate",
+    "optimize": "npm run build:css:all && npm run build:js:obfuscate",
+    "preview": "vite preview",
     "build:css:cookies": "tailwindcss -i ./src/css/pages/cookies.input.css -o ./static/css/cookies.min.css --content \"./cookies.html,./static/js/**/*.js\" --minify",
     "build:css:index": "tailwindcss -i ./src/css/pages/index.input.css -o ./static/css/index.min.css --content \"./index.html,./static/js/**/*.js\" --minify",
     "build:css:knowledge": "tailwindcss -i ./src/css/pages/knowledge.input.css -o ./static/css/knowledge.min.css --content \"./knowledge.html,./static/js/**/*.js\" --minify",
@@ -23,10 +25,13 @@
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.4.22",
+    "baseline-browser-mapping": "^2.10.9",
     "concurrently": "^9.2.1",
     "esbuild": "^0.27.4",
+    "javascript-obfuscator": "^4.2.2",
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.18",
-    "terser": "^5.44.1"
+    "terser": "^5.44.1",
+    "vite": "^6.4.1"
   }
 }
