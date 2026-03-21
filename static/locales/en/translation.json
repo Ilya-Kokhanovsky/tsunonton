@@ -207,9 +207,26 @@
         "title": "<span class=\"text-tsun dark:text-pink-400 font-anime\">09</span> $TSUN Security Best Practices",
         "item1": "<strong>Verify the Contract:</strong> Malicious actors often create fake tokens with the same name. Always ensure you are trading the official address: <code class=\"bg-gray-100 dark:bg-gray-700 px-1.5 py-0.5 rounded text-xs break-all border border-gray-200 dark:border-gray-600 block mt-1\">EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_</code>",
         "item2": "<strong>Official Links Only:</strong> Only click links sourced directly from <em>tsunonton.com</em>, our verified X account, or official Telegram channel.",
-        "item3": "<strong>Ignore Direct Messages (DMs):</strong> Admins or Support will NEVER DM you first. Anyone messaging you offering tech support, \"double airdrops\", or asking you to connect to a \"validation portal\" is a scammer. Block and report them."
+        "item3": "<strong>Ignore Direct Messages (DMs):</strong> Admins or Support will NEVER DM you first. Anyone messaging you offering tech support, \"double airdrops\", or asking you to connect to a \"validation portal\" is a scammer. Block and report them.",
+        "item4": "<strong>Enable 2FA:</strong> Ensure Two-Factor Authentication (a cloud password) is enabled on your Telegram app to protect your account from being hijacked."
+      },
+      "10": {
+        "title": "<span class=\"text-tsun dark:text-pink-400 font-anime\">10</span> TON & GameFi Glossary",
+        "airdropTitle": "Airdrop",
+        "airdropText": "A distribution of cryptocurrency tokens to a large number of wallet addresses, often for free or as a reward for engaging in community tasks.",
+        "dyorTitle": "DYOR",
+        "dyorText": "\"Do Your Own Research\". A standard crypto motto reminding users not to blindly trust what others say and verify facts themselves.",
+        "gasFeeTitle": "Gas Fee",
+        "gasFeeText": "A small network transaction fee paid to validators to process operations on the blockchain. On TON, this is paid in TON coin.",
+        "rugPullTitle": "Rug Pull",
+        "rugPullText": "A scam where developers abandon a project and run away with investors' funds, typically by draining the liquidity pool. Liquidity locks can reduce some risks but do not eliminate all risk.",
+        "smartContractTitle": "Smart Contract",
+        "smartContractText": "Self-executing code on the blockchain that automatically runs when predetermined conditions are met. Jettons (tokens) on TON are controlled by smart contracts."
       }
-    }
+    },
+    "bottomDisclaimer": "Disclaimer: This information is provided for educational and entertainment purposes only and does not constitute financial, investment, legal, tax, or technical advice. Always do your own research before interacting with crypto assets.",
+    "backHome": "<i class=\"fa-solid fa-arrow-left\"></i> Back to Home",
+    "backToTopAria": "Back to top"
   },
   "hero": {
     "title": "Tsunonton Token <span class=\"text-tsun block md:inline mt-2 md:mt-0\">($TSUN)</span>",
@@ -316,7 +333,11 @@
     "q7": "Can I earn real money?",
     "a7": "No. The game is designed for entertainment. Tsun Points are not money and cannot be exchanged for $TSUN or any other asset at this time. Future airdrops are at the team's discretion.",
     "q8": "Why a Tsundere theme?",
-    "a8": "The crypto market is harsh - it treats you terribly before randomly showing affection with massive green candles. That's the textbook definition of a Tsundere! We embraced this culture by mixing Web3 meme energy with engaging anime P2E aesthetics."
+    "a8": "The crypto market is harsh - it treats you terribly before randomly showing affection with massive green candles. That's the textbook definition of a Tsundere! We embraced this culture by mixing Web3 meme energy with engaging anime P2E aesthetics.",
+    "q9": "Why a Tsundere anime theme?",
+    "a9": "Because crypto often feels exactly like a tsundere: first it punishes you, then it randomly rewards you. The theme blends anime culture with community-driven Web3 fun.",
+    "q10": "What happens if I connect my wallet?",
+    "a10": "Connecting your wallet links your public TON address to your game profile via secure wallet protocols. It does not expose your seed phrase or private keys. Any transaction still requires your manual approval in the wallet app."
   },
   "footer": {
     "brandDescription": "The foremost Anime GameFi economy built transparently and securely continuously within the TON Blockchain boundaries.",

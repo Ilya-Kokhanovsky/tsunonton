@@ -207,9 +207,26 @@
         "title": "<span class=\"text-tsun dark:text-pink-400 font-anime\">09</span> Najlepsze praktyki bezpieczeństwa $TSUN",
         "item1": "<strong>Zweryfikuj kontrakt:</strong> Złośliwi aktorzy często tworzą fałszywe tokeny o tej samej nazwie. Zawsze upewnij się, że handlujesz oficjalnym adresem: <code class=\"bg-gray-100 dark:bg-gray-700 px-1.5 py-0.5 rounded text-xs break-all border border-gray-200 dark:border-gray-600 block mt-1\">EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_</code>",
         "item2": "<strong>Tylko oficjalne linki:</strong> Klikaj wyłącznie linki pochodzące bezpośrednio z <em>tsunonton.com</em>, naszego zweryfikowanego konta X lub oficjalnego kanału Telegram.",
-        "item3": "<strong>Ignoruj wiadomości prywatne (DM):</strong> Administratorzy ani pomoc techniczna NIGDY nie napiszą do Ciebie pierwsi. Każdy, kto pisze do Ciebie oferując wsparcie techniczne, „podwójne airdrops” lub prosząc o połączenie z „portalem weryfikacyjnym”, jest oszustem. Zablokuj go i zgłoś."
+        "item3": "<strong>Ignoruj wiadomości prywatne (DM):</strong> Administratorzy ani pomoc techniczna NIGDY nie napiszą do Ciebie pierwsi. Każdy, kto pisze do Ciebie oferując wsparcie techniczne, „podwójne airdrops” lub prosząc o połączenie z „portalem weryfikacyjnym”, jest oszustem. Zablokuj go i zgłoś.",
+        "item4": "<strong>Włącz 2FA:</strong> Upewnij się, że w aplikacji Telegram masz włączone uwierzytelnianie dwuskładnikowe (hasło chmurowe), aby chronić konto przed przejęciem."
+      },
+      "10": {
+        "title": "<span class=\"text-tsun dark:text-pink-400 font-anime\">10</span> Słownik TON i GameFi",
+        "airdropTitle": "Airdrop",
+        "airdropText": "Dystrybucja tokenów kryptowalutowych do dużej liczby adresów portfeli, często za darmo lub jako nagroda za aktywność społecznościową.",
+        "dyorTitle": "DYOR",
+        "dyorText": "\"Do Your Own Research\" (zrób własny research). Popularne motto krypto przypominające, by nie ufać ślepo opiniom innych i samodzielnie weryfikować fakty.",
+        "gasFeeTitle": "Opłata gas",
+        "gasFeeText": "Niewielka opłata sieciowa płacona walidatorom za przetwarzanie operacji na blockchainie. W sieci TON jest opłacana monetą TON.",
+        "rugPullTitle": "Rug Pull",
+        "rugPullText": "Oszustwo, w którym twórcy porzucają projekt i uciekają ze środkami inwestorów, zwykle opróżniając pulę płynności. Blokady płynności mogą zmniejszać część ryzyk, ale nie eliminują ich całkowicie.",
+        "smartContractTitle": "Smart kontrakt",
+        "smartContractText": "Samowykonujący się kod na blockchainie, który uruchamia się automatycznie po spełnieniu określonych warunków. Jettony (tokeny) na TON są kontrolowane przez smart kontrakty."
       }
-    }
+    },
+    "bottomDisclaimer": "Zastrzeżenie: te informacje mają charakter wyłącznie edukacyjny i rozrywkowy i nie stanowią porady finansowej, inwestycyjnej, prawnej, podatkowej ani technicznej. Zawsze przeprowadź własny research przed interakcją z aktywami kryptowalutowymi.",
+    "backHome": "<i class=\"fa-solid fa-arrow-left\"></i> Powrót na stronę główną",
+    "backToTopAria": "Do góry"
   },
   "hero": {
     "title": "Tsunonton Token <span class=\"text-tsun block md:inline mt-2 md:mt-0\">($TSUN)</span>",
@@ -316,7 +333,11 @@
     "q7": "Czy mogę zarobić prawdziwe pieniądze?",
     "a7": "Nie. Gra jest zaprojektowana dla rozrywki. Tsun Points nie są pieniędzmi i nie można ich wymienić na $TSUN ani żaden inny aktyw w tej chwili. Przyszłe airdrops leżą w gestii zespołu.",
     "q8": "Dlaczego motyw tsundere?",
-    "a8": "Rynek kryptowalut jest bezlitosny -  traktuje Cię okropnie, po czym nagle okazuje uczucia ogromnymi zielonymi świecami. To dosłowna definicja tsundere! Embracujemy tę kulturę, mieszając energię memów Web3 z angażującą estetyką anime P2E."
+    "a8": "Rynek kryptowalut jest bezlitosny -  traktuje Cię okropnie, po czym nagle okazuje uczucia ogromnymi zielonymi świecami. To dosłowna definicja tsundere! Embracujemy tę kulturę, mieszając energię memów Web3 z angażującą estetyką anime P2E.",
+    "q9": "Dlaczego motyw anime tsundere?",
+    "a9": "Bo krypto często zachowuje się jak tsundere: najpierw karze, a potem nagle nagradza. Ten motyw łączy kulturę anime z zabawową, społecznościową energią Web3.",
+    "q10": "Co się dzieje po podłączeniu portfela?",
+    "a10": "Połączenie portfela wiąże Twój publiczny adres TON z profilem gry przez bezpieczne protokoły portfelowe. Nie ujawnia to frazy seed ani kluczy prywatnych. Każda transakcja nadal wymaga ręcznego zatwierdzenia w aplikacji portfela."
   },
   "footer": {
     "brandDescription": "Wiodąca gospodarka Anime GameFi zbudowana przejrzyście i bezpiecznie w granicach blockchaina TON.",
