@@ -157,3 +157,34 @@ details > summary::-webkit-details-marker {
   50% { opacity: 0.5; }
   100% { opacity: 1; }
 }
+
+@media (max-width: 767px) {
+    .text-xs {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+    }
+
+    #theme-toggle-mobile-top,
+    #mobile-menu-btn,
+    [data-mobile-lang-trigger] {
+        min-width: 44px;
+        min-height: 44px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .mascot-bounce,
+    .animate-fade-in-up,
+    .skeleton-box {
+        animation: none !important;
+    }
+}

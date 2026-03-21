@@ -16,8 +16,8 @@ module.exports = {
         },
       },
       fontFamily: {
-        anime: ['"Mochiy Pop One"', "sans-serif"],
-        body: ['"Nunito"', "sans-serif"],
+        anime: ['"Mochiy Pop One"', '"Russo One"', "sans-serif"],
+        body: ['"Nunito"', '"Russo One"', "sans-serif"],
       },
     },
   },

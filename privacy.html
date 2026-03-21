@@ -2,7 +2,7 @@
 <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <!-- SEO & Meta Tags - 2026 Standards -->
     <title>Privacy Policy | Tsunonton – Anime GameFi on TON Blockchain</title>
@@ -10,6 +10,8 @@
     <meta name="keywords" content="Tsunonton privacy, TON blockchain privacy, GameFi data protection, wallet address privacy, crypto anime, GDPR rights">
     <meta name="author" content="Tsunonton Project">
     <meta name="theme-color" content="#0a0f1c">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; form-action 'self'; object-src 'none'; frame-ancestors 'self'; upgrade-insecure-requests; img-src 'self' data: https://tsunonton.com https://placehold.co; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; connect-src 'self' https://api.ston.fi https://tonapi.io https://api.geckoterminal.com;">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     
@@ -42,12 +44,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
-    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Nunito:wght@400;600;700;800&family=Russo+One&display=swap" rel="stylesheet">
 
     <!-- Styles -->
     <link rel="preload" as="style" href="./static/css/privacy.min.css">
     <link rel="stylesheet" href="./static/css/privacy.min.css">
     <script type="module" src="./static/js/modules/theme-preload.min.js"></script>
+
 </head>
 <body class="font-body text-gray-800 antialiased selection:bg-tsun selection:text-white dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300 min-h-screen flex flex-col overflow-x-hidden">
 
@@ -61,22 +64,24 @@
             
             <!-- Desktop Nav Layout -->
             <div class="hidden lg:flex items-center space-x-6 xl:space-x-8 font-bold text-gray-600 dark:text-gray-300">
-                <a href="index.html#about" class="hover:text-tsun dark:hover:text-pink-400 transition-colors">Story</a>
-                <a href="index.html#market" class="hover:text-tsun dark:hover:text-pink-400 transition-colors">Market</a>
-                <a href="index.html#game" class="hover:text-tsun dark:hover:text-pink-400 transition-colors">Game</a>
-                <a href="index.html#tokenomics" class="hover:text-tsun dark:hover:text-pink-400 transition-colors">Stats</a>
-                <a href="index.html#transparency" class="hover:text-tsun dark:hover:text-pink-400 transition-colors">Security</a>
-                <a href="knowledge.html" class="hover:text-tsun dark:hover:text-pink-400 transition-colors">Learn</a>
+                <a href="index.html#about" class="hover:text-tsun dark:hover:text-pink-400 transition-colors" data-i18n="nav.story">Story</a>
+                <a href="index.html#market" class="hover:text-tsun dark:hover:text-pink-400 transition-colors" data-i18n="nav.market">Market</a>
+                <a href="index.html#game" class="hover:text-tsun dark:hover:text-pink-400 transition-colors" data-i18n="nav.game">Game</a>
+                <a href="index.html#tokenomics" class="hover:text-tsun dark:hover:text-pink-400 transition-colors" data-i18n="nav.stats">Stats</a>
+                <a href="index.html#transparency" class="hover:text-tsun dark:hover:text-pink-400 transition-colors" data-i18n="nav.security">Security</a>
+                <a href="knowledge.html" class="hover:text-tsun dark:hover:text-pink-400 transition-colors" data-i18n="nav.learn">Learn</a>
                 
-                <button id="theme-toggle-desktop" class="w-10 h-10 rounded-full bg-pink-50 dark:bg-gray-800 text-tsun dark:text-pink-400 flex items-center justify-center hover:scale-110 transition-transform" aria-label="Toggle Dark Mode">
+                <div id="language-switcher-desktop" class="flex items-center gap-2"></div>
+
+                <button id="theme-toggle-desktop" class="w-10 h-10 rounded-full bg-pink-50 dark:bg-gray-800 text-tsun dark:text-pink-400 flex items-center justify-center hover:scale-110 transition-transform" aria-label="Toggle Dark Mode" data-i18n-attr="aria-label" data-i18n-attr-aria-label="aria.themeToggle">
                     <i class="fa-solid fa-moon"></i>
                 </button>
 
                 <div class="relative group flex items-center">
-                    <button class="buy-now-btn bg-tsun text-white px-6 py-2.5 rounded-full font-bold hover:bg-pink-600 hover:scale-105 transition-all duration-300 shadow-lg shadow-pink-300/50 dark:shadow-none whitespace-nowrap min-h-[44px] flex items-center" data-url="https://app.ston.fi/swap?ft=TON&tt=EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_">
+                    <button class="buy-now-btn bg-tsun text-white px-6 py-2.5 rounded-full font-bold hover:bg-pink-600 hover:scale-105 transition-all duration-300 shadow-lg shadow-pink-300/50 dark:shadow-none whitespace-nowrap min-h-[44px] flex items-center" data-url="https://app.ston.fi/swap?ft=TON&tt=EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_" data-i18n="nav.buyNow">
                         Buy Now
                     </button>
-                    <div class="absolute top-full right-0 mt-2 w-56 p-2 bg-gray-800 text-white text-xs rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none z-50">
+                    <div class="absolute top-full right-0 mt-2 w-56 p-2 bg-gray-800 text-white text-xs rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none z-50" data-i18n-html="nav.buyTooltip">
                         Cryptocurrency investments carry high risk. Prices can be volatile. You could lose all your money. <a href="risk.html" class="text-pink-400 underline pointer-events-auto">Read more</a>
                     </div>
                 </div>
@@ -84,10 +89,17 @@
 
             <!-- Mobile Nav Toggles -->
             <div class="flex items-center gap-3 lg:hidden z-20">
-                <button id="theme-toggle-mobile-top" class="w-10 h-10 rounded-full bg-pink-50 dark:bg-gray-800 text-tsun dark:text-pink-400 flex items-center justify-center hover:scale-110 transition-transform" aria-label="Toggle Dark Mode">
+                 <!-- Language Switcher Mobile -->
+                 
+                <button data-mobile-lang-trigger class="w-10 h-10 rounded-full bg-pink-50 dark:bg-gray-800 flex items-center justify-center text-lg hover:bg-pink-100 dark:hover:bg-gray-700 transition-colors">
+                    <span id="mobile-lang-flag">🇺🇸</span>
+                </button>
+
+
+                <button id="theme-toggle-mobile-top" class="w-10 h-10 rounded-full bg-pink-50 dark:bg-gray-800 text-tsun dark:text-pink-400 flex items-center justify-center hover:scale-110 transition-transform" aria-label="Toggle Dark Mode" data-i18n-attr="aria-label" data-i18n-attr-aria-label="aria.themeToggle">
                     <i class="fa-solid fa-moon"></i>
                 </button>
-                <button id="mobile-menu-btn" class="w-10 h-10 flex items-center justify-center text-tsun-dark dark:text-white text-2xl" aria-label="Open Menu">
+                <button id="mobile-menu-btn" class="w-10 h-10 flex items-center justify-center text-tsun-dark dark:text-white text-2xl" aria-label="Open Menu" data-i18n-attr="aria-label" data-i18n-attr-aria-label="aria.openMenu">
                     <i class="fa-solid fa-bars"></i>
                 </button>
             </div>
@@ -95,18 +107,22 @@
         
         <!-- Mobile Dropdown Menu -->
         <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white/95 dark:bg-gray-900/95 backdrop-blur-xl border-b border-pink-100 dark:border-gray-800 shadow-2xl transition-colors duration-300 lg:hidden">
+            <div id="mobile-lang-panel" class="hidden border-b border-gray-100 dark:border-gray-800 bg-gray-50 dark:bg-gray-800/50">
+                <div id="mobile-lang-switcher" class="grid grid-cols-2 gap-2 p-4"></div>
+            </div>
+
             <div class="flex flex-col p-4 sm:p-6 space-y-2 font-bold text-center text-lg text-gray-600 dark:text-gray-200">
-                <a href="index.html#about" class="block w-full py-4 bg-gray-50/50 dark:bg-gray-800/50 hover:bg-pink-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Story</a>
-                <a href="index.html#market" class="block w-full py-4 bg-gray-50/50 dark:bg-gray-800/50 hover:bg-pink-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Market</a>
-                <a href="index.html#game" class="block w-full py-4 bg-gray-50/50 dark:bg-gray-800/50 hover:bg-pink-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Game</a>
-                <a href="index.html#tokenomics" class="block w-full py-4 bg-gray-50/50 dark:bg-gray-800/50 hover:bg-pink-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Stats</a>
-                <a href="index.html#transparency" class="block w-full py-4 bg-gray-50/50 dark:bg-gray-800/50 hover:bg-pink-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Security</a>
-                <a href="knowledge.html" class="block w-full py-4 bg-gray-50/50 dark:bg-gray-800/50 hover:bg-pink-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Learn</a>
+                <a href="index.html#about" class="block w-full py-4 bg-gray-50/50 dark:bg-gray-800/50 hover:bg-pink-50 dark:hover:bg-gray-800 rounded-xl transition-colors" data-i18n="nav.story">Story</a>
+                <a href="index.html#market" class="block w-full py-4 bg-gray-50/50 dark:bg-gray-800/50 hover:bg-pink-50 dark:hover:bg-gray-800 rounded-xl transition-colors" data-i18n="nav.market">Market</a>
+                <a href="index.html#game" class="block w-full py-4 bg-gray-50/50 dark:bg-gray-800/50 hover:bg-pink-50 dark:hover:bg-gray-800 rounded-xl transition-colors" data-i18n="nav.game">Game</a>
+                <a href="index.html#tokenomics" class="block w-full py-4 bg-gray-50/50 dark:bg-gray-800/50 hover:bg-pink-50 dark:hover:bg-gray-800 rounded-xl transition-colors" data-i18n="nav.stats">Stats</a>
+                <a href="index.html#transparency" class="block w-full py-4 bg-gray-50/50 dark:bg-gray-800/50 hover:bg-pink-50 dark:hover:bg-gray-800 rounded-xl transition-colors" data-i18n="nav.security">Security</a>
+                <a href="knowledge.html" class="block w-full py-4 bg-gray-50/50 dark:bg-gray-800/50 hover:bg-pink-50 dark:hover:bg-gray-800 rounded-xl transition-colors" data-i18n="nav.learn">Learn</a>
                 <div class="mt-4">
-                    <button class="buy-now-btn block w-full bg-tsun text-white py-4 rounded-xl hover:bg-pink-600 transition-all shadow-md" data-url="https://app.ston.fi/swap?ft=TON&tt=EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_">
+                    <button class="buy-now-btn block w-full bg-tsun text-white py-4 rounded-xl hover:bg-pink-600 transition-all shadow-md" data-url="https://app.ston.fi/swap?ft=TON&tt=EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_" data-i18n="nav.buyNowMobile">
                         Buy Now on STON.fi
                     </button>
-                    <p class="text-xs text-gray-500 mt-2 px-2 leading-tight">
+                    <p class="text-xs text-gray-500 mt-2 px-2 leading-tight" data-i18n-html="hero.riskNote">
                         Cryptocurrency investments carry high risk. Prices can be volatile. You could lose all your money. <a href="risk.html" class="text-pink-500 hover:text-pink-600 underline">Read more</a>
                     </p>
                 </div>
@@ -118,44 +134,45 @@
     <main class="flex-grow w-full overflow-hidden pt-28 sm:pt-36 lg:pt-40 pb-16 sm:pb-24">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
             <div class="text-center mb-12 sm:mb-16">
-                <div class="inline-flex items-center justify-center bg-pink-100 dark:bg-gray-800 px-5 py-2 rounded-full text-xs sm:text-sm font-bold text-tsun dark:text-pink-400 mb-6 border border-pink-200 dark:border-gray-700 w-auto">
+                <div class="inline-flex items-center justify-center bg-pink-100 dark:bg-gray-800 px-5 py-2 rounded-full text-xs sm:text-sm font-bold text-tsun dark:text-pink-400 mb-6 border border-pink-200 dark:border-gray-700 w-auto" data-i18n-html="privacyPage.badge">
                     <i class="fa-solid fa-user-shield mr-2"></i> Privacy Promise
                 </div>
-                <h1 class="text-4xl sm:text-5xl md:text-6xl font-anime text-gray-900 dark:text-white mb-6 leading-tight">Tsunonton Privacy Policy <span class="block text-2xl sm:text-3xl mt-2 text-tsun dark:text-pink-400">Minimal Data, Maximum Respect</span></h1>
-                <p class="text-lg sm:text-xl text-gray-600 dark:text-gray-300 italic max-w-2xl mx-auto px-2">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-anime text-gray-900 dark:text-white mb-6 leading-tight" data-i18n-html="privacyPage.title">Tsunonton Privacy Policy <span class="block text-2xl sm:text-3xl mt-2 text-tsun dark:text-pink-400">Minimal Data, Maximum Respect</span></h1>
+                <p class="text-lg sm:text-xl text-gray-600 dark:text-gray-300 italic max-w-2xl mx-auto px-2" data-i18n="privacyPage.quote">
                     "It's not like we want your data anyway, b-baka! We aim to collect only the minimum needed to make the game work. Don't get the wrong idea!"
                 </p>
-                <div class="bg-pink-50/80 dark:bg-gray-800/80 border border-pink-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 rounded-2xl px-4 sm:px-5 py-3 sm:py-4 text-xs sm:text-sm leading-relaxed max-w-2xl mx-auto mt-5">
+                <div class="bg-pink-50/80 dark:bg-gray-800/80 border border-pink-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 rounded-2xl px-4 sm:px-5 py-3 sm:py-4 text-xs sm:text-sm leading-relaxed max-w-2xl mx-auto mt-5" data-i18n-html="privacyPage.legalNotice">
                     <strong class="text-tsun">Legal Notice:</strong> This policy is informational and may be updated. It is not legal advice. If you have questions about your rights, contact us.
                 </div>
             </div>
 
             <div class="bg-white dark:bg-gray-800 rounded-[1.5rem] sm:rounded-[2rem] p-4 sm:p-8 md:p-10 pb-12 sm:pb-16 shadow-sm border border-gray-100 dark:border-gray-700 w-full">
-                <div class="inline-flex items-center gap-2 bg-gray-50 dark:bg-gray-900/50 text-gray-500 dark:text-gray-300 px-3 py-1.5 rounded-full text-xs sm:text-sm font-semibold border border-gray-200 dark:border-gray-700 mb-6">
+                <div class="inline-flex items-center gap-2 bg-gray-50 dark:bg-gray-900/50 text-gray-500 dark:text-gray-300 px-3 py-1.5 rounded-full text-xs sm:text-sm font-semibold border border-gray-200 dark:border-gray-700 mb-6" data-i18n-html="privacyPage.effectiveDate">
                     <i class="fa-solid fa-calendar-days"></i> Effective Date: March 17, 2026
                 </div>
 
                 <div class="flex flex-col gap-6 sm:gap-8">
                     <section class="bg-gray-50 dark:bg-gray-800/70 p-5 sm:p-6 rounded-[1rem] border border-gray-100 dark:border-gray-700">
-                        <h2 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-3">1. Data Controller & Your Waifu Guides</h2>
-                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed">Welcome to the <strong>Tsunonton Project</strong>, a community-operated decentralized GameFi ecosystem on the TON blockchain. We do not operate a centralized data brokerage. The Data Controller (legal term) is the community-operated project, and we coordinate through our official Telegram <a href="https://t.me/TsunOnTON" target="_blank" rel="noopener noreferrer" class="text-tsun dark:text-pink-400 hover:text-pink-600">@TsunOnTON</a> for privacy questions.</p>
+                        <h2 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-3" data-i18n="privacyPage.sec1Title">1. Data Controller & Your Waifu Guides</h2>
+                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed" data-i18n-html="privacyPage.sec1Text">Welcome to the <strong>Tsunonton Project</strong>, a community-operated decentralized GameFi ecosystem on the TON blockchain. We do not operate a centralized data brokerage. The Data Controller (legal term) is the community-operated project, and we coordinate through our official Telegram <a href="https://t.me/TsunOnTON" target="_blank" rel="noopener noreferrer" class="text-tsun dark:text-pink-400 hover:text-pink-600">@TsunOnTON</a> for privacy questions.</p>
                     </section>
 
                     <section class="bg-gray-50 dark:bg-gray-800/70 p-5 sm:p-6 rounded-[1rem] border border-gray-100 dark:border-gray-700">
-                        <h2 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-3">2. The Minimal Data We Collect (Really, That's It!)</h2>
-                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">Unlike those creepy corporate overlords, we do not collect your real name or your dog's birthday. To power our Telegram Mini App & TON GameFi mechanics, we collect only:</p>
+                        <h2 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-3" data-i18n="privacyPage.sec2Title">2. The Minimal Data We Collect (Really, That's It!)</h2>
+                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-4" data-i18n="privacyPage.sec2Text">Unlike those creepy corporate overlords, we do not collect your real name or your dog's birthday. To power our Telegram Mini App & TON GameFi mechanics, we collect only:</p>
                         <ul class="list-disc pl-5 space-y-2 marker:text-tsun text-gray-600 dark:text-gray-300">
-                            <li><strong>Telegram User ID:</strong> Your unique Telegram ID for saving in-game progression and account integrity.</li>
-                            <li><strong>TON Wallet Address:</strong> Only when you actively connect it, so we can enable optional on-chain features and community rewards. Rewards, if any, are discretionary and not guaranteed.</li>
-                            <li><strong>Theme Preference:</strong> A basic string stored locally in your browser (LocalStorage) to keep your chosen theme.</li>
+                            <li data-i18n-html="privacyPage.sec2Item1"><strong>Telegram User ID:</strong> Your unique Telegram ID for saving in-game progression and account integrity.</li>
+                            <li data-i18n-html="privacyPage.sec2Item2"><strong>TON Wallet Address:</strong> Only when you actively connect it, so we can enable optional on-chain features and community rewards. Rewards, if any, are discretionary and not guaranteed.</li>
+                            <li data-i18n-html="privacyPage.sec2Item3"><strong>Theme Preference:</strong> A basic string stored locally in your browser (LocalStorage) to keep your chosen theme.</li>
                         </ul>
-                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed mt-4">We do not knowingly collect data from children. The services are intended for users 18+.</p>
+                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed mt-4" data-i18n="privacyPage.sec2Text2">We do not knowingly collect data from children. The services are intended for users 18+.</p>
                     </section>
                 </div>
             </div>
 
             <div class="mt-24 sm:mt-32 text-center mb-16">
-                <a href="index.html" class="inline-flex items-center gap-3 bg-tsun text-white hover:bg-pink-600 px-8 py-4 rounded-xl font-bold transition-transform transform hover:scale-105 shadow-lg shadow-pink-300/50 dark:shadow-none text-lg">
+                <!-- Reusing generic Back to Home -->
+                <a href="index.html" class="inline-flex items-center gap-3 bg-tsun text-white hover:bg-pink-600 px-8 py-4 rounded-xl font-bold transition-transform transform hover:scale-105 shadow-lg shadow-pink-300/50 dark:shadow-none text-lg" data-i18n-html="cookiesPage.backHome">
                     <i class="fa-solid fa-arrow-left"></i> Back to Home
                 </a>
             </div>
@@ -169,7 +186,7 @@
                 
                 <div class="w-full md:w-auto flex flex-col items-center md:items-start max-w-sm mx-auto md:mx-0">
                     <h2 class="text-3xl sm:text-4xl font-anime mb-3 sm:mb-4 tracking-wider">$TSUN</h2>
-                    <p class="text-gray-400 text-sm sm:text-base leading-relaxed">The foremost Anime GameFi economy built transparently and securely continuously within the TON Blockchain boundaries.</p>
+                    <p class="text-gray-400 text-sm sm:text-base leading-relaxed" data-i18n="footer.desc">The foremost Anime GameFi economy built transparently and securely continuously within the TON Blockchain boundaries.</p>
                 </div>
                 
                 <div class="flex flex-col sm:flex-row flex-wrap justify-center w-full md:w-auto gap-4 sm:gap-5">
@@ -179,27 +196,27 @@
                 </div>
 
                 <div class="flex justify-center gap-6 mt-4 md:mt-0">
-                    <a href="https://x.com/tsunonton" target="_blank" rel="noopener noreferrer" class="w-14 h-14 bg-gray-800 text-gray-300 rounded-full flex items-center justify-center hover:bg-tsun hover:text-white transition-transform transform hover:scale-110 text-xl md:text-2xl" aria-label="Twitter">
+                    <a href="https://x.com/tsunonton" target="_blank" rel="noopener noreferrer" class="w-14 h-14 bg-gray-800 text-gray-300 rounded-full flex items-center justify-center hover:bg-tsun hover:text-white transition-transform transform hover:scale-110 text-xl md:text-2xl" aria-label="Twitter" data-i18n-attr="aria-label" data-i18n-attr-aria-label="aria.twitter">
                         <i class="fa-brands fa-twitter"></i>
                     </a>
-                    <a href="https://t.me/tsunonton" target="_blank" rel="noopener noreferrer" class="w-14 h-14 bg-gray-800 text-gray-300 rounded-full flex items-center justify-center hover:bg-tsun hover:text-white transition-transform transform hover:scale-110 text-xl md:text-2xl" aria-label="Telegram Channel">
+                    <a href="https://t.me/tsunonton" target="_blank" rel="noopener noreferrer" class="w-14 h-14 bg-gray-800 text-gray-300 rounded-full flex items-center justify-center hover:bg-tsun hover:text-white transition-transform transform hover:scale-110 text-xl md:text-2xl" aria-label="Telegram Channel" data-i18n-attr="aria-label" data-i18n-attr-aria-label="aria.telegram">
                         <i class="fa-brands fa-telegram"></i>
                     </a>
                 </div>
             </div>
 
             <div class="flex flex-col items-center w-full px-2 text-center text-gray-500 text-xs sm:text-sm gap-3">
-                <p class="max-w-2xl leading-relaxed">
+                <p class="max-w-2xl leading-relaxed" data-i18n="footer.disclaimer">
                     Disclaimer: This site is for entertainment and informational purposes only and does not provide financial, investment, legal, or tax advice. $TSUN is a utility/meme token with no intrinsic value; no guarantees of rewards, price appreciation, or game functionality are made. Renounced contracts and liquidity locks reduce admin control but do not eliminate risks of bugs, exploits, or total loss. Cryptocurrency is highly volatile. In-game points have no monetary value. Must be 18+.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center mt-2 flex-wrap">
-                    <a href="privacy.html" class="hover:text-pink-400 transition-colors underline decoration-gray-700 underline-offset-4">Privacy Policy</a>
-                    <a href="terms.html" class="hover:text-pink-400 transition-colors underline decoration-gray-700 underline-offset-4">Terms of Service</a>
-                    <a href="risk.html" class="hover:text-pink-400 transition-colors underline decoration-gray-700 underline-offset-4">Risk Disclaimer</a>
-                    <a href="cookies.html" class="hover:text-pink-400 transition-colors underline decoration-gray-700 underline-offset-4">Cookie Policy</a>
-                    <a href="knowledge.html" class="hover:text-pink-400 transition-colors underline decoration-gray-700 underline-offset-4">Knowledge Base</a>
+                    <a href="privacy.html" class="hover:text-pink-400 transition-colors underline decoration-gray-700 underline-offset-4" data-i18n="footer.privacy">Privacy Policy</a>
+                    <a href="terms.html" class="hover:text-pink-400 transition-colors underline decoration-gray-700 underline-offset-4" data-i18n="footer.terms">Terms of Service</a>
+                    <a href="risk.html" class="hover:text-pink-400 transition-colors underline decoration-gray-700 underline-offset-4" data-i18n="footer.risk">Risk Disclaimer</a>
+                    <a href="cookies.html" class="hover:text-pink-400 transition-colors underline decoration-gray-700 underline-offset-4" data-i18n="footer.cookies">Cookie Policy</a>
+                    <a href="knowledge.html" class="hover:text-pink-400 transition-colors underline decoration-gray-700 underline-offset-4" data-i18n="footer.knowledge">Knowledge Base</a>
                 </div>
-                <p class="font-bold text-gray-600">&copy; 2026 Tsun On TON. Publicly Verifiable Contract. All rights reserved.</p>
+                <p class="font-bold text-gray-600" data-i18n="footer.rights">&copy; 2026 Tsun On TON. Publicly Verifiable Contract. All rights reserved.</p>
             </div>
         </div>
     </footer>

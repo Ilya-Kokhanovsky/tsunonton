@@ -2,12 +2,14 @@
 <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Tsunonton Cookie Policy | TON GameFi Data & Storage 2026</title>
         <meta name="description" content="Read the Tsunonton cookie policy for TON GameFi and Telegram use. We only store essential preferences for security and UX. No trackers. Learn your choices and controls.">
         <meta name="keywords" content="Tsunonton cookie policy, TON GameFi data, Telegram mini app storage, essential cookies, localStorage, $TSUN privacy">
         <meta name="author" content="Tsunonton Team">
         <meta name="robots" content="index, follow">
+        <meta http-equiv="X-Frame-Options" content="DENY">
+        <meta http-equiv="X-Content-Type-Options" content="nosniff">
         <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; form-action 'self'; object-src 'none'; frame-ancestors 'self'; upgrade-insecure-requests; img-src 'self' data: https://tsunonton.com https://placehold.co; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; connect-src 'self' https://api.ston.fi https://tonapi.io https://api.geckoterminal.com;">
         <meta name="referrer" content="strict-origin-when-cross-origin">
         <link rel="canonical" href="https://tsunonton.com/cookies.html">
@@ -36,12 +38,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
-    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Nunito:wght@400;600;700;800&family=Russo+One&display=swap" rel="stylesheet">
 
     <!-- Styles -->
     <link rel="preload" as="style" href="./static/css/cookies.min.css">
     <link rel="stylesheet" href="./static/css/cookies.min.css">
     <script type="module" src="./static/js/modules/theme-preload.min.js"></script>
+
 </head>
 <body class="font-body text-gray-800 antialiased selection:bg-tsun selection:text-white dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300 min-h-screen flex flex-col overflow-x-hidden">
 
@@ -55,22 +58,24 @@
             
             <!-- Desktop Nav Layout -->
             <div class="hidden lg:flex items-center space-x-6 xl:space-x-8 font-bold text-gray-600 dark:text-gray-300">
-                <a href="index.html#about" class="hover:text-tsun dark:hover:text-pink-400 transition-colors">Story</a>
-                <a href="index.html#market" class="hover:text-tsun dark:hover:text-pink-400 transition-colors">Market</a>
-                <a href="index.html#game" class="hover:text-tsun dark:hover:text-pink-400 transition-colors">Game</a>
-                <a href="index.html#tokenomics" class="hover:text-tsun dark:hover:text-pink-400 transition-colors">Stats</a>
-                <a href="index.html#transparency" class="hover:text-tsun dark:hover:text-pink-400 transition-colors">Security</a>
-                <a href="knowledge.html" class="hover:text-tsun dark:hover:text-pink-400 transition-colors">Learn</a>
+                <a href="index.html#about" class="hover:text-tsun dark:hover:text-pink-400 transition-colors" data-i18n="nav.story">Story</a>
+                <a href="index.html#market" class="hover:text-tsun dark:hover:text-pink-400 transition-colors" data-i18n="nav.market">Market</a>
+                <a href="index.html#game" class="hover:text-tsun dark:hover:text-pink-400 transition-colors" data-i18n="nav.game">Game</a>
+                <a href="index.html#tokenomics" class="hover:text-tsun dark:hover:text-pink-400 transition-colors" data-i18n="nav.stats">Stats</a>
+                <a href="index.html#transparency" class="hover:text-tsun dark:hover:text-pink-400 transition-colors" data-i18n="nav.security">Security</a>
+                <a href="knowledge.html" class="hover:text-tsun dark:hover:text-pink-400 transition-colors" data-i18n="nav.learn">Learn</a>
                 
-                <button id="theme-toggle-desktop" class="w-10 h-10 rounded-full bg-pink-50 dark:bg-gray-800 text-tsun dark:text-pink-400 flex items-center justify-center hover:scale-110 transition-transform" aria-label="Toggle Dark Mode">
+                <button id="theme-toggle-desktop" class="w-10 h-10 rounded-full bg-pink-50 dark:bg-gray-800 text-tsun dark:text-pink-400 flex items-center justify-center hover:scale-110 transition-transform" aria-label="Toggle Dark Mode" data-i18n-attr="aria-label" data-i18n-attr-aria-label="aria.themeToggle">
                     <i class="fa-solid fa-moon"></i>
                 </button>
 
+                <div id="language-switcher-desktop" class="flex items-center gap-2"></div>
+
                 <div class="relative group flex items-center">
-                    <button class="buy-now-btn bg-tsun text-white px-6 py-2.5 rounded-full font-bold hover:bg-pink-600 hover:scale-105 transition-all duration-300 shadow-lg shadow-pink-300/50 dark:shadow-none whitespace-nowrap min-h-[44px] flex items-center" data-url="https://app.ston.fi/swap?ft=TON&tt=EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_">
+                    <button class="buy-now-btn bg-tsun text-white px-6 py-2.5 rounded-full font-bold hover:bg-pink-600 hover:scale-105 transition-all duration-300 shadow-lg shadow-pink-300/50 dark:shadow-none whitespace-nowrap min-h-[44px] flex items-center" data-url="https://app.ston.fi/swap?ft=TON&tt=EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_" data-i18n="nav.buyNow">
                         Buy Now
                     </button>
-                    <div class="absolute top-full right-0 mt-2 w-56 p-2 bg-gray-800 text-white text-xs rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none z-50">
+                    <div class="absolute top-full right-0 mt-2 w-56 p-2 bg-gray-800 text-white text-xs rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none z-50" data-i18n-html="nav.buyTooltip">
                         Cryptocurrency investments carry high risk. Prices can be volatile. You could lose all your money. <a href="risk.html" class="text-pink-400 underline pointer-events-auto">Read more</a>
                     </div>
                 </div>
@@ -78,10 +83,19 @@
 
             <!-- Mobile Nav Toggles -->
             <div class="flex items-center gap-3 lg:hidden z-20">
-                <button id="theme-toggle-mobile-top" class="w-10 h-10 rounded-full bg-pink-50 dark:bg-gray-800 text-tsun dark:text-pink-400 flex items-center justify-center hover:scale-110 transition-transform" aria-label="Toggle Dark Mode">
+                <button id="theme-toggle-mobile-top" class="w-10 h-10 rounded-full bg-pink-50 dark:bg-gray-800 text-tsun dark:text-pink-400 flex items-center justify-center hover:scale-110 transition-transform" aria-label="Toggle Dark Mode" data-i18n-attr="aria-label" data-i18n-attr-aria-label="aria.themeToggle">
                     <i class="fa-solid fa-moon"></i>
                 </button>
-                <button id="mobile-menu-btn" class="w-10 h-10 flex items-center justify-center text-tsun-dark dark:text-white text-2xl" aria-label="Open Menu">
+                <div class="relative" data-lang-switcher>
+                    <button id="lang-toggle-mobile-top" class="w-10 h-10 rounded-full bg-pink-50 dark:bg-gray-800 text-tsun dark:text-pink-400 flex items-center justify-center hover:scale-110 transition-transform font-bold text-xs" data-lang-toggle data-lang-target="lang-menu-mobile" aria-label="Change language" data-i18n-attr="aria-label" data-i18n-attr-aria-label="language.toggleLabel">
+                        <span data-lang-current>🇺🇸</span>
+                    </button>
+                    <div id="lang-menu-mobile" class="hidden absolute right-0 mt-2 w-36 bg-white dark:bg-gray-900 border border-pink-100 dark:border-gray-700 rounded-xl shadow-xl overflow-hidden z-50" data-lang-menu>
+                        <button class="w-full px-4 py-3 text-left text-sm font-bold hover:bg-pink-50 dark:hover:bg-gray-800 transition-colors" data-lang-option data-lang="en" data-i18n="language.english">English</button>
+                        <button class="w-full px-4 py-3 text-left text-sm font-bold hover:bg-pink-50 dark:hover:bg-gray-800 transition-colors" data-lang-option data-lang="ru" data-i18n="language.russian">Russian</button>
+                    </div>
+                </div>
+                <button id="mobile-menu-btn" class="w-10 h-10 flex items-center justify-center text-tsun-dark dark:text-white text-2xl" aria-label="Open Menu" data-i18n-attr="aria-label" data-i18n-attr-aria-label="aria.openMenu">
                     <i class="fa-solid fa-bars"></i>
                 </button>
             </div>
@@ -89,18 +103,22 @@
         
         <!-- Mobile Dropdown Menu -->
         <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white/95 dark:bg-gray-900/95 backdrop-blur-xl border-b border-pink-100 dark:border-gray-800 shadow-2xl transition-colors duration-300 lg:hidden">
+            <div id="mobile-lang-panel" class="hidden border-b border-gray-100 dark:border-gray-800 bg-gray-50 dark:bg-gray-800/50">
+                <div id="mobile-lang-switcher" class="grid grid-cols-2 gap-2 p-4"></div>
+            </div>
+
             <div class="flex flex-col p-4 sm:p-6 space-y-2 font-bold text-center text-lg text-gray-600 dark:text-gray-200">
-                <a href="index.html#about" class="block w-full py-4 bg-gray-50/50 dark:bg-gray-800/50 hover:bg-pink-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Story</a>
-                <a href="index.html#market" class="block w-full py-4 bg-gray-50/50 dark:bg-gray-800/50 hover:bg-pink-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Market</a>
-                <a href="index.html#game" class="block w-full py-4 bg-gray-50/50 dark:bg-gray-800/50 hover:bg-pink-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Game</a>
-                <a href="index.html#tokenomics" class="block w-full py-4 bg-gray-50/50 dark:bg-gray-800/50 hover:bg-pink-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Stats</a>
-                <a href="index.html#transparency" class="block w-full py-4 bg-gray-50/50 dark:bg-gray-800/50 hover:bg-pink-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Security</a>
-                <a href="knowledge.html" class="block w-full py-4 bg-gray-50/50 dark:bg-gray-800/50 hover:bg-pink-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Learn</a>
+                <a href="index.html#about" class="block w-full py-4 bg-gray-50/50 dark:bg-gray-800/50 hover:bg-pink-50 dark:hover:bg-gray-800 rounded-xl transition-colors" data-i18n="nav.story">Story</a>
+                <a href="index.html#market" class="block w-full py-4 bg-gray-50/50 dark:bg-gray-800/50 hover:bg-pink-50 dark:hover:bg-gray-800 rounded-xl transition-colors" data-i18n="nav.market">Market</a>
+                <a href="index.html#game" class="block w-full py-4 bg-gray-50/50 dark:bg-gray-800/50 hover:bg-pink-50 dark:hover:bg-gray-800 rounded-xl transition-colors" data-i18n="nav.game">Game</a>
+                <a href="index.html#tokenomics" class="block w-full py-4 bg-gray-50/50 dark:bg-gray-800/50 hover:bg-pink-50 dark:hover:bg-gray-800 rounded-xl transition-colors" data-i18n="nav.stats">Stats</a>
+                <a href="index.html#transparency" class="block w-full py-4 bg-gray-50/50 dark:bg-gray-800/50 hover:bg-pink-50 dark:hover:bg-gray-800 rounded-xl transition-colors" data-i18n="nav.security">Security</a>
+                <a href="knowledge.html" class="block w-full py-4 bg-gray-50/50 dark:bg-gray-800/50 hover:bg-pink-50 dark:hover:bg-gray-800 rounded-xl transition-colors" data-i18n="nav.learn">Learn</a>
                 <div class="mt-4">
-                    <button class="buy-now-btn block w-full bg-tsun text-white py-4 rounded-xl hover:bg-pink-600 transition-all shadow-md" data-url="https://app.ston.fi/swap?ft=TON&tt=EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_">
+                    <button class="buy-now-btn block w-full bg-tsun text-white py-4 rounded-xl hover:bg-pink-600 transition-all shadow-md" data-url="https://app.ston.fi/swap?ft=TON&tt=EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_" data-i18n="nav.buyNowMobile">
                         Buy Now on STON.fi
                     </button>
-                    <p class="text-xs text-gray-500 mt-2 px-2 leading-tight">
+                    <p class="text-xs text-gray-500 mt-2 px-2 leading-tight" data-i18n-html="hero.riskNote">
                         Cryptocurrency investments carry high risk. Prices can be volatile. You could lose all your money. <a href="risk.html" class="text-pink-500 hover:text-pink-600 underline">Read more</a>
                     </p>
                 </div>
@@ -112,57 +130,57 @@
     <main class="flex-grow w-full overflow-hidden pt-28 sm:pt-36 lg:pt-40 pb-16 sm:pb-24">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
             <div class="text-center mb-12 sm:mb-16">
-                <div class="inline-flex items-center justify-center bg-pink-100 dark:bg-gray-800 px-5 py-2 rounded-full text-xs sm:text-sm font-bold text-tsun dark:text-pink-400 mb-6 border border-pink-200 dark:border-gray-700 w-auto">
+                <div class="inline-flex items-center justify-center bg-pink-100 dark:bg-gray-800 px-5 py-2 rounded-full text-xs sm:text-sm font-bold text-tsun dark:text-pink-400 mb-6 border border-pink-200 dark:border-gray-700 w-auto" data-i18n-html="cookiesPage.badge">
                     <i class="fa-solid fa-cookie-bite mr-2"></i> Cookie Guidelines
                 </div>
-                <h1 class="text-4xl sm:text-5xl md:text-6xl font-anime text-gray-900 dark:text-white mb-6 leading-tight">Tsunonton Cookie Policy <span class="block text-2xl sm:text-3xl mt-2 text-tsun dark:text-pink-400">Essential TON GameFi Storage</span></h1>
-                <p class="text-lg sm:text-xl text-gray-600 dark:text-gray-300 italic max-w-2xl mx-auto px-2">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-anime text-gray-900 dark:text-white mb-6 leading-tight" data-i18n-html="cookiesPage.title">Tsunonton Cookie Policy <span class="block text-2xl sm:text-3xl mt-2 text-tsun dark:text-pink-400">Essential TON GameFi Storage</span></h1>
+                <p class="text-lg sm:text-xl text-gray-600 dark:text-gray-300 italic max-w-2xl mx-auto px-2" data-i18n="cookiesPage.quote">
                     "No ad trackers. Only the essentials needed to keep the experience smooth across the site and game."
                 </p>
-                <p class="text-sm sm:text-base text-gray-500 dark:text-gray-400 mt-4 max-w-2xl mx-auto px-2">
+                <p class="text-sm sm:text-base text-gray-500 dark:text-gray-400 mt-4 max-w-2xl mx-auto px-2" data-i18n-html="cookiesPage.intro">
                     We keep your Tsunonton experience clean, community-first, and transparent. For more details on how we handle data, see the <a href="privacy.html" class="text-pink-500 hover:underline">Privacy Policy</a> and <a href="risk.html" class="text-pink-500 hover:underline">Risk Disclaimer</a>.
                 </p>
-                <div class="bg-pink-50/80 dark:bg-gray-800/80 border border-pink-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 rounded-2xl px-4 sm:px-5 py-3 sm:py-4 text-xs sm:text-sm leading-relaxed max-w-2xl mx-auto mt-5">
+                <div class="bg-pink-50/80 dark:bg-gray-800/80 border border-pink-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 rounded-2xl px-4 sm:px-5 py-3 sm:py-4 text-xs sm:text-sm leading-relaxed max-w-2xl mx-auto mt-5" data-i18n-html="cookiesPage.legalNotice">
                     <strong class="text-tsun">Legal Notice:</strong> This page explains essential storage only and is not legal advice. We may update storage practices as the app evolves.
                 </div>
             </div>
 
             <div class="bg-white dark:bg-gray-800 rounded-[1.5rem] sm:rounded-[2rem] p-4 sm:p-8 md:p-10 pb-12 sm:pb-16 shadow-sm border border-gray-100 dark:border-gray-700 w-full">
-                <div class="inline-flex items-center gap-2 bg-gray-50 dark:bg-gray-900/50 text-gray-500 dark:text-gray-300 px-3 py-1.5 rounded-full text-xs sm:text-sm font-semibold border border-gray-200 dark:border-gray-700 mb-6">
+                <div class="inline-flex items-center gap-2 bg-gray-50 dark:bg-gray-900/50 text-gray-500 dark:text-gray-300 px-3 py-1.5 rounded-full text-xs sm:text-sm font-semibold border border-gray-200 dark:border-gray-700 mb-6" data-i18n-html="cookiesPage.effectiveDate">
                     <i class="fa-solid fa-calendar-days"></i> Effective Date: March 15, 2026
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mb-8">
                     <div class="bg-gray-50 dark:bg-gray-800/70 p-4 sm:p-5 rounded-[1rem] border border-gray-100 dark:border-gray-700">
-                        <h2 class="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-2">Quick Summary</h2>
-                        <p class="text-sm sm:text-base text-gray-600 dark:text-gray-300">We only store the minimum needed for the Tsunonton website and Telegram mini-app to work: theme preference, consent, and secure session checks. No ad trackers. No cross-site profiling to our knowledge.</p>
+                        <h2 class="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-2" data-i18n="cookiesPage.summaryTitle">Quick Summary</h2>
+                        <p class="text-sm sm:text-base text-gray-600 dark:text-gray-300" data-i18n="cookiesPage.summaryText">We only store the minimum needed for the Tsunonton website and Telegram mini-app to work: theme preference, consent, and secure session checks. No ad trackers. No cross-site profiling to our knowledge.</p>
                     </div>
                     <div class="bg-gray-50 dark:bg-gray-800/70 p-4 sm:p-5 rounded-[1rem] border border-gray-100 dark:border-gray-700">
-                        <h3 class="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-2">Your Controls</h3>
-                        <p class="text-sm sm:text-base text-gray-600 dark:text-gray-300">You can clear cookies and localStorage anytime in your browser. Some features may break if you block essential storage.</p>
+                        <h3 class="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-2" data-i18n="cookiesPage.controlsTitle">Your Controls</h3>
+                        <p class="text-sm sm:text-base text-gray-600 dark:text-gray-300" data-i18n="cookiesPage.controlsText">You can clear cookies and localStorage anytime in your browser. Some features may break if you block essential storage.</p>
                     </div>
                 </div>
 
                 <div class="flex flex-col gap-6 sm:gap-8">
                     <section class="bg-gray-50 dark:bg-gray-800/70 p-5 sm:p-6 rounded-[1rem] border border-gray-100 dark:border-gray-700">
-                        <h2 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-3">1. Essential Operations</h2>
-                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed">Tsunonton ($TSUN) uses minimal essential browser storage (cookies and Web Storage like localStorage) to ensure functionality and improve user experience across the website and Telegram GameFi mini-app.</p>
+                        <h2 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-3" data-i18n="cookiesPage.sec1Title">1. Essential Operations</h2>
+                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed" data-i18n="cookiesPage.sec1Text">Tsunonton ($TSUN) uses minimal essential browser storage (cookies and Web Storage like localStorage) to ensure functionality and improve user experience across the website and Telegram GameFi mini-app.</p>
                     </section>
-
+                    
                     <section class="bg-gray-50 dark:bg-gray-800/70 p-5 sm:p-6 rounded-[1rem] border border-gray-100 dark:border-gray-700">
-                        <h2 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-3">2. What We Store</h2>
-                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">We aim for a no-tracking policy. We do not use third-party tracking, analytics, or marketing cookies on this site.</p>
+                        <h2 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-3" data-i18n="cookiesPage.sec2Title">2. What We Store</h2>
+                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-4" data-i18n="cookiesPage.sec2Text">We aim for a no-tracking policy. We do not use third-party tracking, analytics, or marketing cookies on this site.</p>
                         <ul class="list-disc pl-5 space-y-2 marker:text-tsun text-gray-600 dark:text-gray-300">
-                            <li><strong>Theme Preference:</strong> The main site stores a <code class="bg-pink-50 dark:bg-gray-900/50 px-1.5 py-0.5 rounded text-xs border border-pink-100 dark:border-gray-700">theme</code> value (e.g., "dark" or "light") to persist your preferred visual theme across pages.</li>
-                            <li><strong>Authentication & Validation:</strong> We may use localized storage combined with Telegram initialization data to securely process actions, wallet linkages, and game updates without maintaining server-side user mapping.</li>
-                            <li><strong>Cookie Consent:</strong> A simple acknowledgement indicating you have read the cookie banner.</li>
+                            <li data-i18n-html="cookiesPage.sec2Item1"><strong>Theme Preference:</strong> The main site stores a <code class="bg-pink-50 dark:bg-gray-900/50 px-1.5 py-0.5 rounded text-xs border border-pink-100 dark:border-gray-700">theme</code> value (e.g., "dark" or "light") to persist your preferred visual theme across pages.</li>
+                            <li data-i18n-html="cookiesPage.sec2Item2"><strong>Authentication & Validation:</strong> We may use localized storage combined with Telegram initialization data to securely process actions, wallet linkages, and game updates without maintaining server-side user mapping.</li>
+                            <li data-i18n-html="cookiesPage.sec2Item3"><strong>Cookie Consent:</strong> A simple acknowledgement indicating you have read the cookie banner.</li>
                         </ul>
                     </section>
 
                     <section class="bg-gray-50 dark:bg-gray-800/70 p-5 sm:p-6 rounded-[1rem] border border-gray-100 dark:border-gray-700">
-                        <h2 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-3">3. Disabling Functionality</h2>
-                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">Because our stored properties are essential for core visual functions and decentralized connectivity, attempting to disable or block them may result in unpredictable and deteriorated functionality.</p>
-                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">However, you may choose to control or clear localStorage and cookies manually via your web browser settings at any point:</p>
+                        <h2 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-3" data-i18n="cookiesPage.sec3Title">3. Disabling Functionality</h2>
+                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-4" data-i18n="cookiesPage.sec3Text1">Because our stored properties are essential for core visual functions and decentralized connectivity, attempting to disable or block them may result in unpredictable and deteriorated functionality.</p>
+                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-4" data-i18n="cookiesPage.sec3Text2">However, you may choose to control or clear localStorage and cookies manually via your web browser settings at any point:</p>
                         <ul class="list-disc pl-5 space-y-2 marker:text-tsun text-gray-600 dark:text-gray-300">
                             <li><a href="https://support.google.com/chrome/answer/95647" target="_blank" class="text-tsun dark:text-pink-400 hover:text-pink-600">Chrome Settings</a></li>
                             <li><a href="https://support.apple.com/guide/safari/manage-cookies-sfri11471/mac" target="_blank" class="text-tsun dark:text-pink-400 hover:text-pink-600">Safari Settings</a></li>
@@ -172,18 +190,18 @@
                     </section>
 
                     <section class="bg-gray-50 dark:bg-gray-800/70 p-5 sm:p-6 rounded-[1rem] border border-gray-100 dark:border-gray-700">
-                        <h2 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-3">4. Consent</h2>
-                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed">By continuing to use the Tsunonton application or website, you acknowledge our use of strictly necessary storage properties as described in this policy. Where required by law, we request consent via the banner.</p>
+                        <h2 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-3" data-i18n="cookiesPage.sec4Title">4. Consent</h2>
+                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed" data-i18n="cookiesPage.sec4Text">By continuing to use the Tsunonton application or website, you acknowledge our use of strictly necessary storage properties as described in this policy. Where required by law, we request consent via the banner.</p>
                     </section>
                     <section class="bg-gray-50 dark:bg-gray-800/70 p-5 sm:p-6 rounded-[1rem] border border-gray-100 dark:border-gray-700">
-                        <h2 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-3">5. Contact & Transparency</h2>
-                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed">Questions about cookies or storage? Ask in our <a href="https://t.me/tsunonton_chat" target="_blank" rel="noopener noreferrer" class="text-pink-500 hover:underline">community chat</a> or review the <a href="knowledge.html" class="text-pink-500 hover:underline">Knowledge Base</a>. We keep policies public and community-reviewed.</p>
+                        <h2 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-3" data-i18n="cookiesPage.sec5Title">5. Contact & Transparency</h2>
+                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed" data-i18n-html="cookiesPage.sec5Text">Questions about cookies or storage? Ask in our <a href="https://t.me/tsunonton_chat" target="_blank" rel="noopener noreferrer" class="text-pink-500 hover:underline">community chat</a> or review the <a href="knowledge.html" class="text-pink-500 hover:underline">Knowledge Base</a>. We keep policies public and community-reviewed.</p>
                     </section>
                 </div>
             </div>
 
             <div class="mt-24 sm:mt-32 text-center mb-16">
-                <a href="index.html" class="inline-flex items-center gap-3 bg-tsun text-white hover:bg-pink-600 px-8 py-4 rounded-xl font-bold transition-transform transform hover:scale-105 shadow-lg shadow-pink-300/50 dark:shadow-none text-lg">
+                <a href="index.html" class="inline-flex items-center gap-3 bg-tsun text-white hover:bg-pink-600 px-8 py-4 rounded-xl font-bold transition-transform transform hover:scale-105 shadow-lg shadow-pink-300/50 dark:shadow-none text-lg" data-i18n-html="cookiesPage.backHome">
                     <i class="fa-solid fa-arrow-left"></i> Back to Home
                 </a>
             </div>
@@ -197,7 +215,7 @@
                 
                 <div class="w-full md:w-auto flex flex-col items-center md:items-start max-w-sm mx-auto md:mx-0">
                     <h2 class="text-3xl sm:text-4xl font-anime mb-3 sm:mb-4 tracking-wider">$TSUN</h2>
-                    <p class="text-gray-400 text-sm sm:text-base leading-relaxed">The foremost Anime GameFi economy built transparently and securely continuously within the TON Blockchain boundaries.</p>
+                    <p class="text-gray-400 text-sm sm:text-base leading-relaxed" data-i18n="footer.desc">The foremost Anime GameFi economy built transparently and securely continuously within the TON Blockchain boundaries.</p>
                 </div>
                 
                 <div class="flex flex-col sm:flex-row flex-wrap justify-center w-full md:w-auto gap-4 sm:gap-5">
@@ -207,27 +225,27 @@
                 </div>
 
                 <div class="flex justify-center gap-6 mt-4 md:mt-0">
-                    <a href="https://x.com/tsunonton" target="_blank" rel="noopener noreferrer" class="w-14 h-14 bg-gray-800 text-gray-300 rounded-full flex items-center justify-center hover:bg-tsun hover:text-white transition-transform transform hover:scale-110 text-xl md:text-2xl" aria-label="Twitter">
+                    <a href="https://x.com/tsunonton" target="_blank" rel="noopener noreferrer" class="w-14 h-14 bg-gray-800 text-gray-300 rounded-full flex items-center justify-center hover:bg-tsun hover:text-white transition-transform transform hover:scale-110 text-xl md:text-2xl" aria-label="Twitter" data-i18n-attr="aria-label" data-i18n-attr-aria-label="aria.twitter">
                         <i class="fa-brands fa-twitter"></i>
                     </a>
-                    <a href="https://t.me/tsunonton" target="_blank" rel="noopener noreferrer" class="w-14 h-14 bg-gray-800 text-gray-300 rounded-full flex items-center justify-center hover:bg-tsun hover:text-white transition-transform transform hover:scale-110 text-xl md:text-2xl" aria-label="Telegram Channel">
+                    <a href="https://t.me/tsunonton" target="_blank" rel="noopener noreferrer" class="w-14 h-14 bg-gray-800 text-gray-300 rounded-full flex items-center justify-center hover:bg-tsun hover:text-white transition-transform transform hover:scale-110 text-xl md:text-2xl" aria-label="Telegram Channel" data-i18n-attr="aria-label" data-i18n-attr-aria-label="aria.telegram">
                         <i class="fa-brands fa-telegram"></i>
                     </a>
                 </div>
             </div>
 
             <div class="flex flex-col items-center w-full px-2 text-center text-gray-500 text-xs sm:text-sm gap-3">
-                <p class="max-w-2xl leading-relaxed">
+                <p class="max-w-2xl leading-relaxed" data-i18n="footer.disclaimer">
                     Disclaimer: This site is for entertainment and informational purposes only and does not provide financial, investment, legal, or tax advice. $TSUN is a utility/meme token with no intrinsic value; no guarantees of rewards, price appreciation, or game functionality are made. Renounced contracts and liquidity locks reduce admin control but do not eliminate risks of bugs, exploits, or total loss. Cryptocurrency is highly volatile. In-game points have no monetary value. Must be 18+.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center mt-2 flex-wrap">
-                    <a href="privacy.html" class="hover:text-pink-400 transition-colors underline decoration-gray-700 underline-offset-4">Privacy Policy</a>
-                    <a href="terms.html" class="hover:text-pink-400 transition-colors underline decoration-gray-700 underline-offset-4">Terms of Service</a>
-                    <a href="risk.html" class="hover:text-pink-400 transition-colors underline decoration-gray-700 underline-offset-4">Risk Disclaimer</a>
-                    <a href="cookies.html" class="hover:text-pink-400 transition-colors underline decoration-gray-700 underline-offset-4">Cookie Policy</a>
-                    <a href="knowledge.html" class="hover:text-pink-400 transition-colors underline decoration-gray-700 underline-offset-4">Knowledge Base</a>
+                    <a href="privacy.html" class="hover:text-pink-400 transition-colors underline decoration-gray-700 underline-offset-4" data-i18n="footer.privacy">Privacy Policy</a>
+                    <a href="terms.html" class="hover:text-pink-400 transition-colors underline decoration-gray-700 underline-offset-4" data-i18n="footer.terms">Terms of Service</a>
+                    <a href="risk.html" class="hover:text-pink-400 transition-colors underline decoration-gray-700 underline-offset-4" data-i18n="footer.risk">Risk Disclaimer</a>
+                    <a href="cookies.html" class="hover:text-pink-400 transition-colors underline decoration-gray-700 underline-offset-4" data-i18n="footer.cookies">Cookie Policy</a>
+                    <a href="knowledge.html" class="hover:text-pink-400 transition-colors underline decoration-gray-700 underline-offset-4" data-i18n="footer.knowledge">Knowledge Base</a>
                 </div>
-                <p class="font-bold text-gray-600">&copy; 2026 Tsun On TON. Publicly Verifiable Contract. All rights reserved.</p>
+                <p class="font-bold text-gray-600" data-i18n="footer.rights">&copy; 2026 Tsun On TON. Publicly Verifiable Contract. All rights reserved.</p>
             </div>
         </div>
     </footer>

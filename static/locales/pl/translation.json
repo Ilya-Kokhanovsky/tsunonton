@@ -1,0 +1,354 @@
+{
+  "meta": {
+    "title": "Tsunonton Token | TON GameFi Anime Telegram Clicker 2026",
+    "description": "Graj w Tsunonton ($TSUN), anime clicker TON GameFi. Tapuj w Telegramie, zbieraj punkty w grze (bez wartości pieniężnej), dołącz do społeczności i poznaj ryzyko. Handel $TSUN wiąże się z wysokim ryzykiem.",
+    "ogTitle": "Tsunonton Token | TON GameFi Anime Telegram Clicker 2026",
+    "ogDescription": "Graj w Tsunonton ($TSUN), anime clicker TON GameFi. Tapuj w Telegramie, zbieraj punkty w grze (bez wartości pieniężnej) i dołącz do społeczności. Krypto to wysokie ryzyko.",
+    "twitterTitle": "Tsunonton Token | TON GameFi Anime Telegram Clicker 2026",
+    "twitterDescription": "Graj w Tsunonton ($TSUN), anime clicker TON GameFi. Tapuj w Telegramie, zbieraj punkty w grze (bez wartości pieniężnej) i dołącz do społeczności. Krypto to wysokie ryzyko.",
+    "ogLocale": "pl_PL"
+  },
+  "languages": {
+    "en": "English",
+    "ru": "Русский",
+    "pl": "Polski"
+  },
+  "language": {
+    "current": "🇵🇱",
+    "english": "🇺🇸 English",
+    "russian": "🇷🇺 Russian",
+    "toggleLabel": "Zmień język",
+    "selectorTitle": "Wybierz język",
+    "selectorAriaLabel": "Wybór języka",
+    "closeSelector": "Zamknij wybór języka",
+    "searchLabel": "Szukaj języka",
+    "searchPlaceholder": "Szukaj języka..."
+  },
+  "nav": {
+    "story": "Historia",
+    "market": "Rynek",
+    "game": "Gra",
+    "stats": "Statystyki",
+    "security": "Bezpieczeństwo",
+    "learn": "Wiedza",
+    "buyNow": "Kup Teraz",
+    "buyNowMobile": "Kup Teraz na STON.fi",
+    "buyTooltip": "Inwestycje w kryptowaluty niosą wysokie ryzyko. Ceny mogą być zmienne. Możesz stracić wszystkie pieniądze. <a href=\"risk.html\" class=\"text-pink-400 underline pointer-events-auto\">Czytaj więcej</a>"
+  },
+  "common": {
+    "gameInDev": "Gra jest obecnie w trakcie tworzenia"
+  },
+  "cookiesPage": {
+    "badge": "<i class=\"fa-solid fa-cookie-bite mr-2\"></i> Polityka plików cookie",
+    "title": "Polityka plików cookie Tsunonton <span class=\"block text-2xl sm:text-3xl mt-2 text-tsun dark:text-pink-400\">Niezbędne przechowywanie danych TON GameFi</span>",
+    "quote": "\"Żadnych trackerów reklamowych. Tylko to, co niezbędne do sprawnego działania strony i gry.\"",
+    "intro": "Dbamy o to, by Twoje doświadczenie z Tsunonton było przejrzyste i nastawione na społeczność. Więcej informacji o tym, jak przetwarzamy dane, znajdziesz w <a href=\"privacy.html\" class=\"text-pink-500 hover:underline\">Polityce Prywatności</a> i <a href=\"risk.html\" class=\"text-pink-500 hover:underline\">Zastrzeżeniu o Ryzyku</a>.",
+    "legalNotice": "<strong class=\"text-tsun\">Uwaga prawna:</strong> Ta strona opisuje wyłącznie niezbędne przechowywanie danych i nie stanowi porady prawnej. Możemy aktualizować nasze praktyki w miarę rozwoju aplikacji.",
+    "effectiveDate": "<i class=\"fa-solid fa-calendar-days\"></i> Data wejścia w życie: 15 marca 2026",
+    "summaryTitle": "Krótkie podsumowanie",
+    "summaryText": "Przechowujemy jedynie minimum niezbędne do działania strony Tsunonton i mini-aplikacji Telegram: preferencje motywu, zgodę użytkownika i bezpieczne sprawdzanie sesji. Żadnych trackerów reklamowych. Żadnego profilowania między witrynami, zgodnie z naszą najlepszą wiedzą.",
+    "controlsTitle": "Twoje opcje",
+    "controlsText": "Możesz wyczyścić pliki cookie i localStorage w dowolnym momencie w ustawieniach przeglądarki. Niektóre funkcje mogą nie działać, jeśli zablokujesz niezbędne przechowywanie danych.",
+    "sec1Title": "1. Działanie podstawowe",
+    "sec1Text": "Tsunonton ($TSUN) używa minimalnego niezbędnego przechowywania w przeglądarce (pliki cookie i Web Storage, np. localStorage), aby zapewnić funkcjonalność i poprawić komfort użytkowania na stronie oraz w mini-aplikacji Telegram GameFi.",
+    "sec2Title": "2. Co przechowujemy",
+    "sec2Text": "Dążymy do polityki braku śledzenia. Nie używamy plików cookie podmiotów trzecich do śledzenia, analityki ani marketingu na tej stronie.",
+    "sec2Item1": "<strong>Preferencje motywu:</strong> Strona przechowuje wartość <code class=\"bg-pink-50 dark:bg-gray-900/50 px-1.5 py-0.5 rounded text-xs border border-pink-100 dark:border-gray-700\">theme</code> (np. \"dark\" lub \"light\"), aby zachować wybrany przez Ciebie motyw wizualny między stronami.",
+    "sec2Item2": "<strong>Uwierzytelnianie i weryfikacja:</strong> Możemy używać lokalnego przechowywania w połączeniu z danymi inicjalizacyjnymi Telegrama do bezpiecznego przetwarzania akcji, powiązań portfela i aktualizacji gry bez utrzymywania mapowania użytkowników po stronie serwera.",
+    "sec2Item3": "<strong>Zgoda na pliki cookie:</strong> Proste potwierdzenie, że zapoznałeś się z banerem dotyczącym plików cookie.",
+    "sec3Title": "3. Wyłączenie funkcji",
+    "sec3Text1": "Ponieważ nasze przechowywane właściwości są niezbędne do podstawowych funkcji wizualnych i zdecentralizowanej łączności, próba ich wyłączenia lub zablokowania może spowodować nieprzewidywalne i pogorszone działanie.",
+    "sec3Text2": "Możesz jednak ręcznie kontrolować lub wyczyścić localStorage i pliki cookie w dowolnym momencie za pomocą ustawień przeglądarki:",
+    "sec4Title": "4. Zgoda",
+    "sec4Text": "Kontynuując korzystanie z aplikacji lub strony Tsunonton, potwierdzasz nasze używanie wyłącznie niezbędnych właściwości przechowywania opisanych w tej polityce. Tam, gdzie wymaga tego prawo, prosimy o zgodę za pomocą banera.",
+    "sec5Title": "5. Kontakt i przejrzystość",
+    "sec5Text": "Masz pytania dotyczące plików cookie lub przechowywania danych? Zapytaj na naszym <a href=\"https://t.me/tsunonton_chat\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-pink-500 hover:underline\">czacie społeczności</a> lub przejrzyj <a href=\"knowledge.html\" class=\"text-pink-500 hover:underline\">Bazę Wiedzy</a>. Polityki są publiczne i przeglądane przez społeczność.",
+    "backHome": "<i class=\"fa-solid fa-arrow-left\"></i> Powrót do strony głównej"
+  },
+  "privacyPage": {
+    "badge": "<i class=\"fa-solid fa-user-shield mr-2\"></i> Obietnica prywatności",
+    "title": "Polityka Prywatności Tsunonton <span class=\"block text-2xl sm:text-3xl mt-2 text-tsun dark:text-pink-400\">Minimalne dane, maksymalny szacunek</span>",
+    "quote": "\"Wcale i tak nie chcemy Twoich danych, b-baka! Staramy się zbierać tylko minimum potrzebne do działania gry. Nie myśl sobie czegoś!\"",
+    "legalNotice": "<strong class=\"text-tsun\">Uwaga prawna:</strong> Niniejsza polityka ma charakter informacyjny i może być aktualizowana. Nie stanowi porady prawnej. Jeśli masz pytania dotyczące swoich praw, skontaktuj się z nami.",
+    "effectiveDate": "<i class=\"fa-solid fa-calendar-days\"></i> Data wejścia w życie: 17 marca 2026",
+    "sec1Title": "1. Administrator danych i Twoi przewodnicy waifu",
+    "sec1Text": "Witaj w <strong>projekcie Tsunonton</strong> -  zarządzanym przez społeczność, zdecentralizowanym ekosystemie GameFi na blockchainie TON. Nie prowadzimy scentralizowanego pośrednictwa danych. Administratorem danych (termin prawny) jest projekt prowadzony przez społeczność, a w kwestiach prywatności koordynujemy przez oficjalny kanał Telegram <a href=\"https://t.me/TsunOnTON\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-tsun dark:text-pink-400 hover:text-pink-600\">@TsunOnTON</a>.",
+    "sec2Title": "2. Minimalne dane, które zbieramy (Naprawdę, to wszystko!)",
+    "sec2Text": "W odróżnieniu od tych przerażających korporacyjnych molochów, nie zbieramy Twojego prawdziwego imienia ani urodzin Twojego psa. Aby zasilić naszą aplikację Telegram Mini App i mechanikę TON GameFi, zbieramy wyłącznie:",
+    "sec2Item1": "<strong>ID użytkownika Telegram:</strong> Twój unikalny identyfikator Telegram do zapisywania postępów w grze i zapewnienia integralności konta.",
+    "sec2Item2": "<strong>Adres portfela TON:</strong> Tylko gdy aktywnie go połączysz, aby umożliwić opcjonalne funkcje on-chain i nagrody społecznościowe. Nagrody, jeśli w ogóle istnieją, są uznaniowe i nie są gwarantowane.",
+    "sec2Item3": "<strong>Preferencje motywu:</strong> Podstawowy ciąg znaków przechowywany lokalnie w przeglądarce (LocalStorage), aby zapamiętać wybrany motyw.",
+    "sec2Text2": "Świadomie nie zbieramy danych od dzieci. Usługi są przeznaczone dla użytkowników w wieku 18+."
+  },
+  "riskPage": {
+    "badge": "<i class=\"fa-solid fa-triangle-exclamation mr-2\"></i> Ostrzeżenie o ryzyku",
+    "title": "Zastrzeżenie o ryzyku i inwestycjach <span class=\"block text-2xl sm:text-3xl mt-2 text-tsun dark:text-pink-400\">Przeczytaj uważnie</span>",
+    "quote": "\"Aktywa kryptograficzne są zmienne. Uczestnicz tylko wtedy, gdy rozumiesz ryzyko i akceptujesz pełną odpowiedzialność.\"",
+    "legalNotice": "<strong class=\"text-tsun\">Uwaga prawna:</strong> Ta strona ma charakter informacyjny i nie stanowi porady prawnej, finansowej ani podatkowej. Warunki rynkowe i regulacje prawne mogą ulec zmianie w dowolnym momencie.",
+    "effectiveDate": "<i class=\"fa-solid fa-calendar-days\"></i> Data wejścia w życie: 15 marca 2026",
+    "sec1Title": "1. Użyteczność i charakter tokena",
+    "sec1Text": "Tsun On TON ($TSUN) to token użytkowy/memowy stworzony w celach rozrywkowych w ekosystemie GameFi Tsun On TON. Wyraźnie <strong>nie jest</strong> instrumentem finansowym, papierem wartościowym, udziałem ani akcją i nie ma gwarantowanej użyteczności ani funkcjonalności.",
+    "sec2Title": "2. Brak wartości wewnętrznej ani gwarantowanego zwrotu",
+    "sec2Text": "Token $TSUN nie posiada żadnej wartości wewnętrznej ani bazowej i nie składa żadnych obietnic ani gwarancji dotyczących zwrotów finansowych, nagród ani wzrostu cen. Żadne oświadczenia złożone przez projekt nie powinny być interpretowane jako doradztwo finansowe.",
+    "sec3Title": "3. Wysoka zmienność i ryzyko całkowitej straty",
+    "sec3Text": "Inwestycje w kryptowaluty są wysoce zmienne i z natury ryzykowne. Kupując $TSUN, angażując się w projekt lub grając w grę, przyjmujesz ryzyko częściowej lub całkowitej utraty środków. Wyniki z przeszłości nie wskazują na przyszłe rezultaty. Inteligentne kontrakty mogą zawierać błędy lub luki bezpieczeństwa, a transakcje blockchain są nieodwracalne.",
+    "sec4Title": "4. Brak doradztwa inwestycyjnego",
+    "sec4Text": "Tsun On TON, jego deweloperzy i administratorzy społeczności nie udzielają porad inwestycyjnych, prawnych ani podatkowych. Wszelkie decyzje dotyczące zakupu, posiadania lub handlu są podejmowane wyłącznie na własne ryzyko użytkownika. Jeśli nie masz pewności co do uczestnictwa, skonsultuj się z wykwalifikowanymi specjalistami.",
+    "sec5Title": "5. Ograniczenie odpowiedzialności",
+    "sec5Text1": "W żadnych okolicznościach zespół projektu Tsun On TON, jego podmioty powiązane ani współpracownicy nie ponoszą odpowiedzialności za jakiekolwiek bezpośrednie, pośrednie, wynikowe ani inne straty lub szkody poniesione w wyniku polegania na jakichkolwiek dostarczonych informacjach lub interakcji z tokenem $TSUN.",
+    "sec5Text2": "Zmiany regulacyjne, zobowiązania podatkowe i ograniczenia jurysdykcyjne mogą wpłynąć na dostęp do usług, dostępność tokenów lub ich traktowanie prawne. Jesteś odpowiedzialny za przestrzeganie przepisów obowiązujących w Twojej jurysdykcji."
+  },
+  "termsPage": {
+    "badge": "Regulamin i zasady",
+    "title": "Warunki Korzystania z Usług <span class=\"block text-2xl sm:text-3xl mt-2 text-tsun dark:text-pink-400\">Przeczytaj uważnie</span>",
+    "quote": "\"Te zasady chronią społeczność i zapewniają uczciwość gry. Korzystając z usług, akceptujesz je.\"",
+    "legalNotice": "<strong class=\"text-tsun\">Uwaga prawna:</strong> Ta strona ma charakter informacyjny i nie stanowi porady prawnej. Warunki mogą być aktualizowane w dowolnym momencie.",
+    "effectiveDate": "<i class=\"fa-solid fa-calendar-days\"></i> Data wejścia w życie: 15 marca 2026",
+    "sec1Title": "1. Akceptacja warunków",
+    "sec1Text": "Uzyskując dostęp do strony Tsun On TON, korzystając z Telegram Mini-App lub wchodząc w interakcję z tokenem $TSUN (łącznie: „Usługi”), zgadzasz się na przestrzeganie niniejszych Warunków Korzystania z Usług. Aby korzystać z tych Usług, musisz mieć ukończone 18 lat lub być w wieku pełnoletności w swojej jurysdykcji.",
+    "sec2Title": "2. Charakter projektu",
+    "sec2Text": "Tsun On TON ($TSUN) to ekosystem GameFi i token memowy nastawiony na rozrywkę, działający na blockchainie TON. Token $TSUN nie ma wartości wewnętrznej, nie jest instrumentem finansowym i nie gwarantuje żadnych zwrotów finansowych. Ekosystem jest zaprojektowany do angażowania społeczności i może ulec zmianie lub zostać wycofany w dowolnym momencie.",
+    "sec3Title": "3. Brak doradztwa finansowego",
+    "sec3Text1": "Treści udostępniane na tej stronie, w naszym bocie Telegram i w wszelkich powiązanych komunikatach służą wyłącznie celom informacyjnym i rozrywkowym. Nie stanowią doradztwa finansowego, inwestycyjnego, prawnego ani podatkowego. Zespół Tsun On TON nie jest zarejestrowanym doradcą finansowym, a nic na tej stronie nie powinno być interpretowane jako rekomendacja kupna, sprzedaży lub posiadania jakiejkolwiek kryptowaluty lub tokena. Wszelkie oświadczenia dotyczące potencjalnej wartości lub przyszłych planów mają charakter prognostyczny i mogą ulec zmianie bez powiadomienia.",
+    "sec3Text2": "Przyjmujesz do wiadomości, że wszelkie decyzje o nabyciu tokenów $TSUN lub uczestnictwie w grze podejmowane są wyłącznie przez Ciebie, na podstawie własnej oceny ryzyka i korzyści. Gorąco zachęcamy do samodzielnego przeprowadzenia badań (DYOR) i konsultacji z wykwalifikowanym specjalistą przed zaangażowaniem się w jakikolwiek krypto-asset.",
+    "sec4Title": "4. Przyjęcie ryzyka",
+    "sec4Text": "Angażowanie się w zdecentralizowane aplikacje (dApps) i kryptowaluty wiąże się ze znacznym ryzykiem. Korzystając z naszych Usług, wyraźnie przyjmujesz do wiadomości i akceptujesz wszelkie ryzyko, w tym m.in. zmienność aktywów, luki technologiczne, błędy smart kontraktów, zmiany regulacyjne i całkowitą utratę środków. Wyłącznie Ty jesteś odpowiedzialny za zabezpieczenie swoich kluczy prywatnych i portfeli.",
+    "sec5Title": "5. Ograniczenie odpowiedzialności",
+    "sec5Text1": "W maksymalnym zakresie dozwolonym przez obowiązujące prawo, zespół Tsun On TON, jego deweloperzy, współpracownicy i podmioty powiązane nie ponoszą odpowiedzialności za jakiekolwiek bezpośrednie, pośrednie, incydentalne, szczególne, wynikowe ani przykładowe szkody, w tym m.in. straty finansowe, utratę zysków, utratę danych ani szkody wynikające z korzystania lub niemożności korzystania z Usług lub interakcji z tokenem $TSUN.",
+    "sec5Text2": "Kod i inteligentne kontrakty są dostarczane „w stanie, w jakim są” i „w miarę dostępności”, bez jakiejkolwiek gwarancji, wyraźnej lub dorozumianej.",
+    "sec6Title": "6. Prawo właściwe i jurysdykcja",
+    "sec6Text": "Niniejsze Warunki Korzystania z Usług oraz wszelkie odrębne umowy, na podstawie których świadczymy Usługi, podlegają prawu norweskim oraz obowiązującym przepisom Europejskiego Obszaru Gospodarczego (EOG), w tym zgodności ze standardami MiCA (Markets in Crypto-Assets) w zakresie dozwolonym przez prawo. Wszelkie spory wynikające z niniejszych warunków podlegają wyłącznej jurysdykcji sądów norweskich.",
+    "sec7Title": "7. Zmiany",
+    "sec7Text": "Zastrzegamy sobie prawo do zmiany lub modyfikacji niniejszych warunków w dowolnym momencie bez wcześniejszego powiadomienia. Dalsze korzystanie z Usług oznacza akceptację wszelkich zmian."
+  },
+  "knowledgePage": {
+    "title": "Baza Wiedzy Tsunonton <span class=\"block text-2xl sm:text-3xl mt-2 text-tsun dark:text-pink-400\">Przewodnik po TON GameFi i Telegramie</span>",
+    "badge": "<i class=\"fa-solid fa-graduation-cap mr-2\"></i> Klasa Tsun",
+    "intro1": "\"Nowy w krypto lub TON? Nie martw się - przygotowałam ten prosty przewodnik po Tsunonton. Wcale nie zależy mi na Twoim sukcesie... b-baka! Po prostu przeczytaj uważnie i nie rób głupich błędów!\"",
+    "intro2": "Stworzony przez zespół stawiający społeczność na pierwszym miejscu. Status on-chain (w tym zrzeczenie się kontraktu lub blokady) należy zawsze weryfikować samodzielnie. Przed graniem lub wymianą zapoznaj się z naszym <a href=\"risk.html\" class=\"text-pink-500 hover:underline\">Zastrzeżeniem o Ryzyku</a> i <a href=\"privacy.html\" class=\"text-pink-500 hover:underline\">Polityką Prywatności</a>.",
+    "legalNotice": "<strong class=\"text-tsun\">Uwaga prawna:</strong> Ten przewodnik ma charakter edukacyjny i wyłącznie rozrywkowy. Nie stanowi doradztwa finansowego, inwestycyjnego, prawnego ani podatkowego. Krypto-aktywa są obarczone wysokim ryzykiem i mogą stracić całą wartość.",
+    "quickStartTitle": "Szybki start z $TSUN",
+    "quickStartText": "Skonfiguruj portfel TON, zdobądź niewielką ilość TON na opłaty gas i dokonaj wymiany na <a href=\"https://app.ston.fi/swap?ft=TON&tt=EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-tsun font-bold hover:underline\">STON.fi</a>. Następnie odkryj <a href=\"index.html#game\" class=\"text-pink-500 hover:underline\">grę Tsunonton</a>, aby zbierać Tsun Points (tylko w grze).",
+    "checklistTitle": "Lista kontrolna bezpieczeństwa",
+    "checklist1": "<i class=\"fa-solid fa-check text-green-500 mt-0.5\"></i> Zweryfikuj oficjalny kontrakt na <a href=\"https://tonviewer.com/EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-pink-500 hover:underline\">Tonviewer</a>.",
+    "checklist2": "<i class=\"fa-solid fa-check text-green-500 mt-0.5\"></i> Ignoruj wiadomości prywatne i korzystaj wyłącznie z linków z <a href=\"index.html\" class=\"text-pink-500 hover:underline\">tsunonton.com</a>.",
+    "checklist3": "<i class=\"fa-solid fa-check text-green-500 mt-0.5\"></i> Zawsze zachowaj swoją frazę seed w tajemnicy.",
+    "accordions": {
+      "01": {
+        "title": "<span class=\"text-tsun dark:text-pink-400 font-anime\">01</span> Czym jest blockchain w GameFi?",
+        "text": "Wyobraź sobie blockchain jako cyfrową księgę lub wspólny notatnik, który każdy może zobaczyć, ale nikt nie może usunąć ani zmodyfikować. Gdy informacja (np. transakcja) zostaje w nim zapisana, pozostaje tam na zawsze.",
+        "list1": "<strong>Decentralizacja:</strong> Żaden centralny organ (jak bank) nim nie zarządza. Jest utrzymywany przez globalną sieć komputerów.",
+        "list2": "<strong>Przejrzystość:</strong> Każdy może przeglądać transakcje na publicznych eksploratorach bloków.",
+        "list3": "<strong>Niezmienność:</strong> Danych nie można zmienić po ich potwierdzeniu."
+      },
+      "02": {
+        "title": "<span class=\"text-tsun dark:text-pink-400 font-anime\">02</span> Czym jest blockchain TON (The Open Network)?",
+        "text": "TON to szybki, wysoce skalowalny blockchain pierwotnie zaprojektowany przez zespół stojący za Telegramem. Został stworzony do przetwarzania milionów transakcji na sekundę, co czyni go doskonałym rozwiązaniem dla TON GameFi, aplikacji społecznościowych i mikrotransakcji.",
+        "note": "<strong class=\"text-gray-900 dark:text-white\">Dlaczego używamy TON:</strong> Oferuje niezwykle niskie opłaty gas, niemal natychmiastowe potwierdzenia transakcji i płynną głęboką integrację z ogromnym ekosystemem Telegrama."
+      },
+      "03": {
+        "title": "<span class=\"text-tsun dark:text-pink-400 font-anime\">03</span> Portfele TON -  Twoja cyfrowa kieszeń",
+        "text": "Portfel kryptowalutowy tak naprawdę nie przechowuje monet; przechowuje <em>klucze prywatne</em> (hasła), które dowodzą, że posiadasz monety przypisane do Twojego adresu na blockchainie.",
+        "card1Title": "<i class=\"fa-solid fa-wallet text-ton-blue\"></i> Tonkeeper",
+        "card1Text": "Portfel przede wszystkim mobilny z doskonałym UX. Dostępny na iOS i Androida.",
+        "card2Title": "<i class=\"fa-solid fa-desktop text-ton-blue\"></i> MyTonWallet",
+        "card2Text": "Rozszerzenie webowe i aplikacja desktopowa -  bogata w funkcje i bezpieczna.",
+        "warning": "<i class=\"fa-solid fa-triangle-exclamation mt-0.5\"></i> <span>KRYTYCZNE OSTRZEŻENIE BEZPIECZEŃSTWA: Nigdy nie udostępniaj swojej frazy seed (12 lub 24 słowa) NIKOMU. Jeśli ktoś ją zdobędzie, ma pełny dostęp do Twoich środków. Zespół Tsun NIGDY o nią nie zapyta.</span>"
+      },
+      "04": {
+        "title": "<span class=\"text-tsun dark:text-pink-400 font-anime\">04</span> Jak kupić $TSUN na STON.fi (krok po kroku)",
+        "prereq": "<i class=\"fa-solid fa-info-circle text-blue-500 mt-1 text-lg flex-shrink-0\"></i> <span class=\"text-sm md:text-base\">Wymagania wstępne: musisz mieć skonfigurowany portfel TON zasilony pewną ilością TON, aby pokryć opłatę gas i koszt zakupu.</span>",
+        "step1Title": "Otwórz STON.fi",
+        "step1Text": "Przejdź do <a href=\"https://app.ston.fi/swap?ft=TON&tt=EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_\" target=\"_blank\" class=\"text-tsun hover:underline font-bold\">strony wymiany $TSUN na STON.fi</a>.",
+        "step2Title": "Podłącz portfel",
+        "step2Text": "Kliknij „Połącz portfel” w prawym górnym rogu. Zeskanuj kod QR za pomocą Tonkeeper lub zatwierdź monit w swoim rozszerzeniu.",
+        "step3Title": "Skonfiguruj wymianę",
+        "step3Text": "Upewnij się, że w polu „Płacisz” jest „TON”, a w polu „Otrzymujesz” jest „$TSUN”.",
+        "step4Title": "Wykonaj transakcję",
+        "step4Text": "Wprowadź kwotę, kliknij „Swap” i potwierdź transakcję w aplikacji portfela."
+      },
+      "05": {
+        "title": "<span class=\"text-tsun dark:text-pink-400 font-anime\">05</span> Czym jest DEX na TON? Jak działają wymiany",
+        "text": "<strong>DEX</strong> (zdecentralizowana giełda) jak STON.fi to platforma umożliwiająca użytkownikom bezpośredni handel kryptowalutami bez potrzeby scentralizowanego pośrednika (jak bank lub tradycyjna giełda).",
+        "sec1Title": "Pule płynności",
+        "sec1Text": "Zamiast księgi zleceń, DEX-y używają pul płynności. Są to ogromne zasoby sparowanych tokenów (np. TON i $TSUN) zablokowane w smart kontrakcie. Gdy kupujesz $TSUN za TON, dodajesz TON do puli i pobierasz $TSUN. Zmienia to stosunek tokenów i określa cenę.",
+        "sec2Title": "Poślizg cenowy (Slippage)",
+        "sec2Text": "Różnica między oczekiwaną ceną transakcji a ceną wykonania. Poślizg pojawia się na szybko zmieniających się rynkach, gdy cena zmienia się podczas przetwarzania Twojej transakcji.",
+        "sec3Title": "Opłaty gas",
+        "sec3Text": "Niewielki koszt ułamkowy płacony w TON za przetworzenie i walidację Twojej transakcji w sieci."
+      },
+      "06": {
+        "title": "<span class=\"text-tsun dark:text-pink-400 font-anime\">06</span> Zrozumienie tokenomiki Tsunonton",
+        "text": "Nasza struktura dąży do przejrzystości wobec społeczności, a kluczowy status on-chain należy sprawdzać samodzielnie.",
+        "list1": "<strong>Całkowita podaż:</strong> 1 000 000 000 $TSUN.",
+        "list2": "<strong>Zero podatków (0% kupno/sprzedaż):</strong> Aktualne ustawienia on-chain pokazują 0% podatek kupno/sprzedaż. Zweryfikuj status przed handlem.",
+        "list3": "<strong>Zrzeczony kontrakt:</strong> Zgłoszony status zrzeczenia się zmniejsza kontrolę administracyjną, ale nie eliminuje ryzyk ani nie gwarantuje niezmienności.",
+        "list4": "<strong>Zablokowana płynność:</strong> Zgłoszone blokady płynności zmniejszają niektóre ryzyko, ale nie gwarantują bezpieczeństwa ani stabilności cen.",
+        "note": "Przypomnienie: $TSUN to token użytkowy/memowy stworzony do rozrywki w ekosystemie GameFi. Nie jest inwestycją ani papierem wartościowym, a nagrody ani wartość nie są gwarantowane."
+      },
+      "07": {
+        "title": "<span class=\"text-tsun dark:text-pink-400 font-anime\">07</span> Tsun Points kontra $TSUN w grze Tsunonton",
+        "text": "Kluczowe jest zrozumienie różnicy między naszymi dwoma systemami:",
+        "card1Title": "<i class=\"fa-solid fa-gamepad text-ton-blue\"></i> Tsun Points",
+        "card1Text": "Wirtualne punkty w grze uzyskiwane przez tapowanie maskotki w Telegramie. Są w całości scentralizowane w bocie, <strong>nie mają wartości pieniężnej</strong> i są całkowicie niezbywalne. Stworzone dla zabawy i tablic wyników.",
+        "card2Title": "<i class=\"fa-solid fa-coins text-tsun\"></i> Token $TSUN",
+        "card2Text": "Zdecentralizowana kryptowaluta istniejąca na blockchainie TON. Można ją kupować, sprzedawać i handlować publicznie na STON.fi za pomocą portfela kryptowalutowego.",
+        "note": "Uwaga: Chociaż Tsun Points mogą wpływać na przyszłe uznaniowe airdrops społecznościowe, nie mogą być bezpośrednio przeliczone ani wypłacone. Airdrops nie są gwarantowane."
+      },
+      "08": {
+        "title": "<span class=\"text-tsun dark:text-pink-400 font-anime\">08</span> Jak bezpiecznie grać w klicker Telegram",
+        "text": "Dostęp do gry Tsunonton można uzyskać przez <strong>@tsunonton_bot</strong> na Telegramie.",
+        "list1": "<strong>Połączenie portfela:</strong> Bot może poprosić Cię o połączenie portfela TON przez <em>TON Connect</em>. Protokół ten bezpiecznie łączy Twój publiczny adres z ID Telegrama, abyśmy mogli śledzić rankingi i potencjalne airdrops.",
+        "list2": "<strong>Co MOŻE zrobić:</strong> Poprosić o podpis kryptograficzny potwierdzający, że posiadasz portfel.",
+        "list3": "<strong>Czego NIE MOŻE zrobić:</strong> Nie może uzyskać dostępu do Twoich środków, samodzielnie wysyłać transakcji ani widzieć Twoich kluczy prywatnych. Każda pojedyncza operacja finansowa na TON wymaga ręcznego zatwierdzenia w aplikacji portfela.",
+        "list4": "<strong>Prywatność danych:</strong> Przechowujemy wyłącznie Twój publiczny ID Telegram i połączony publiczny adres portfela w celu obsługi mechaniki gry."
+      },
+      "09": {
+        "title": "<span class=\"text-tsun dark:text-pink-400 font-anime\">09</span> Najlepsze praktyki bezpieczeństwa $TSUN",
+        "item1": "<strong>Zweryfikuj kontrakt:</strong> Złośliwi aktorzy często tworzą fałszywe tokeny o tej samej nazwie. Zawsze upewnij się, że handlujesz oficjalnym adresem: <code class=\"bg-gray-100 dark:bg-gray-700 px-1.5 py-0.5 rounded text-xs break-all border border-gray-200 dark:border-gray-600 block mt-1\">EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_</code>",
+        "item2": "<strong>Tylko oficjalne linki:</strong> Klikaj wyłącznie linki pochodzące bezpośrednio z <em>tsunonton.com</em>, naszego zweryfikowanego konta X lub oficjalnego kanału Telegram.",
+        "item3": "<strong>Ignoruj wiadomości prywatne (DM):</strong> Administratorzy ani pomoc techniczna NIGDY nie napiszą do Ciebie pierwsi. Każdy, kto pisze do Ciebie oferując wsparcie techniczne, „podwójne airdrops” lub prosząc o połączenie z „portalem weryfikacyjnym”, jest oszustem. Zablokuj go i zgłoś."
+      }
+    }
+  },
+  "hero": {
+    "title": "Tsunonton Token <span class=\"text-tsun block md:inline mt-2 md:mt-0\">($TSUN)</span>",
+    "subtitle": "\"Wcale nie chcę, żebyś mnie tapował!\"",
+    "description": "Dołącz do społeczności tokena Tsunonton -  projektu anime TON GameFi z klikaczem RPG na Telegramie. Tapuj, zbieraj Tsun Points (tylko w grze), śledź swój ranking i śledź aktualizacje społeczności. Nowy tutaj? Zacznij od <a href=\"knowledge.html\" class=\"text-pink-500 hover:text-pink-600 underline\">Bazy Wiedzy</a> i przeczytaj <a href=\"risk.html\" class=\"text-pink-500 hover:text-pink-600 underline\">Zastrzeżenie o Ryzyku</a>, b-baka.",
+    "buyButton": "Kup $TSUN",
+    "playSoon": "Graj (Wkrótce)",
+    "riskNote": "Inwestycje w kryptowaluty niosą wysokie ryzyko. Ceny mogą być zmienne. Możesz stracić wszystkie pieniądze. <a href=\"risk.html\" class=\"text-pink-500 hover:text-pink-600 underline\">Czytaj więcej</a>",
+    "tapHint": "Tapnij ją, żeby wejść w interakcję"
+  },
+  "mascot": {
+    "default": "H-Hmph! Baka!",
+    "lines": [
+      "Nie dotykaj mnie! Idź grać w grę na Telegramie!",
+      "Idioto! Idź kupić na STON.fi!",
+      "Kontrakt zrzeczony! Bezpiecznie wchodzić w interakcje.",
+      "Hmph! Baka! Postaw mnie później!",
+      "Dlaczego tu jeszcze jesteś? Tablica wyników czeka!",
+      "Płynność zablokowana na zawsze. Nie bądź papierową rączką!",
+      "Ugh, dobrze. Masz airdrop.",
+      "Nie waż się mnie sprzedawać!",
+      "Łączę portfel... Żartowałam!"
+    ]
+  },
+  "market": {
+    "label": "Przejrzystość on-chain",
+    "title": "Przegląd rynku TON GameFi",
+    "viewContract": "Zobacz kontrakt na Tonviewer",
+    "holders": "Posiadacze",
+    "marketCap": "Kapitalizacja rynkowa",
+    "liquidity": "Płynność",
+    "change24h": "Zmiana 24h"
+  },
+  "game": {
+    "badge": "Telegram Mini-App",
+    "badgeStatus": "Wkrótce",
+    "title": "Klicker Tsunonton <span class=\"text-lg md:text-2xl text-amber-500 bg-amber-100 dark:bg-amber-900/30 px-3 py-1 rounded-xl ml-2\">Wkrótce</span>",
+    "description": "Gra Tsunonton jest w aktywnym rozwoju. Już wkrótce będziesz mógł tapować naszą tsundere maskotkę w Telegramie, aby zdobywać <strong>Tsun Points</strong>, odblokowywać ulepszenia i wspinać się na globalne tablice wyników. Ta animowana gra TON jest stworzona dla zabawy społeczności -  bez obietnic finansowych. Chcesz aktualizacji? Śledź naszą <a href=\"knowledge.html\" class=\"text-pink-500 hover:underline\">Bazę Wiedzy</a> i kanały społeczności.",
+    "comingSoon": "Wkrótce",
+    "card1Title": "Tapuj i zdobywaj",
+    "card1Desc": "Tapuj maskotkę, aby zbierać Tsun Points.",
+    "card2Title": "Ulepszaj statystyki",
+    "card2Desc": "Zwiększaj siłę tapnięcia i regenerację energii.",
+    "card3Title": "Wykonuj zadania",
+    "card3Desc": "Kończ codzienne misje dla wyższych rang.",
+    "note": "<strong>Ważne:</strong> Tsun Points to wyłącznie wirtualny wynik w grze. Nie są tokenami $TSUN i nie mają wartości pieniężnej. Wszelkie przyszłe airdrops lub nagrody nie są gwarantowane i mogą ulec zmianie. Gra służy rozrywce -  prosimy o odpowiedzialne podejście."
+  },
+  "tokenomics": {
+    "title": "Tokenomika Tsunonton",
+    "totalSupply": "Całkowita podaż: <span class=\"font-bold text-gray-900 dark:text-white tracking-wider\">1 000 000 000 $TSUN</span>",
+    "description": "Dystrybucja tokenów $TSUN stawia społeczność na pierwszym miejscu z planowaną 40% alokacją na nagrody w grze. Dane mają charakter poglądowy, mogą ulec zmianie i nie oznaczają prawa do otrzymania tokenów. Przed uczestnictwem zapoznaj się z naszym <a href=\"risk.html\" class=\"text-pink-500 hover:underline\">Zastrzeżeniem o Ryzyku</a>.",
+    "gameRewards": "Nagrody w grze",
+    "community": "Społeczność",
+    "liquidity": "Pule płynności (Na żywo na DEX)",
+    "devMarketing": "Dev i Marketing"
+  },
+  "transparency": {
+    "title": "Bezpieczeństwo i przejrzystość",
+    "description": "Aktualne parametry tokena pokazują 0% podatek kupno/sprzedaż i zrzeczony kontrakt, z płynnością podobno zablokowaną przez narzędzia podmiotów trzecich. Prosimy o samodzielne zweryfikowanie wszystkich danych on-chain. Zrzeczone kontrakty i blokady zmniejszają kontrolę administracyjną, ale nie eliminują ryzyk takich jak błędy, exploity czy utrata wartości.",
+    "badgeTax": "0% Podatek (Aktualnie)",
+    "badgeContract": "Kontrakt Zrzeczony (Zweryfikuj)",
+    "badgeLock": "Blokada LP (Zweryfikuj)",
+    "contractLabel": "Oficjalny Smart Kontrakt",
+    "copyButton": "Kopiuj",
+    "copyToast": "Adres skopiowany do schowka. Zawsze weryfikuj on-chain."
+  },
+  "roadmap": {
+    "title": "Mapa drogowa projektu",
+    "description": "Jasne kamienie milowe opisujące zamierzone cele. Elementy mapy drogowej są celami, nie gwarancjami, i mogą ulec zmianie w zależności od realiów społeczności i technicznych.",
+    "phase1Status": "Ukończono",
+    "phase1Title": "Geneza (Ukończono)",
+    "phase1Item1": "Uruchomienie tokena na <span class=\"font-bold border-b border-gray-300 dark:border-gray-600 pb-0.5\"><a href=\"https://app.ston.fi/swap?ft=TON&tt=EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_\">STON.fi</a></span> (zweryfikuj dane on-chain)",
+    "phase1Item2": "<a href=\"https://tonraffles.app/lock/EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-ton-blue hover:text-blue-600 transition-colors font-bold underline decoration-ton-blue/30 underline-offset-4\">Blokada płynności</a> zgłoszona przez TonRaffles (zweryfikuj)",
+    "phase1Item3": "<a href=\"https://minter.ton.org/jetton/EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_\" class=\"text-ton-blue hover:text-blue-600 transition-colors font-bold underline decoration-ton-blue/30 underline-offset-4\">Status zrzeczonego kontraktu</a> zgłoszony (zweryfikuj)",
+    "phase1Item4": "Społeczność założona z przejrzystymi mechanizmami weryfikacji",
+    "phase2Status": "W trakcie tworzenia",
+    "phase2Title": "Aplikacja (W trakcie tworzenia)",
+    "phase2Item1": "Gra Telegram Mini-App -  w aktywnym rozwoju",
+    "phase2Item2": "Masowe codzienne zadania funkcjonalne i śledzenie poleceń wdrożone",
+    "phase2Item3": "Proces weryfikacji Tonkeeper formalnie zainicjowany (W toku)",
+    "phase2Item4": "Aplikacje o przyspieszone notowanie na CoinMarketCap i CoinGecko przygotowane",
+    "phase3Status": "Nadchodzi",
+    "phase3Title": "Ekosystem (Nadchodzi)",
+    "phase3Item1": "<strong class=\"text-gray-600 dark:text-gray-400\">Airdrop $TSUN</strong> dla aktywnych graczy Telegram <span class=\"text-xs bg-gray-100 dark:bg-gray-700 px-2 py-0.5 rounded ml-1\">Q3 2026</span><br><span class=\"text-[11px] text-gray-400 italic mt-1 block\">*Uznaniowy, może być zmieniony lub anulowany, nie jest gwarantowany.</span>",
+    "phase3Item2": "Uruchomienie zweryfikowanej kolekcji NFT <span class=\"text-xs bg-gray-100 dark:bg-gray-700 px-2 py-0.5 rounded ml-1\">Q3 2026</span>",
+    "phase3Item3": "Wdrożenie rozwiązań cross-chain bridging i marketing",
+    "phase3Item4": "Notowania na giełdach scentralizowanych (CEX) najwyższego poziomu <span class=\"text-xs bg-gray-100 dark:bg-gray-700 px-2 py-0.5 rounded ml-1\">Q4 2026</span>"
+  },
+  "faq": {
+    "title": "Baza Wiedzy",
+    "description": "Wszystko, co musisz wiedzieć o tokenie Tsunonton, TON GameFi i mini-aplikacji Telegram, z jasnym kontekstem ryzyka.",
+    "q1": "Czym jest Tsun on TON?",
+    "a1": "Tsun On TON ($TSUN) to projekt GameFi i klicker o tematyce anime na <strong>blockchainie TON</strong>. Wcale nie chce, żebyś kupował... b-baka! Wchodząc w interakcję z naszym botem Telegram, możesz zbierać punkty w grze, dołączając do społeczności. Punkty w grze są oddzielne od $TSUN i nie mają wartości finansowej.",
+    "q2": "Jak kupić $TSUN?",
+    "a2": "Popularną opcją jest <a href=\"https://app.ston.fi/swap?ft=TON&tt=EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-tsun font-bold hover:underline hover:text-pink-600 transition-colors\">STON.fi</a>. Połącz Tonkeeper lub MyTonWallet, upewnij się, że masz trochę TON na opłaty gas, i wymień na $TSUN. Zawsze weryfikuj adres kontraktu i pamiętaj, że handel wiąże się z wysokim ryzykiem. Przewodnik krok po kroku znajdziesz w naszej <a href=\"knowledge.html\" class=\"text-pink-500 hover:underline\">Bazie Wiedzy</a>.",
+    "q3": "Czy kontrakt jest audytowany?",
+    "a3": "Raporty społeczności wskazują, że kontrakt jest zrzeczony. Możesz zweryfikować aktualny status na <a href=\"https://tonviewer.com/EQB1oXiTnD34HwdH0L1fiWtKg0XWMD-47t8i933VhUeNDsd_\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-tsun font-bold hover:underline hover:text-pink-600 transition-colors\">Tonviewer</a>. Zrzeczone kontrakty zmniejszają kontrolę administracyjną, ale nie eliminują ryzyk jak błędy, exploity czy zmienność rynkowa.",
+    "q4": "Gdzie jest zablokowana płynność?",
+    "a4": "Początkowa płynność jest podobno zablokowana przez zewnętrzne narzędzia w sieci TON (<a href=\"https://tonraffles.app/lock/EQAaE2H90dF2OomdsrCQ2zMEg-C0UG_Jkt_dijf3-tkdCbQ7\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-tsun font-bold hover:underline hover:text-pink-600 transition-colors\">TonRaffles</a>). Prosimy o weryfikację statusu blokady on-chain. Blokady płynności zmniejszają pewne ryzyko, ale nie są gwarancją przed stratą.",
+    "q5": "Jak grać?",
+    "a5": "Po prostu otwórz naszą oficjalną <a href=\"https://t.me/tsunonton_bot\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-tsun font-bold hover:underline hover:text-pink-600 transition-colors\">Telegram Mini-App</a> na telefonie lub komputerze. Zacznij tapować tsundere maskotkę, aby zbierać punkty, podnosić swoje statystyki, zapraszać znajomych i wspinać się na tablice wyników. Tsun Points, które zdobywasz, służą zabawie i pozycji w rankingu -  nie są zbywalnym aktywem. Więcej szczegółów znajdziesz w naszej <a href=\"knowledge.html\" class=\"text-pink-500 hover:underline\">Bazie Wiedzy</a>.",
+    "q6": "Kiedy jest airdrop?",
+    "a6": "Airdrop $TSUN jest aktualnie zaplanowany na <strong>Q3 2026</strong>, z zastrzeżeniem zmian lub anulowania. Aktywni gracze, którzy wykonują zadania w grze, mogą zostać rozważeni do uznaniowej nagrody społecznościowej. Uczestnictwo nie uprawnia do otrzymania tokenów.",
+    "q7": "Czy mogę zarobić prawdziwe pieniądze?",
+    "a7": "Nie. Gra jest zaprojektowana dla rozrywki. Tsun Points nie są pieniędzmi i nie można ich wymienić na $TSUN ani żaden inny aktyw w tej chwili. Przyszłe airdrops leżą w gestii zespołu.",
+    "q8": "Dlaczego motyw tsundere?",
+    "a8": "Rynek kryptowalut jest bezlitosny -  traktuje Cię okropnie, po czym nagle okazuje uczucia ogromnymi zielonymi świecami. To dosłowna definicja tsundere! Embracujemy tę kulturę, mieszając energię memów Web3 z angażującą estetyką anime P2E."
+  },
+  "footer": {
+    "brandDescription": "Wiodąca gospodarka Anime GameFi zbudowana przejrzyście i bezpiecznie w granicach blockchaina TON.",
+    "chatButton": "Zapytaj na czacie społeczności",
+    "disclaimer": "Zastrzeżenie: Ta strona służy wyłącznie celom rozrywkowym i informacyjnym i nie stanowi doradztwa finansowego, inwestycyjnego, prawnego ani podatkowego. $TSUN to token użytkowy/memowy bez wartości wewnętrznej; nie są składane żadne gwarancje dotyczące nagród, wzrostu cen ani funkcjonalności gry. Zrzeczone kontrakty i blokady płynności zmniejszają kontrolę administracyjną, ale nie eliminują ryzyk błędów, exploitów ani całkowitej straty. Kryptowaluty są wysoce zmienne. Punkty w grze nie mają wartości pieniężnej. Wymagany wiek: 18+.",
+    "privacy": "Polityka Prywatności",
+    "terms": "Warunki Korzystania",
+    "risk": "Zastrzeżenie o Ryzyku",
+    "cookies": "Polityka Cookies",
+    "knowledge": "Baza Wiedzy",
+    "rights": "© 2026 Tsun On TON. Publicznie weryfikowalny kontrakt. Wszelkie prawa zastrzeżone."
+  },
+  "cookie": {
+    "notice": "Ta strona używa niezbędnych plików cookie do zapewnienia funkcjonalności. Kontynuując, zgadzasz się na ich użycie. Więcej szczegółów znajdziesz w naszej <a href=\"cookies.html\" class=\"dark:text-pink-400 text-pink-500 hover:text-pink-600 underline font-semibold transition-colors\">Polityce Cookies</a>.",
+    "accept": "Akceptuj"
+  },
+  "riskModal": {
+    "title": "⚠️ Ostrzeżenie o ryzyku",
+    "body": "Inwestycje w kryptowaluty niosą wysokie ryzyko. Ceny mogą być zmienne i możesz stracić wszystkie pieniądze. Upewnij się, że rozumiesz ryzyko przed kontynuowaniem.",
+    "cancel": "Anuluj",
+    "confirm": "Rozumiem, kontynuuj"
+  },
+  "aria": {
+    "themeToggle": "Przełącz tryb ciemny",
+    "openMenu": "Otwórz menu",
+    "twitter": "Twitter",
+    "telegram": "Kanał Telegram"
+  },
+  "images": {
+    "mascotAlt": "Maskotka anime Tsunonton dla TON GameFi Telegram clicker",
+    "screenshot1Alt": "Ekran startowy gry Tsunonton dla Telegram clicker",
+    "screenshot2Alt": "Ekran ulepszeń klikacza Telegram Tsunonton",
+    "screenshot3Alt": "Codzienne zadania i nagrody Tsunonton w TON GameFi mini-app"
+  }
+}

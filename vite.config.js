@@ -11,6 +11,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         "main": "static/js/main.js",
+        "modules/i18n": "static/js/modules/i18n.js",
         "modules/theme-preload": "static/js/modules/theme-preload.js",
         "schema/index": "static/js/schema/index.js",
         "schema/knowledge": "static/js/schema/knowledge.js",
