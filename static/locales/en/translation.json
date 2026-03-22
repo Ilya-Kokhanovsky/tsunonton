@@ -231,6 +231,12 @@
   "hero": {
     "title": "Tsunonton Token <span class=\"text-tsun block md:inline mt-2 md:mt-0\">($TSUN)</span>",
     "subtitle": "\"It's not like I <em>want</em> you to click me!\"",
+    "typewriterPhrases": [
+      "\"I pretend to be cold, but your clicks warm up this page.\"",
+      "\"Every tap writes a tiny chapter in the Tsunonton story.\"",
+      "\"Keep it fun, keep it smart, and verify everything on-chain.\"",
+      "\"Not all heroes wear capes. Some just keep tapping.\""
+    ],
     "description": "Join the Tsunonton token community, a TON GameFi anime project with a Telegram clicker RPG. Tap to collect Tsun Points (in-game only), track your rank, and follow community updates. New here? Start in the <a href=\"knowledge.html\" class=\"text-pink-500 hover:text-pink-600 underline\">Knowledge Base</a> and read the <a href=\"risk.html\" class=\"text-pink-500 hover:text-pink-600 underline\">Risk Disclaimer</a>, b-baka.",
     "buyButton": "Buy $TSUN",
     "playSoon": "Play Game (Soon)",

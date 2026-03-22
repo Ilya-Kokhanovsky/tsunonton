@@ -231,6 +231,12 @@
   "hero": {
     "title": "Tsunonton Token <span class=\"text-tsun block md:inline mt-2 md:mt-0\">($TSUN)</span>",
     "subtitle": "\"Wcale nie chcę, żebyś mnie tapował!\"",
+    "typewriterPhrases": [
+      "\"Udaje chłód, ale Twoje tapnięcia ożywiają tę stronę.\"",
+      "\"Każdy tap dopisuje mały rozdział do historii Tsunonton.\"",
+      "\"Baw się, myśl rozsądnie i zawsze weryfikuj dane on-chain.\"",
+      "\"Nie każdy bohater nosi pelerynę. Niektórzy po prostu tapują.\""
+    ],
     "description": "Dołącz do społeczności tokena Tsunonton -  projektu anime TON GameFi z klikaczem RPG na Telegramie. Tapuj, zbieraj Tsun Points (tylko w grze), śledź swój ranking i śledź aktualizacje społeczności. Nowy tutaj? Zacznij od <a href=\"knowledge.html\" class=\"text-pink-500 hover:text-pink-600 underline\">Bazy Wiedzy</a> i przeczytaj <a href=\"risk.html\" class=\"text-pink-500 hover:text-pink-600 underline\">Zastrzeżenie o Ryzyku</a>, b-baka.",
     "buyButton": "Kup $TSUN",
     "playSoon": "Graj (Wkrótce)",
