@@ -1,7 +1,33 @@
 import { defineConfig } from "vite";
+import { rmSync } from "node:fs";
+
+function cleanGeneratedJsOutputs() {
+  const generatedTargets = [
+    "static/js/main.min.js",
+    "static/js/modules/i18n.min.js",
+    "static/js/modules/index-enhancements.min.js",
+    "static/js/modules/theme-preload.min.js",
+    "static/js/pages/knowledge.min.js",
+    "static/js/schema/index.min.js",
+    "static/js/schema/knowledge.min.js",
+    "static/js/schema/privacy.min.js",
+    "static/js/schema/cookies.min.js",
+    "static/js/chunks"
+  ];
+
+  return {
+    name: "clean-generated-js-outputs",
+    buildStart() {
+      for (const target of generatedTargets) {
+        rmSync(target, { recursive: true, force: true });
+      }
+    }
+  };
+}
 
 export default defineConfig({
   root: ".",
+  plugins: [cleanGeneratedJsOutputs()],
   build: {
     outDir: "static",
     emptyOutDir: false,
