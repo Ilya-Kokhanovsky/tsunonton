@@ -330,17 +330,19 @@
     "a5": "Po prostu otwórz naszą oficjalną <a href=\"https://t.me/tsunonton_bot\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-tsun font-bold hover:underline hover:text-pink-600 transition-colors\">Telegram Mini-App</a> na telefonie lub komputerze. Zacznij tapować tsundere maskotkę, aby zbierać punkty, podnosić swoje statystyki, zapraszać znajomych i wspinać się na tablice wyników. Tsun Points, które zdobywasz, służą zabawie i pozycji w rankingu -  nie są zbywalnym aktywem. Więcej szczegółów znajdziesz w naszej <a href=\"knowledge.html\" class=\"text-pink-500 hover:underline\">Bazie Wiedzy</a>.",
     "q6": "Kiedy jest airdrop?",
     "a6": "Airdrop $TSUN jest aktualnie zaplanowany na <strong>Q3 2026</strong>, z zastrzeżeniem zmian lub anulowania. Aktywni gracze, którzy wykonują zadania w grze, mogą zostać rozważeni do uznaniowej nagrody społecznościowej. Uczestnictwo nie uprawnia do otrzymania tokenów.",
-    "q7": "Czy mogę zarobić prawdziwe pieniądze?",
-    "a7": "Nie. Gra jest zaprojektowana dla rozrywki. Tsun Points nie są pieniędzmi i nie można ich wymienić na $TSUN ani żaden inny aktyw w tej chwili. Przyszłe airdrops leżą w gestii zespołu.",
-    "q8": "Dlaczego motyw tsundere?",
-    "a8": "Rynek kryptowalut jest bezlitosny -  traktuje Cię okropnie, po czym nagle okazuje uczucia ogromnymi zielonymi świecami. To dosłowna definicja tsundere! Embracujemy tę kulturę, mieszając energię memów Web3 z angażującą estetyką anime P2E.",
+    "q6b": "Czy mogę zarobić prawdziwe pieniądze z gry?",
+    "a6b": "Nie. Gra jest zaprojektowana dla rozrywki. Tsun Points nie są pieniędzmi i nie można ich wymienić na $TSUN ani żaden inny aktyw w tej chwili. Przyszłe airdropy pozostają w gestii zespołu.",
+    "q7": "Jaka jest całkowita podaż i tokenomika?",
+    "a7": "Całkowita podaż wynosi <strong>1 000 000 000 $TSUN</strong>, przy aktualnym podatku 0% kupno/sprzedaż. Docelowy podział to: 40% na nagrody w grze, 24,4% na inicjatywy społeczności, 17,3% na płynność oraz 18,3% na rozwój i marketing. Dane mają charakter poglądowy, mogą się zmienić i nie tworzą prawa do jakichkolwiek wypłat.",
+    "q8": "Jak projekt jest chroniony przed rug pullami?",
+    "a8": "Projekt stara się ograniczać część ryzyk centralizacji poprzez zgłaszany <strong>zrzeczony kontrakt</strong> i <strong>zablokowaną początkową płynność</strong>. Te środki nie eliminują ryzyk rynkowych, technicznych ani operacyjnych. Więcej informacji znajdziesz w <a href=\"risk.html\" class=\"text-pink-500 hover:underline\">Zastrzeżeniu o Ryzyku</a>.",
     "q9": "Dlaczego motyw anime tsundere?",
-    "a9": "Bo krypto często zachowuje się jak tsundere: najpierw karze, a potem nagle nagradza. Ten motyw łączy kulturę anime z zabawową, społecznościową energią Web3.",
+    "a9": "Rynek kryptowalut jest bezlitosny -  traktuje Cię okropnie, po czym nagle okazuje uczucia ogromnymi zielonymi świecami. To dosłowna definicja tsundere! Embracujemy tę kulturę, mieszając energię memów Web3 z angażującą estetyką anime P2E.",
     "q10": "Co się dzieje po podłączeniu portfela?",
-    "a10": "Połączenie portfela wiąże Twój publiczny adres TON z profilem gry przez bezpieczne protokoły portfelowe. Nie ujawnia to frazy seed ani kluczy prywatnych. Każda transakcja nadal wymaga ręcznego zatwierdzenia w aplikacji portfela."
+    "a10": "Podłączenie portfela w grze przez oficjalne protokoły TON Connect to standardowa praktyka. Może ono potwierdzać własność on-chain dla opcjonalnych funkcji, takich jak synchronizacja postępów czy potencjalne nagrody społecznościowe. Aplikacja nie może wykonać transakcji bez Twojej wyraźnej zgody w portfelu."
   },
   "footer": {
-    "brandDescription": "Wiodąca gospodarka Anime GameFi zbudowana przejrzyście i bezpiecznie w granicach blockchaina TON.",
+    "brandDescription": "Token społecznościowy GameFi w klimacie anime, tworzony otwarcie na blockchainie TON.",
     "chatButton": "Zapytaj na czacie społeczności",
     "disclaimer": "Zastrzeżenie: Ta strona służy wyłącznie celom rozrywkowym i informacyjnym i nie stanowi doradztwa finansowego, inwestycyjnego, prawnego ani podatkowego. $TSUN to token użytkowy/memowy bez wartości wewnętrznej; nie są składane żadne gwarancje dotyczące nagród, wzrostu cen ani funkcjonalności gry. Zrzeczone kontrakty i blokady płynności zmniejszają kontrolę administracyjną, ale nie eliminują ryzyk błędów, exploitów ani całkowitej straty. Kryptowaluty są wysoce zmienne. Punkty w grze nie mają wartości pieniężnej. Wymagany wiek: 18+.",
     "privacy": "Polityka Prywatności",
@@ -351,8 +353,9 @@
     "rights": "© 2026 Tsun On TON. Publicznie weryfikowalny kontrakt. Wszelkie prawa zastrzeżone."
   },
   "cookie": {
-    "notice": "Ta strona używa niezbędnych plików cookie do zapewnienia funkcjonalności. Kontynuując, zgadzasz się na ich użycie. Więcej szczegółów znajdziesz w naszej <a href=\"cookies.html\" class=\"dark:text-pink-400 text-pink-500 hover:text-pink-600 underline font-semibold transition-colors\">Polityce Cookies</a>.",
-    "accept": "Akceptuj"
+    "notice": "Używamy wyłącznie niezbędnych plików cookie do działania serwisu. Nie stosujemy plików śledzących ani reklamowych. Więcej szczegółów znajdziesz w naszej <a href=\"cookies.html\" class=\"dark:text-pink-400 text-pink-500 hover:text-pink-600 underline font-semibold transition-colors\">Polityce Cookies</a>.",
+    "accept": "Akceptuj",
+    "reject": "Odrzuć nieobowiązkowe"
   },
   "riskModal": {
     "title": "⚠️ Ostrzeżenie o ryzyku",
